@@ -1,5 +1,7 @@
-./src/main/ressources/application.properties
-/src/main/ressources/application.properties
+src/main/ressources/application.properties
 
-./target/*
-/target/
+.project
+.classpath
+
+target/*
+target/
