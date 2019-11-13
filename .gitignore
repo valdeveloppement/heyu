@@ -1,5 +1,7 @@
 src/main/ressources/application.properties
 
+.settings/
+.settings/*
 .project
 .classpath
 
