@@ -6,4 +6,7 @@ import com.example.demo.model.HeyUser;
 
 public interface HeyUserRepository extends JpaRepository<HeyUser, Long> {
 
+	
+	HeyUser findByHeyUserName(String heyUserName);
+	
 }

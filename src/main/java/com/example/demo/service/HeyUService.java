@@ -12,6 +12,13 @@ public class HeyUService {
 	HeyUserRepository huRep;
 	
 	
+	public void updateLocation() {
+		
+	}
+	
+	public void findNearUser() {
+		
+	}
 	
 	// Transform °DEC en Rad
 	public double convertToRad(double angle) {
