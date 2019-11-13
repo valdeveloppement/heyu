@@ -57,11 +57,13 @@ public class HeyUService {
 		double e =0.081819190842622;
 		
 		//main radii of curvature
+
+		double p = a*(1-Math.pow(e, 2))/Math.pow((1-(Math.pow(e, 2)*Math.pow(Math.sin(latMoyRad), 2))), 1.5);
+		double N =a/Math.sqrt(1-(Math.pow(e, 2)*Math.pow(Math.sin(latMoyRad), 2)));
+		System.out.println(p);	
+		System.out.println(N);
 		
-//		double p=(a*(1-Math.pow(e, 2)))/Math.pow(((1-Math.pow(e, 2))*Math.pow(Math.sin(latMoyRad), 2)), (3/2));
-//		double N =a/Math.sqrt(((1-Math.pow(e, 2))*Math.pow(Math.sin(latMoyRad), 2)));
-//		
-//		
+		
 ////		double ee =(1-Math.pow(e, 2.0));
 ////		double sinLat= Math.sin(latMoyRad);
 ////		double sin2Lat=Math.pow(sinLat, 2);
@@ -70,13 +72,13 @@ public class HeyUService {
 ////		double p =(a*ee)/Math.pow((eesin2Lat), 1.5);
 ////		double N =a/Math.sqrt(eesin2Lat);
 ////		//Approximate radius
-//		double radius= Math.sqrt(p*N);
+		double radius= Math.sqrt(p*N);
 //		
 //		System.out.println("p="+p);
 //		System.out.println("N="+N);
 //		System.out.println("radius="+radius);
 		
-		double radius=a;
+//		double radius=a;
 		
 		
 		double distance = SAB*radius;
