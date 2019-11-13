@@ -1,6 +1,5 @@
 package com.example.demo.service;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -21,7 +20,7 @@ public class HeyUserServiceImpl implements HeyUserService {
 	RoleRepository roleRep;
 	
 	@Autowired
-	BCryptPasswordEncoder bCryptPasswordEncoder;
+	public BCryptPasswordEncoder bCryptPasswordEncoder;
 	
     @Override
     public void save(HeyUser user) {
