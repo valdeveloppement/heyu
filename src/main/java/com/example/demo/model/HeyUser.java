@@ -43,6 +43,14 @@ public class HeyUser {
 	@JsonIgnore
 	private Set<Role> roles;
 	
+	public void addHeyUserNearU(HeyUser user) {
+		this.heyUserNearU.add(user);
+	}
+	
+	public void removeHeyUserNearU(HeyUser user) {
+		this.heyUserNearU.remove(user);
+	}
+	
 	public List<HeyUser> getHeyUserNearU() {
 		return heyUserNearU;
 	}
