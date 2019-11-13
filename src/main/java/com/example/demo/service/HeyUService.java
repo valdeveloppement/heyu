@@ -12,6 +12,13 @@ public class HeyUService {
 	HeyUserRepository huRep;
 	
 	
+	public void updateLocation() {
+		
+	}
+	
+	public void findNearUser() {
+		
+	}
 	
 	// Transform °DEC en Rad
 	public double convertToRad(double angle) {
@@ -51,16 +58,30 @@ public class HeyUService {
 		
 		//main radii of curvature
 		
-		double p=(a*(1-Math.pow(e, 2)))/Math.pow(((1-Math.pow(e, 2))*Math.pow(Math.sin(latMoyRad), 2)), (3/2));
+//		double p=(a*(1-Math.pow(e, 2)))/Math.pow(((1-Math.pow(e, 2))*Math.pow(Math.sin(latMoyRad), 2)), (3/2));
+//		double N =a/Math.sqrt(((1-Math.pow(e, 2))*Math.pow(Math.sin(latMoyRad), 2)));
+//		
+//		
+////		double ee =(1-Math.pow(e, 2.0));
+////		double sinLat= Math.sin(latMoyRad);
+////		double sin2Lat=Math.pow(sinLat, 2);
+////		double eesin2Lat =ee*sin2Lat;
+////		
+////		double p =(a*ee)/Math.pow((eesin2Lat), 1.5);
+////		double N =a/Math.sqrt(eesin2Lat);
+////		//Approximate radius
+//		double radius= Math.sqrt(p*N);
+//		
+//		System.out.println("p="+p);
+//		System.out.println("N="+N);
+//		System.out.println("radius="+radius);
 		
-		double N =a/Math.sqrt(((1-Math.pow(e, 2))*Math.pow(Math.sin(latMoyRad), 2)));
-		
-		//Approximate radius
-		double radius= Math.sqrt(p*N);
-		System.out.println(radius);
+		double radius=a;
 		
 		
 		double distance = SAB*radius;
+//		double distance = SAB*6378137;
+
 		
 		System.out.println(distance);
 
