@@ -1,5 +1,11 @@
-./src/main/ressources/application.properties
-/src/main/ressources/application.properties
+src/main/ressources/application.properties
 
-./target/*
-/target/
+bin/
+
+.settings/
+.settings/*
+.project
+.classpath
+
+target/*
+target/

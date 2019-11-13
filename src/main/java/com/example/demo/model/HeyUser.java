@@ -1,11 +1,13 @@
 package com.example.demo.model;
 
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Transient;
 @Entity
 public class HeyUser {
@@ -20,9 +22,24 @@ public class HeyUser {
 	private String heyUserPic;
 	private Double heyUserLatitude;
 	private Double heyUserLongitude;
-	//private List<Match> heyUserNearU;
+	@Transient
+	private List<HeyUser> heyUserNearU;
 	private int heyUserSearchRadius;
+	@ManyToMany
+	private Set<Role> roles;
 	
+	public List<HeyUser> getHeyUserNearU() {
+		return heyUserNearU;
+	}
+	public void setHeyUserNearU(List<HeyUser> heyUserNearU) {
+		this.heyUserNearU = heyUserNearU;
+	}
+	public Set<Role> getRoles() {
+		return roles;
+	}
+	public void setRoles(Set<Role> roles) {
+		this.roles = roles;
+	}
 	public String getHeyUPasswordConfirm() {
 		return heyUPasswordConfirm;
 	}
