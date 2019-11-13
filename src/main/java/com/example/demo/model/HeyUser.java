@@ -20,7 +20,8 @@ public class HeyUser {
 	private String heyUserPic;
 	private Double heyUserLatitude;
 	private Double heyUserLongitude;
-	//private List<Match> heyUserNearU;
+	@Transient
+	private List<HeyUser> heyUserNearU;
 	private int heyUserSearchRadius;
 	
 	public String getHeyUPasswordConfirm() {
