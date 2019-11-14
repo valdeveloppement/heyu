@@ -1,10 +1,11 @@
 package com.example.demo.dto;
 
-public class ModifyHeyUserSettings {
+public class RegisteringDTO {
 	private String heyUserName;
 	private String heyUserPassword;
 	private String heyUserPic;
-	private String heyUserMessage;
+	
+	
 	
 	public String getHeyUserName() {
 		return heyUserName;
@@ -24,12 +25,6 @@ public class ModifyHeyUserSettings {
 	public void setHeyUserPic(String heyUserPic) {
 		this.heyUserPic = heyUserPic;
 	}
-	public String getHeyUserMessage() {
-		return heyUserMessage;
-	}
-	public void setHeyUserMessage(String heyUserMessage) {
-		this.heyUserMessage = heyUserMessage;
-	}
-
-
+	
+	
 }

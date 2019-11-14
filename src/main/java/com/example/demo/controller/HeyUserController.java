@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.example.demo.dto.NewLocationDto;
+import com.example.demo.dto.NewLocationDTO;
 import com.example.demo.model.HeyUser;
 import com.example.demo.service.HeyUService;
 import com.example.demo.service.HeyUSecurityService;

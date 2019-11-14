@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.dto.NewLocationDto;
+import com.example.demo.dto.NewLocationDTO;
 import com.example.demo.model.HeyUser;
 import com.example.demo.service.HeyUService;
 
@@ -19,7 +19,7 @@ public class HeyUController {
 
 	
     @PostMapping("/updateLocation")
-    public ArrayList<HeyUser> updateLocation(@RequestBody NewLocationDto newLocationDto) {
+    public ArrayList<HeyUser> updateLocation(@RequestBody NewLocationDTO newLocationDto) {
     	
     	
     
@@ -36,7 +36,7 @@ public class HeyUController {
     
     
     @PostMapping("/registering")
-    public ArrayList<HeyUser> register(@RequestBody NewLocationDto newLocationDto) {
+    public ArrayList<HeyUser> register(@RequestBody NewLocationDTO newLocationDto) {
     	
     	
     
