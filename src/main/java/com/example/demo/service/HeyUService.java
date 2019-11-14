@@ -15,25 +15,34 @@ public class HeyUService {
 	HeyUserRepository huRep;
 	
 	ArrayList<HeyUser> listUsers;
-	
+
+	public ArrayList<HeyUser> getListUsers() {
+		return listUsers;
+	}
+
+	public void setListUsers(ArrayList<HeyUser> listUsers) {
+		this.listUsers = listUsers;
+	}
+
 	/**
 	 * Update the location of the user passed in parameter.
 	 * @param longitude
 	 * @param latitude
 	 * @param idUser
 	 */
-	public void updateLocation(double longitude, double latitude, long idUser) {
-		for(HeyUser heyUser : this.listUsers) {
-			if(heyUser.getHeyUserId() == idUser) {
-				heyUser.setHeyUserLongitude(longitude);
-				heyUser.setHeyUserLatitude(latitude);
-				break;
-			}
-		}
+	public void updateLocation(double longitude, double latitude, HeyUser heyUser) {
+		heyUser.setHeyUserLongitude(longitude);
+		heyUser.setHeyUserLatitude(latitude);
 	}
 
-
-
+	public HeyUser searchUserInArrayList(long idUser, ArrayList<HeyUser> listUsers){
+		for(HeyUser heyUser : this.listUsers) {
+			if(heyUser.getHeyUserId() == idUser) {
+				return heyUser;
+			}
+		}
+		return null;
+	}
 
 	public boolean findNearUser(HeyUser thisUser, ArrayList<HeyUser> listToCheck ) {
 		

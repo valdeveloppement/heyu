@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -64,6 +66,11 @@ public class HeyUserController {
     
     @PostMapping("/updateLocation")
     public void updateLocation(@RequestBody NewLocationDto newLocationDto) {
-    	hUServ.updateLocation(newLocationDto.getHeyUserLongitude(), newLocationDto.getHeyUserLatitude(), Long.parseLong(newLocationDto.getHeyUserId()));
+    	ArrayList<HeyUser> listUsers = hUServ.getListUsers();
+    	HeyUser searchedUser = hUServ.searchUserInArrayList(Long.parseLong(newLocationDto.getHeyUserId()), listUsers);
+    	if(searchedUser != null) {
+    		hUServ.updateLocation(searchedUser.getHeyUserLongitude(), searchedUser.getHeyUserLatitude(), searchedUser);
+    		hUServ.findNearUser(searchedUser, listUsers);
+    	}
     }
 }
