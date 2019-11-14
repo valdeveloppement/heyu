@@ -13,11 +13,23 @@ public class HeyUService {
 
 	@Autowired
 	HeyUserRepository huRep;
-
-	ArrayList<HeyUser> listUsers = new ArrayList<HeyUser>();
-
-	public void updateLocation() {
-
+	
+	ArrayList<HeyUser> listUsers;
+	
+	/**
+	 * Update the location of the user passed in parameter.
+	 * @param longitude
+	 * @param latitude
+	 * @param idUser
+	 */
+	public void updateLocation(double longitude, double latitude, long idUser) {
+		for(HeyUser heyUser : this.listUsers) {
+			if(heyUser.getHeyUserId() == idUser) {
+				heyUser.setHeyUserLongitude(longitude);
+				heyUser.setHeyUserLatitude(latitude);
+				break;
+			}
+		}
 	}
 
 
