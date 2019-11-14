@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
 import com.example.demo.model.HeyUser;
+import com.example.demo.service.HeyUSecurityService;
 import com.example.demo.service.HeyUserService;
-import com.example.demo.service.SecurityService;
 import com.example.demo.validator.HeyUserValidator;
 
 @Controller
@@ -19,7 +19,7 @@ public class HeyUserController {
 	HeyUserService huServ;
 	
 	@Autowired
-	SecurityService securityService;
+	HeyUSecurityService securityService;
 	
 	@Autowired
 	HeyUserValidator huValidator;

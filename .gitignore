@@ -2,10 +2,5 @@ src/main/ressources/application.properties
 
 bin/
 
-.settings/
-.settings/*
-.project
-.classpath
-
 target/*
 target/
