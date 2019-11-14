@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.dto.NewLocationDto;
 import com.example.demo.model.HeyUser;
 import com.example.demo.service.HeyUService;
+import com.example.demo.service.HeyUSecurityService;
 import com.example.demo.service.HeyUserService;
-import com.example.demo.service.SecurityService;
 import com.example.demo.validator.HeyUserValidator;
 
 @Controller
@@ -26,7 +26,7 @@ public class HeyUserController {
 	HeyUserService hUserServ;
 	
 	@Autowired
-	SecurityService securityService;
+	HeyUSecurityService securityService;
 	
 	@Autowired
 	HeyUserValidator huValidator;
