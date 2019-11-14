@@ -37,12 +37,21 @@ public class HeyUser {
 	@Transient
 	@JsonIgnore/*Properties("heyUserNearU")*/
 	private List<HeyUser> heyUserNearU;
-	@JsonIgnore
-	private int heyUserSearchRadius;	
+//	@JsonIgnore
+//	private int heyUserSearchRadius;	
 	@ManyToMany
 	@JsonIgnore
 	private Set<Role> roles;
+	private String heyUserMessage;
 	
+	public String getHeyUserMessage() {
+		return heyUserMessage;
+	}
+
+	public void setHeyUserMessage(String heyUserMessage) {
+		this.heyUserMessage = heyUserMessage;
+	}
+
 	public void addHeyUserNearU(HeyUser user) {
 		this.heyUserNearU.add(user);
 	}
@@ -106,10 +115,10 @@ public class HeyUser {
 	public void setHeyUserLongitude(Double heyUserLongitude) {
 		this.heyUserLongitude = heyUserLongitude;
 	}
-	public int getHeyUserSearchRadius() {
-		return heyUserSearchRadius;
-	}
-	public void setHeyUserSearchRadius(int heyUserSearchRadius) {
-		this.heyUserSearchRadius = heyUserSearchRadius;
-	}
+//	public int getHeyUserSearchRadius() {
+//		return heyUserSearchRadius;
+//	}
+//	public void setHeyUserSearchRadius(int heyUserSearchRadius) {
+//		this.heyUserSearchRadius = heyUserSearchRadius;
+//	}
 }
