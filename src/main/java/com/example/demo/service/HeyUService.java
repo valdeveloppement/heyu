@@ -26,45 +26,22 @@ public class HeyUService {
 	public boolean findNearUser(HeyUser thisUser, ArrayList<HeyUser> listToCheck ) {
 		
 		boolean HeyUserNearUIsModified = false;
-		
+		ArrayList<HeyUser> mylistUsers = new ArrayList<HeyUser>();
+		int distance=0;
 		
 		// listToCheck can be this.listUsers or a reduced list according to parameters(online, )
 		for(HeyUser heyUser : listToCheck) {
 
-			int distance = calculateDistance(thisUser.getHeyUserLatitude(), thisUser.getHeyUserLongitude(),heyUser.getHeyUserLatitude(), heyUser.getHeyUserLongitude());
+			distance = calculateDistance(thisUser.getHeyUserLatitude(), thisUser.getHeyUserLongitude(),heyUser.getHeyUserLatitude(), heyUser.getHeyUserLongitude());
 
-			if(!thisUser.equals(heyUser)) {
-
-				// Add or Remove matchs for thisUser
-
-				if(!thisUser.getHeyUserNearU().contains(heyUser)) {
-					if(distance <= thisUser.getHeyUserSearchRadius()) {
-						thisUser.addHeyUserNearU(heyUser);
-						HeyUserNearUIsModified=true;
-					}
-
-				}
-
-				else if(distance > thisUser.getHeyUserSearchRadius()) {
-					thisUser.removeHeyUserNearU(heyUser);
-					HeyUserNearUIsModified=true;
-				}
-
-
-				// Add or Remove matchs for heyUser if you use websocket
-
-//				if(!heyUser.getHeyUserNearU().contains(thisUser)) {
-//					if(distance <= heyUser.getHeyUserSearchRadius()) {
-//						heyUser.addHeyUserNearU(thisUser);
-//					}
-//
-//				}
-//
-//				else if(distance > heyUser.getHeyUserSearchRadius()) {
-//					heyUser.removeHeyUserNearU(thisUser);
-//				}
+			if((!thisUser.equals(heyUser)) && (distance <= thisUser.getHeyUserSearchRadius())) {
+					
+				mylistUsers.add(heyUser);
+				HeyUserNearUIsModified=true;
 			}
+	
 		}
+		thisUser.setHeyUserNearU(mylistUsers);
 		return HeyUserNearUIsModified;
 	}
 
