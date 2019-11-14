@@ -35,35 +35,33 @@ public class HeyUService {
 		heyUser.setHeyUserLatitude(latitude);
 	}
 
-	public HeyUser searchUserInArrayList(long idUser, ArrayList<HeyUser> listUsers){
+	public HeyUser searchUserInArrayList(String heyUserName, String heyUserPassword, ArrayList<HeyUser> listUsers){
 		for(HeyUser heyUser : this.listUsers) {
-			if(heyUser.getHeyUserId() == idUser) {
+			if((heyUser.getHeyUserName() == heyUserName) && (heyUser.getHeyUserPassword() == heyUserPassword)) {
 				return heyUser;
 			}
 		}
 		return null;
 	}
 
-	public boolean findNearUser(HeyUser thisUser, ArrayList<HeyUser> listToCheck ) {
+	public ArrayList<HeyUser> findNearUser(HeyUser thisUser, int radius, ArrayList<HeyUser> listToCheck ) {
 		
-		boolean HeyUserNearUIsModified = false;
 		ArrayList<HeyUser> mylistUsers = new ArrayList<HeyUser>();
-		int distance=0;
-		
+		int distance=0;		
 		// listToCheck can be this.listUsers or a reduced list according to parameters(online, )
 		for(HeyUser heyUser : listToCheck) {
 
 			distance = calculateDistance(thisUser.getHeyUserLatitude(), thisUser.getHeyUserLongitude(),heyUser.getHeyUserLatitude(), heyUser.getHeyUserLongitude());
 
-			if((!thisUser.equals(heyUser)) && (distance <= thisUser.getHeyUserSearchRadius())) {
+			if((!thisUser.equals(heyUser)) && (distance <= radius)) {
 					
 				mylistUsers.add(heyUser);
-				HeyUserNearUIsModified=true;
 			}
 	
 		}
 		thisUser.setHeyUserNearU(mylistUsers);
-		return HeyUserNearUIsModified;
+		return mylistUsers;
+
 	}
 
 

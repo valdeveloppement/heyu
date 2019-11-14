@@ -64,13 +64,5 @@ public class HeyUserController {
         return "welcome";
     }
     
-    @PostMapping("/updateLocation")
-    public void updateLocation(@RequestBody NewLocationDto newLocationDto) {
-    	ArrayList<HeyUser> listUsers = hUServ.getListUsers();
-    	HeyUser searchedUser = hUServ.searchUserInArrayList(Long.parseLong(newLocationDto.getHeyUserId()), listUsers);
-    	if(searchedUser != null) {
-    		hUServ.updateLocation(searchedUser.getHeyUserLongitude(), searchedUser.getHeyUserLatitude(), searchedUser);
-    		hUServ.findNearUser(searchedUser, listUsers);
-    	}
-    }
+
 }

@@ -1,24 +1,40 @@
 package com.example.demo.dto;
 
 public class NewLocationDto {
-	
-	private String heyUserId;
-	private String myToken;
+
+	private String heyUserName;
+	private String heyUserPassword;
 	private double heyUserLatitude;
 	private double heyUserLongitude;
+	private int heyUserSearchRadius;
+
 	
-	public String getHeyUserId() {
-		return heyUserId;
+	
+
+	
+	
+	
+
+	
+	public int getHeyUserSearchRadius() {
+		return heyUserSearchRadius;
 	}
-	public void setHeyUserId(String heyUserId) {
-		this.heyUserId = heyUserId;
+	public void setHeyUserSearchRadius(int heyUserSearchRadius) {
+		this.heyUserSearchRadius = heyUserSearchRadius;
 	}
-	public String getMyToken() {
-		return myToken;
+	public String getHeyUserName() {
+		return heyUserName;
 	}
-	public void setMyToken(String myToken) {
-		this.myToken = myToken;
+	public void setHeyUserName(String heyUserName) {
+		this.heyUserName = heyUserName;
 	}
+	public String getHeyUserPassword() {
+		return heyUserPassword;
+	}
+	public void setHeyUserPassword(String heyUserPassword) {
+		this.heyUserPassword = heyUserPassword;
+	}
+	
 	public double getHeyUserLatitude() {
 		return heyUserLatitude;
 	}
