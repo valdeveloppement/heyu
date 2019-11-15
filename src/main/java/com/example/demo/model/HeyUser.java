@@ -7,26 +7,58 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Transient;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Entity
 public class HeyUser {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@JsonIgnore
 	private Long heyUserId;
 	private String heyUserName;
+	@JsonIgnore
 	private String heyUserPassword;
 	@Transient
+	@JsonIgnore
     private String heyUPasswordConfirm;
 	private String heyUserPic;
+	@Transient
+	@JsonIgnore
 	private Double heyUserLatitude;
+	@Transient
+	@JsonIgnore
 	private Double heyUserLongitude;
 	@Transient
+	@JsonIgnore/*Properties("heyUserNearU")*/
 	private List<HeyUser> heyUserNearU;
-	private int heyUserSearchRadius;
+//	@JsonIgnore
+//	private int heyUserSearchRadius;	
 	@ManyToMany
+	@JsonIgnore
 	private Set<Role> roles;
+	private String heyUserMessage;
+	
+	public String getHeyUserMessage() {
+		return heyUserMessage;
+	}
+
+	public void setHeyUserMessage(String heyUserMessage) {
+		this.heyUserMessage = heyUserMessage;
+	}
+
+	public void addHeyUserNearU(HeyUser user) {
+		this.heyUserNearU.add(user);
+	}
+	
+	public void removeHeyUserNearU(HeyUser user) {
+		this.heyUserNearU.remove(user);
+	}
 	
 	public List<HeyUser> getHeyUserNearU() {
 		return heyUserNearU;
@@ -83,10 +115,10 @@ public class HeyUser {
 	public void setHeyUserLongitude(Double heyUserLongitude) {
 		this.heyUserLongitude = heyUserLongitude;
 	}
-	public int getHeyUserSearchRadius() {
-		return heyUserSearchRadius;
-	}
-	public void setHeyUserSearchRadius(int heyUserSearchRadius) {
-		this.heyUserSearchRadius = heyUserSearchRadius;
-	}
+//	public int getHeyUserSearchRadius() {
+//		return heyUserSearchRadius;
+//	}
+//	public void setHeyUserSearchRadius(int heyUserSearchRadius) {
+//		this.heyUserSearchRadius = heyUserSearchRadius;
+//	}
 }

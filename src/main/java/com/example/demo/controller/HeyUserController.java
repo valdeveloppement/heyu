@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,11 +11,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.example.demo.dto.NewLocationDto;
+import com.example.demo.dto.NewLocationDTO;
 import com.example.demo.model.HeyUser;
 import com.example.demo.service.HeyUService;
+import com.example.demo.service.HeyUSecurityService;
 import com.example.demo.service.HeyUserService;
-import com.example.demo.service.SecurityService;
 import com.example.demo.validator.HeyUserValidator;
 
 @Controller
@@ -26,7 +28,7 @@ public class HeyUserController {
 	HeyUserService hUserServ;
 	
 	@Autowired
-	SecurityService securityService;
+	HeyUSecurityService securityService;
 	
 	@Autowired
 	HeyUserValidator huValidator;
@@ -62,8 +64,5 @@ public class HeyUserController {
         return "welcome";
     }
     
-    @PostMapping("/updateLocation")
-    public void updateLocation(@RequestBody NewLocationDto newLocationDto) {
-    	hUServ.updateLocation(newLocationDto.getHeyUserLongitude(), newLocationDto.getHeyUserLatitude(), Long.parseLong(newLocationDto.getHeyUserId()));
-    }
+
 }
