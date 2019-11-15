@@ -8,14 +8,7 @@ public class NewLocationDTO {
 	private double heyUserLongitude;
 	private int heyUserSearchRadius;
 
-	
-	
-
-	
-	
-	
-
-	
+		
 	public int getHeyUserSearchRadius() {
 		return heyUserSearchRadius;
 	}

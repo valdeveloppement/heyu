@@ -1,6 +1,6 @@
 package com.example.demo.dto;
 
-public class ModifyHeyUserSettingsDTO {
+public class ModifyHeyUserSettingsDTOExpected {
 	private String heyUserName;
 	private String heyUserPassword;
 	private String heyUserPic;

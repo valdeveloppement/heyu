@@ -1,12 +1,19 @@
 package com.example.demo.dto;
 
-public class RegisteringDTO {
+public class RegisteringDTOExpected {
 	private String heyUserName;
 	private String heyUserPassword;
-	private String heyUserPic;
+	private String heyUserConfirmPassword = null;
+	private String heyUserPic/*= URL DE BASE*/;
 	
 	
 	
+	public String getHeyUserConfirmPassword() {
+		return heyUserConfirmPassword;
+	}
+	public void setHeyUserConfirmPassword(String heyUserConfirmPassword) {
+		this.heyUserConfirmPassword = heyUserConfirmPassword;
+	}
 	public String getHeyUserName() {
 		return heyUserName;
 	}
