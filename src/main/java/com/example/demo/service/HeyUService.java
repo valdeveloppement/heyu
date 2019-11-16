@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.demo.dto.LoginDTOSent;
 import com.example.demo.model.HeyUser;
 import com.example.demo.repository.HeyUserRepository;
 
@@ -14,7 +15,8 @@ public class HeyUService {
 	@Autowired
 	HeyUserRepository huRep;
 	
-	ArrayList<HeyUser> listUsers;
+	ArrayList<HeyUser> listUsers = new ArrayList<HeyUser>();
+	
 
 	public ArrayList<HeyUser> getListUsers() {
 		return listUsers;
@@ -36,14 +38,24 @@ public class HeyUService {
 	}
 
 	public HeyUser searchUserInArrayList(String heyUserName, String heyUserPassword, ArrayList<HeyUser> listUsers){
-		for(HeyUser heyUser : this.listUsers) {
-			if((heyUser.getHeyUserName() == heyUserName) && (heyUser.getHeyUserPassword() == heyUserPassword)) {
+		for(HeyUser heyUser : listUsers) {
+			if((heyUser.getHeyUserName().equals(heyUserName)) && (heyUser.getHeyUserPassword().equals(heyUserPassword))) {
 				return heyUser;
 			}
 		}
 		return null;
 	}
-
+	
+	public HeyUser searchUserInArrayListByName(String heyUserName, ArrayList<HeyUser> listUsers) {
+		for(HeyUser heyUser : listUsers) {
+			if(heyUser.getHeyUserName().equals(heyUserName)) {
+				return heyUser;
+			} 
+		}
+		
+		return null;
+	}
+	
 	public ArrayList<HeyUser> findNearUser(HeyUser thisUser, int radius, ArrayList<HeyUser> listToCheck ) {
 		
 		ArrayList<HeyUser> mylistUsers = new ArrayList<HeyUser>();
@@ -120,6 +132,13 @@ public class HeyUService {
 
 
 	}
+
+	public void save(HeyUser thisUserLogin) {
+		huRep.save(thisUserLogin);
+		
+	}
+
+
 
 
 
