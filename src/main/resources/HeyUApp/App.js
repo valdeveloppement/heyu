@@ -10,7 +10,7 @@ export default class App extends React.Component {
   state = {
     heyUserName: 'nobody',
     heyUserPassword: '0000',
-    heyUserSearchRadius: 5857873,
+    heyUserSearchRadius: 50000,
     currentLongitude: "0",//Initial Longitude
     currentLatitude: "0",//Initial Latitude
     currentAccuracy:"0",
@@ -145,11 +145,11 @@ export default class App extends React.Component {
     return (
        <View style = {styles.container}>
           <Image
-            source={{uri:'https://png.icons8.com/dusk/100/000000/compass.png'}}
+            source={{uri:'https://s.yimg.com/uu/api/res/1.2/Bexb6QOS4icfU0kXaC86oQ--~B/aD0yMDA7dz0yNjA7c209MTthcHBpZD15dGFjaHlvbg--/http://media.zenfs.com/fr_FR/News/TeleLoisirs/50306-que-devient-rowan-atkinson-alias-mr-bean.jpg'}}
             style={{width: 100, height: 100}}
           />
           <Text style = {styles.boldText}>
-             You are Here
+             Mr Bean knows where you are:
           </Text>
           <Text style={{justifyContent:'center',alignItems: 'center',marginTop:16}}>
             Longitude: {this.state.currentLongitude}
@@ -163,6 +163,10 @@ export default class App extends React.Component {
           <Text style={{justifyContent:'center',alignItems: 'center',marginTop:16}}>
             PositionCountChange: {this.state.positionCountChange}
           </Text>
+          <Text style={{justifyContent:'center',alignItems: 'center',marginTop:16}}>
+            Friends: {this.state.heyUserNearU.length}
+          </Text>
+
        </View>
     )
  }
@@ -181,7 +185,7 @@ const styles = StyleSheet.create ({
     backgroundColor:'white'
  },
  boldText: {
-    fontSize: 30,
+    fontSize: 20,
     color: 'red',
  }
 })
