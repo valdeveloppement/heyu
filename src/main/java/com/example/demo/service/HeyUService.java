@@ -7,7 +7,6 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.dto.LoginDTOSent;
 import com.example.demo.model.HeyUser;
 import com.example.demo.repository.HeyUserRepository;
 
@@ -92,9 +91,12 @@ public class HeyUService {
 		// listToCheck can be this.listUsers or a reduced list according to parameters(online, )
 		for(HeyUser heyUser : listToCheck) {
 
-			distance = calculateDistance(thisUser.getHeyUserLatitude(), thisUser.getHeyUserLongitude(),heyUser.getHeyUserLatitude(), heyUser.getHeyUserLongitude());
 
-			if((!thisUser.equals(heyUser)) && (distance <= radius)) {
+			if((!thisUser.equals(heyUser)) && (calculateDistance(thisUser.getHeyUserLatitude(), thisUser.getHeyUserLongitude(),heyUser.getHeyUserLatitude(), heyUser.getHeyUserLongitude()) <= radius)) {
+				
+				
+				
+				System.out.println("MATCH");
 					
 				mylistUsers.add(heyUser);
 			}
@@ -118,6 +120,7 @@ public class HeyUService {
 
 
 	public int calculateDistance(double latA, double longA, double latB, double longB) {
+		System.out.println("LatA="+latA+"LongA="+longA+"LatB="+latB+"LongB="+longB);
 
 		// En WGS84  https://fr.wikipedia.org/wiki/WGS_84
 		//https://geodesie.ign.fr/contenu/fichiers/Distance_longitude_latitude.pdf

@@ -37,12 +37,11 @@ public class HeyUController {
 		// convert user object to json string and return it 
 		System.out.println(mapper.writeValueAsString(newLocationDto));
 
-
-
 		HeyUser searchedUser = hUServ.searchUserInArrayList( newLocationDto.getHeyUserName(),newLocationDto.getHeyUserPassword(), hUServ.getListUsers());
 			UpdatePositionResponseDto response = new UpdatePositionResponseDto();
 			if(searchedUser != null) {
-			hUServ.updateLocation(searchedUser.getHeyUserLongitude(), searchedUser.getHeyUserLatitude(), searchedUser);
+			hUServ.updateLocation(newLocationDto.getHeyUserLongitude(), newLocationDto.getHeyUserLatitude(), searchedUser);
+			
 			response.setHeyUserNearU(hUServ.findNearUser(searchedUser, newLocationDto.getHeyUserSearchRadius(), hUServ.getListUsers()));
 			}
 			return response;
