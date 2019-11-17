@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dto.LoginDTOSent;
 import com.example.demo.dto.ModifyHeyUserSettingsDTOExpected;
-import com.example.demo.dto.NewLocationDTO;
+import com.example.demo.dto.UpdatePositionDTO;
+import com.example.demo.dto.UpdatePositionResponseDto;
 import com.example.demo.dto.RegisteringDTOExpected;
 import com.example.demo.model.HeyUser;
 import com.example.demo.service.HeyUService;
@@ -27,11 +28,14 @@ public class HeyUController {
 	}
 	
     @PostMapping("/updateLocation")
-    public ArrayList<HeyUser> updateLocation(@RequestBody NewLocationDTO newLocationDto) {
+    public UpdatePositionResponseDto updateLocation(@RequestBody UpdatePositionDTO newLocationDto) {
+    	System.out.println("/updateLocation is called");
     	HeyUser searchedUser = hUServ.searchUserInArrayList( newLocationDto.getHeyUserName(),newLocationDto.getHeyUserPassword(), hUServ.getListUsers());
     	if(searchedUser != null) {
+    		UpdatePositionResponseDto response = new UpdatePositionResponseDto();
     		hUServ.updateLocation(searchedUser.getHeyUserLongitude(), searchedUser.getHeyUserLatitude(), searchedUser);
-    		return hUServ.findNearUser(searchedUser, newLocationDto.getHeyUserSearchRadius(), hUServ.getListUsers());
+    		response.setHeyUserNearU(hUServ.findNearUser(searchedUser, newLocationDto.getHeyUserSearchRadius(), hUServ.getListUsers()));
+    		return response;
     	}
 		return null;
     }
