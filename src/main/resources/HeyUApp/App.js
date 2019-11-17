@@ -20,38 +20,63 @@ export default class App extends React.Component {
 
 
  componentDidMount = () => {
-  var that =this;
-  //Checking for the permission just after component loaded
-  if(Platform.OS === 'ios'){
-    this.callLocation(that);
-  }else{
-    async function requestLocationPermission() {
-      try {
-        const granted = await PermissionsAndroid.request(
-          PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,{
-            'title': 'Location Access Required',
-            'message': 'This App needs to Access your location'
-          }
-        )
-        if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-          //To Check, If Permission is granted
-          that.callLocation(that);
+    var that =this;
+    //Checking for the permission just after component loaded
+    if(Platform.OS === 'ios'){
+      this.callLocation(that);
+    }else{
+      async function requestLocationPermission() {
+        try {
+          const granted = await PermissionsAndroid.request(
+            PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,{
+              'title': 'Location Access Required',
+              'message': 'This App needs to Access your location'
+            }
+          )
+          if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+            //To Check, If Permission is granted
+            that.callLocation(that);
+            
+          } else {
+            alert("Permission Denied");
           
-        } else {
-          alert("Permission Denied");
-         
+          }
+        } catch (err) {
+          alert("err",err);
+          console.warn(err)
         }
-      } catch (err) {
-        alert("err",err);
-        console.warn(err)
       }
-    }
-    requestLocationPermission();
-  }    
- }
+      requestLocationPermission();
+    }    
+  }
 
+  updateHeyUserNearUList = (that) => {
+    console.log("updateHeyUserNearUList s'execute")
  
-
+   fetch('http://localhost:8080/updateLocation', {
+     method: 'POST',
+     headers: {
+       Accept: 'application/json',
+       'Content-Type': 'application/json',
+     },
+     body: JSON.stringify({
+       heyUserName: that.state.heyUserName,
+       heyUserPassword: that.state.heyUserPassword,
+       heyUserSearchRadius: that.state.heyUserSearchRadius,
+       currentLongitude: that.state.currentLongitude,
+       currentLatitude: that.state.currentLatitude,
+     }),
+   }).then((response) => response.json())
+       .then((responseJson) => {
+         that.setState({ heyUserNearU:responseJson.heyUserNearU });
+         console.log(that.state.heyUserNearU);
+         return responseJson.heyUserNearU;
+       })
+       .catch((error) => {
+         console.error(error);
+       });
+  }
+  
 
 
  callLocation(that){
@@ -93,39 +118,16 @@ export default class App extends React.Component {
        //accuracy
        that.setState({ currentAccuracy:currentAccuracy });
 
-
+       
       // Fetch Here
-
-      updateHeyUserNearUList = () => {
-
-        fetch('localhost:8080/updateLocation', {
-          method: 'POST',
-          headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            heyUserName: 'heyUserNameUndefined',
-            heyUserPassword: 'heyUserPasswordUndefined',
-            heyUserSearchRadius: 'heyUserSearchRadiusUndefined',
-            currentLongitude: 0,//Initial Longitude
-            currentLatitude: 0,//Initial Latitude
-          }),
-        }).then((response) => response.json())
-            .then((responseJson) => {
-              return responseJson.movies;
-            })
-            .catch((error) => {
-              console.error(error);
-            });
-        
-      }
+      that.updateHeyUserNearUList(that);
+      
 
     },
     (error) => alert(error.message),
       { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000, distanceFilter: 3 }
     );
- }
+  }
 
 
 
