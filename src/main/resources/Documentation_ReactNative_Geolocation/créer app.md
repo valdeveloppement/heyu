@@ -48,5 +48,8 @@ react-native run-android
 pour build un apk dans /android:
 gradlew assembleRelease
 
-
+pour ouvrior un port:
+iptables -A INPUT -p tcp -m tcp --dport 7777 -j ACCEPT # ouvrir le port 777
+iptables -D INPUT -p tcp -m tcp --dport 7777 -j ACCEPT # annuler l'ouverture
+iptables -L # regarder ce qui est ouvert et ce qui l'est pas
 
