@@ -8,12 +8,12 @@ import Geolocation from '@react-native-community/geolocation';
  
 export default class App extends React.Component {
   state = {
-    heyUserName: 'heyUserNameUndefined',
-    heyUserPassword: 'heyUserPasswordUndefined',
-    heyUserSearchRadius: 'heyUserSearchRadiusUndefined',
-    currentLongitude: 0,//Initial Longitude
-    currentLatitude: 0,//Initial Latitude
-    currentAccuracy:0,
+    heyUserName: 'nobody',
+    heyUserPassword: '0000',
+    heyUserSearchRadius: 5857873,
+    currentLongitude: "0",//Initial Longitude
+    currentLatitude: "0",//Initial Latitude
+    currentAccuracy:"0",
     positionCountChange: 0,
     heyUserNearU: []
  }
@@ -52,8 +52,8 @@ export default class App extends React.Component {
 
   updateHeyUserNearUList = (that) => {
     console.log("updateHeyUserNearUList s'execute")
- 
-   fetch('http://localhost:8080/updateLocation', {
+
+    fetch('http://192.168.1.64:8080/updateLocation', {
      method: 'POST',
      headers: {
        Accept: 'application/json',
@@ -63,13 +63,14 @@ export default class App extends React.Component {
        heyUserName: that.state.heyUserName,
        heyUserPassword: that.state.heyUserPassword,
        heyUserSearchRadius: that.state.heyUserSearchRadius,
-       currentLongitude: that.state.currentLongitude,
-       currentLatitude: that.state.currentLatitude,
+       heyUserLongitude: that.state.currentLongitude,
+       heyUserLatitude: that.state.currentLatitude,
      }),
    }).then((response) => response.json())
        .then((responseJson) => {
          that.setState({ heyUserNearU:responseJson.heyUserNearU });
          console.log(that.state.heyUserNearU);
+         console.log("longueur du tableau = "+ that.state.heyUserNearU.length);
          return responseJson.heyUserNearU;
        })
        .catch((error) => {
@@ -84,11 +85,11 @@ export default class App extends React.Component {
     Geolocation.getCurrentPosition(
       //Will give you the current location
        (position) => {
-          const currentLongitude = parseFloat(JSON.stringify(position.coords.longitude));
+          const currentLongitude =JSON.stringify(position.coords.longitude);
           //getting the Longitude from the location json
-          const currentLatitude = parseFloat(JSON.stringify(position.coords.latitude));
+          const currentLatitude = JSON.stringify(position.coords.latitude);
           //getting the Latitude from the location json
-          const currentAccuracy = parseFloat(JSON.stringify(position.coords.accuracy));
+          const currentAccuracy = JSON.stringify(position.coords.accuracy);
           //getting the Latitude from the location json
           that.setState({ currentAccuracy:currentAccuracy });
           //Setting state Longitude to re re-render the Longitude Text
@@ -104,21 +105,20 @@ export default class App extends React.Component {
     that.watchID = Geolocation.watchPosition((position) => {
       //Will give you the location on location change
         console.log(position);
-        const currentLongitude = parseFloat(JSON.stringify(position.coords.longitude));
+        const currentLongitude = JSON.stringify(position.coords.longitude);
           //getting the Longitude from the location json
-          const currentLatitude = parseFloat(JSON.stringify(position.coords.latitude));
+          const currentLatitude =JSON.stringify(position.coords.latitude);
           //getting the Latitude from the location json
-          const currentAccuracy = parseFloat(JSON.stringify(position.coords.accuracy));
+          const currentAccuracy = JSON.stringify(position.coords.accuracy);
         //getting the Latitude from the location json
        that.setState({ currentLongitude:currentLongitude });
        //Setting state Longitude to re re-render the Longitude Text
        that.setState({ currentLatitude:currentLatitude });
        //if position changes
-       that.setState({ positionCountChange:this.state.positionCountChange+1 });
+       that.setState({ positionCountChange:this.state.positionCountChange+1});
        //accuracy
        that.setState({ currentAccuracy:currentAccuracy });
 
-       
       // Fetch Here
       that.updateHeyUserNearUList(that);
       

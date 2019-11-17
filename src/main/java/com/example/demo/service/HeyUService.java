@@ -2,6 +2,8 @@ package com.example.demo.service;
 
 import java.util.ArrayList;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +27,33 @@ public class HeyUService {
 	public void setListUsers(ArrayList<HeyUser> listUsers) {
 		this.listUsers = listUsers;
 	}
+	
+    
+	
+	
+    @PostConstruct
+    public void createTestsUsers() {
+    	System.out.println("createTestsUsers  s'execute");
+    	listUsers.add(new HeyUser());
+    	listUsers.add(new HeyUser());
+    	listUsers.get(1).setHeyUserName("nobody2");
+    	listUsers.get(1).setHeyUserLatitude(43.6081066);
+    	listUsers.get(1).setHeyUserLongitude(3.87417341);
+    }
+    
+    
+    
+    @PostConstruct
+    public void loadListUsers() {
+    	System.out.println("loadListUsers s'execute");
+    	listUsers.addAll(huRep.findAll());
+    }
+	
+	
+	
+	
+	
+	
 
 	/**
 	 * Update the location of the user passed in parameter.

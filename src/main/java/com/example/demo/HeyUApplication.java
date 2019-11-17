@@ -16,15 +16,16 @@ import com.example.demo.service.HeyUService;
 public class HeyUApplication /*extends SpringBootServletInitializer*/ {
 	
 	   
-	    @Autowired
-	    private HeyUserRepository hUserRep;
-	    @Autowired
-	    private HeyUService myService;
-	    
-	    @PostConstruct
-	    public void createListUsers() {
-	    	myService.getListUsers().addAll(hUserRep.findAll());  
-	    }
+//	    @Autowired
+//	    private HeyUserRepository hUserRep;
+//	    @Autowired
+//	    private HeyUService myService;
+//	    
+//	    @PostConstruct
+//	    public void createListUsers() {
+//	    	System.out.println(" @PostConstruct s'exectute dans le main");
+//	    	myService.getListUsers().addAll(hUserRep.findAll());  
+//	    }
 
 
 	/*@Override
@@ -37,10 +38,7 @@ public class HeyUApplication /*extends SpringBootServletInitializer*/ {
 		
 
 	
-		HeyUService myService = new HeyUService();
-		
-		
-		myService.calculateDistance(45.0, 0, 46.25791, 1.83421);
+
 		
 	}
 
