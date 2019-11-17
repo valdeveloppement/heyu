@@ -1,25 +1,20 @@
 import React from 'react';
-import {View, Text,  StyleSheet, Image ,PermissionsAndroid,Platform} from 'react-native';
+import {View, Text,  StyleSheet, Image , ScrollView , PermissionsAndroid,Platform} from 'react-native';
+import  MultiSlider from '@ptomasroos/react-native-multi-slider';
+import CustomSliderMarkerLeft from '@ptomasroos/react-native-multi-slider';
+import  CustomSliderMarkerRight  from '@ptomasroos/react-native-multi-slider';
+
 //import all the components we are going to use.
 
- 
  
 export default class HeyUFriends extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
-}
-
- componentDidMount = () => {
-    
   }
 
-
-
-
-
- 
-
+  enableScroll = () => this.setState({ scrollEnabled: true });
+  disableScroll = () => this.setState({ scrollEnabled: false });
  
  render() {
     return (
@@ -29,16 +24,37 @@ export default class HeyUFriends extends React.Component {
             Friends: {this.props.AppState.heyUserNearU.length}
         </Text>
 
-    
-        {/* <ul>
-          {this.props.AppState.heyUserNearU.map((friend, index) => {
-            return <li key={index}>{friend.HeyUserName}</li>                     
-          })}
-        </ul> */}
+       
+        <View>
+            {this.props.AppState.heyUserNearU.map((heyUser, index) =>
+            <View key={heyUser.heyUserName + index}>
+                 <Image source={{uri:heyUser.heyUserPic }} style={{width: 100, height: 100}}/>
+                <Text>{heyUser.heyUserName}</Text>
+                <Text>{heyUser.heyUserMessage}</Text>
+            </View>
+            
 
-       </View>
+            )}
+        </View>
+
+        {/* HOW TO USE  https://github.com/ptomasroos/react-native-multi-slider#installation */}
+        <ScrollView scrollEnabled={this.state.scrollEnabled}>
+          <MultiSlider
+      
+            // onValuesChangeStart={this.disableScroll}
+            // onValuesChangeFinish={this.enableScroll}
+          />
+        </ScrollView>
+
+       
+
+
+
+    </View>
     )
  }
+
+
 }
 
 

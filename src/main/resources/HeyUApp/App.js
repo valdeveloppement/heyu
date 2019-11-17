@@ -10,7 +10,7 @@ export default class App extends React.Component {
   state = {
     heyUserName: 'nobody',
     heyUserPassword: '0000',
-    heyUserSearchRadius: 6,
+    heyUserSearchRadius: 20,
     heyUserLongitude: "0",//Initial Longitude
     heyUserLongitude: "0",//Initial Latitude
     currentAccuracy:"0",
@@ -182,8 +182,7 @@ export default class App extends React.Component {
             PositionCountChange: {this.state.positionCountChange}
           </Text>
 
-
-          <HeyUFriends AppState = {this.state}> </HeyUFriends>
+          <HeyUFriends AppState = {this.state} setHeyUserSearchRadius ={this.setHeyUserSearchRadius} setHeyUserPic={this.setHeyUserPic} setheyUserMessage={this.setheyUserMessage}>  </HeyUFriends>
 
        </View>
     )
