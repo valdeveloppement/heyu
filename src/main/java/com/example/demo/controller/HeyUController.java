@@ -109,7 +109,16 @@ public class HeyUController {
 			thisUserLoginDto.setConnected(true);// inutile si le boolean se conserve apres envoi du settingsDTO
 			thisUserLoginDto.setMessageSent("Your modifications has been successfully registered !");
 			hUServ.save(thisUserLoginDto.getUserconnected());
-			hUServ.getListUsers().add(thisUserLoginDto.getUserconnected().getHeyUserId().intValue(), thisUserLoginDto.getUserconnected());
+			
+//			for(HeyUser user : hUServ.getListUsers()) {
+//				if(user.equals(thisUserLoginDto.getUserconnected())) {
+//					int indexOfUserConnected = hUServ.getListUsers().indexOf(user);
+//					hUServ.getListUsers().add(indexOfUserConnected, thisUserLoginDto.getUserconnected());
+//				}
+//			}
+			
+			int indexOfUserConnected = hUServ.getListUsers().indexOf(searchedUser);
+			hUServ.getListUsers().add(indexOfUserConnected, thisUserLoginDto.getUserconnected());
 			return thisUserLoginDto;
 		} else {
 			thisUserLoginDto.setConnected(false); // A CONFIRMER (si un utilisateur entre en dur "true" dans le false...
