@@ -10,7 +10,7 @@ export default class App extends React.Component {
   state = {
     heyUserName: 'nobody',
     heyUserPassword: '0000',
-    heyUserSearchRadius: 4000,
+    heyUserSearchRadius:5000,
     heyUserLongitude: "0",//Initial Longitude
     heyUserLongitude: "0",//Initial Latitude
     currentAccuracy:"0",
