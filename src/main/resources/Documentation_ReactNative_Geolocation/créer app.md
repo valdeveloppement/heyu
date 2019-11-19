@@ -53,3 +53,7 @@ iptables -A INPUT -p tcp -m tcp --dport 7777 -j ACCEPT # ouvrir le port 777
 iptables -D INPUT -p tcp -m tcp --dport 7777 -j ACCEPT # annuler l'ouverture
 iptables -L # regarder ce qui est ouvert et ce qui l'est pas
 
+
+
+npm install --save react-native-range-slider
+

@@ -28,7 +28,7 @@ export default class HeyUFriends extends React.Component {
         <View>
             {this.props.AppState.heyUserNearU.map((heyUser, index) =>
             <View key={heyUser.heyUserName + index}>
-                 <Image source={{uri:heyUser.heyUserPic }} style={{width: 100, height: 100}}/>
+                 <Image source={{uri:heyUser.heyUserPic }} style={{width: 60, height: 60}}/>
                 <Text>{heyUser.heyUserName}</Text>
                 <Text>{heyUser.heyUserMessage}</Text>
             </View>

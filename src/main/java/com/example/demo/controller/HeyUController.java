@@ -106,6 +106,7 @@ public class HeyUController {
 		LoginDTOSent thisUserLoginDto = new LoginDTOSent();
 		if(searchedUser != null) {
 			
+
 			thisUserLoginDto.setUserconnected(searchedUser);
 			thisUserLoginDto.getUserconnected().setHeyUserMessage(settingsDTO.getHeyUserMessage());
 			thisUserLoginDto.getUserconnected().setHeyUserPic(settingsDTO.getHeyUserPic());
@@ -114,6 +115,7 @@ public class HeyUController {
 			thisUserLoginDto.setMessageSent("Your modifications has been successfully registered !");
 			hUServ.save(thisUserLoginDto.getUserconnected());
 			
+
 			int indexOfUserConnected = hUServ.getListUsers().indexOf(searchedUser);
 			hUServ.getListUsers().add(indexOfUserConnected, thisUserLoginDto.getUserconnected());
 			return thisUserLoginDto;
