@@ -25,8 +25,12 @@ public class HeyUController {
 	HeyUService hUServ;
 
 	@GetMapping("/getTest")
-	public String getTest() {
-		return "abv";
+	public LoginDTOSent getTest() {
+		System.out.println("getTest !");
+		LoginDTOSent thisUserLoginDto = new LoginDTOSent();
+		thisUserLoginDto.setConnected(false);
+		thisUserLoginDto.setMessageSent("We haven't been able to connect you, please check your informations... ");
+		return thisUserLoginDto;
 	}
 
 	@PostMapping("/updateLocation")
