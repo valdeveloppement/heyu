@@ -10,7 +10,7 @@ export default class App extends React.Component {
   state = {
     heyUserName: 'nobody',
     heyUserPassword: '0000',
-    heyUserSearchRadius: 20,
+    heyUserSearchRadius:5000,
     heyUserLongitude: "0",//Initial Longitude
     heyUserLongitude: "0",//Initial Latitude
     currentAccuracy:"0",
@@ -58,7 +58,7 @@ export default class App extends React.Component {
   updateHeyUserNearUList = (that) => {
     console.log("updateHeyUserNearUList s'execute")
 
-    fetch('http://192.168.1.64:8080/updateLocation', {
+    fetch('http://192.168.8.101:8080/updateLocation', {
      method: 'POST',
      headers: {
        Accept: 'application/json',
