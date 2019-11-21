@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'HeyUApp' do
-  # Pods for HeyUApp
+target 'HeyUApplication' do
+  # Pods for HeyUApplication
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -34,9 +34,7 @@ target 'HeyUApp' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-
-
-  target 'HeyUAppTests' do
+  target 'HeyUApplicationTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -44,10 +42,10 @@ target 'HeyUApp' do
   use_native_modules!
 end
 
-target 'HeyUApp-tvOS' do
-  # Pods for HeyUApp-tvOS
+target 'HeyUApplication-tvOS' do
+  # Pods for HeyUApplication-tvOS
 
-  target 'HeyUApp-tvOSTests' do
+  target 'HeyUApplication-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

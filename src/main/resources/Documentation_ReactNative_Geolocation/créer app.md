@@ -1,5 +1,6 @@
 https://facebook.github.io/react-native/docs/getting-started.html#android-development-environment
 https://facebook.github.io/react-native/docs/running-on-device
+https://reactnavigation.org/docs/en/getting-started.html
 
 On installe npm, android studio les sdk (aussi ceux de lollipop pour moi)
 
@@ -56,4 +57,11 @@ iptables -L # regarder ce qui est ouvert et ce qui l'est pas
 
 
 npm install --save react-native-range-slider
+
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 

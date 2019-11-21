@@ -1,5 +1,5 @@
 {
-  "name": "HeyUApp",
+  "name": "HeyUApplication",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,17 +10,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@ptomasroos/react-native-multi-slider": "^1.0.0",
     "@react-native-community/geolocation": "^2.0.2",
-    "@react-native-community/slider": "^2.0.5",
     "react": "16.9.0",
     "react-native": "0.61.4",
-    "react-native-gesture-handler": "^1.5.0",
-    "react-native-range-slider": "^0.1.2",
-    "react-native-reanimated": "^1.4.0",
+    "react-native-gesture-handler": "^1.5.1",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^1.10.3",
-    "rn-range-slider": "^1.3.0",
     "typescript": "^3.7.2"
   },
   "devDependencies": {

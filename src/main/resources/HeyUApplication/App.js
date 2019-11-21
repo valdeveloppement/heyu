@@ -4,13 +4,17 @@ import {View, Text,  StyleSheet, Image ,PermissionsAndroid,Platform} from 'react
 //import all the components we are going to use.
 import Geolocation from '@react-native-community/geolocation';
 import HeyUFriends from './components/HeyUFriends';
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
+// import 'react-native-gesture-handler';
+
  
  
 export default class App extends React.Component {
   state = {
     heyUserName: 'nobody',
     heyUserPassword: '0000',
-    heyUserSearchRadius:5000,
+    heyUserSearchRadius:10,
     heyUserLongitude: "0",//Initial Longitude
     heyUserLongitude: "0",//Initial Latitude
     currentAccuracy:"0",
@@ -58,7 +62,7 @@ export default class App extends React.Component {
   updateHeyUserNearUList = (that) => {
     console.log("updateHeyUserNearUList s'execute")
 
-    fetch('http://192.168.8.101:8080/updateLocation', {
+    fetch('http://192.168.8.105:8080/updateLocation', {
      method: 'POST',
      headers: {
        Accept: 'application/json',

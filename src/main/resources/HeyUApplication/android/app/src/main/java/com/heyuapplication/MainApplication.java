@@ -1,4 +1,4 @@
-package com.heyuapp;
+package com.heyuapplication;
 
 import android.app.Application;
 import android.content.Context;
