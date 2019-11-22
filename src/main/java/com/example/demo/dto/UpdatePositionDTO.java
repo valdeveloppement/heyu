@@ -1,6 +1,6 @@
 package com.example.demo.dto;
 
-public class NewLocationDTO {
+public class UpdatePositionDTO {
 
 	private String heyUserName;
 	private String heyUserPassword;
@@ -8,14 +8,7 @@ public class NewLocationDTO {
 	private double heyUserLongitude;
 	private int heyUserSearchRadius;
 
-	
-	
-
-	
-	
-	
-
-	
+		
 	public int getHeyUserSearchRadius() {
 		return heyUserSearchRadius;
 	}
