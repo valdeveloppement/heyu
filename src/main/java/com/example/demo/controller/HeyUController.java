@@ -59,6 +59,7 @@ public class HeyUController {
 	public LoginDTOSent login(@RequestBody RegisteringDTOExpected loginDTO) {
 		HeyUser searchedUser = hUServ.searchUserInArrayList(loginDTO.getHeyUserName(),loginDTO.getHeyUserPassword(), hUServ.getListUsers());
 		LoginDTOSent thisUserLoginDto = new LoginDTOSent();
+
 		if(searchedUser != null) {
 			//thisUserLoginDto.getUserconnected().setHeyUserName(searchedUser);
 			thisUserLoginDto.setUserconnected(searchedUser);

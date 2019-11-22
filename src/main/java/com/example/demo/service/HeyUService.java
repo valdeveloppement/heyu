@@ -46,6 +46,7 @@ public class HeyUService {
     public void loadListUsers() {
     	System.out.println("loadListUsers s'execute");
     	listUsers.addAll(huRep.findAll());
+    
     }
 	
 	
