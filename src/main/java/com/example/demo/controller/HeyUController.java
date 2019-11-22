@@ -25,8 +25,12 @@ public class HeyUController {
 	HeyUService hUServ;
 
 	@GetMapping("/getTest")
-	public String getTest() {
-		return "abv";
+	public LoginDTOSent getTest() {
+		System.out.println("getTest !");
+		LoginDTOSent thisUserLoginDto = new LoginDTOSent();
+		thisUserLoginDto.setConnected(false);
+		thisUserLoginDto.setMessageSent("We haven't been able to connect you, please check your informations... ");
+		return thisUserLoginDto;
 	}
 
 	@PostMapping("/updateLocation")
@@ -57,6 +61,7 @@ public class HeyUController {
 		LoginDTOSent thisUserLoginDto = new LoginDTOSent();
 
 		if(searchedUser != null) {
+			//thisUserLoginDto.getUserconnected().setHeyUserName(searchedUser);
 			thisUserLoginDto.setUserconnected(searchedUser);
 			thisUserLoginDto.setConnected(true);
 			thisUserLoginDto.setMessageSent("You've been successfully logged in");
@@ -107,7 +112,6 @@ public class HeyUController {
 		LoginDTOSent thisUserLoginDto = new LoginDTOSent();
 		if(searchedUser != null) {
 			
-
 			thisUserLoginDto.setUserconnected(searchedUser);
 			thisUserLoginDto.getUserconnected().setHeyUserMessage(settingsDTO.getHeyUserMessage());
 			thisUserLoginDto.getUserconnected().setHeyUserPic(settingsDTO.getHeyUserPic());

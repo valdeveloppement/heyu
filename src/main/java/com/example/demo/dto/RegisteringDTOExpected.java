@@ -4,8 +4,6 @@ public class RegisteringDTOExpected {
 	private String heyUserName;
 	private String heyUserPassword;
 	private String heyUserConfirmPassword = null;
-	private String heyUserPic/*= URL DE BASE*/;
-	
 	
 	
 	public String getHeyUserConfirmPassword() {
@@ -26,12 +24,7 @@ public class RegisteringDTOExpected {
 	public void setHeyUserPassword(String heyUserPassword) {
 		this.heyUserPassword = heyUserPassword;
 	}
-	public String getHeyUserPic() {
-		return heyUserPic;
-	}
-	public void setHeyUserPic(String heyUserPic) {
-		this.heyUserPic = heyUserPic;
-	}
+
 	
 	
 }
