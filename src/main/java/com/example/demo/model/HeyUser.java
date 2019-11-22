@@ -1,5 +1,6 @@
 package com.example.demo.model;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -21,28 +22,32 @@ public class HeyUser {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@JsonIgnore
 	private Long heyUserId;
-	private String heyUserName;
+	private String heyUserName="nobody";
 	@JsonIgnore
-	private String heyUserPassword;
+	private String heyUserPassword="0000";
 	@Transient
 	@JsonIgnore
     private String heyUPasswordConfirm;
-	private String heyUserPic;
+	private String heyUserPic="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png";
 	@Transient
 	@JsonIgnore
-	private Double heyUserLatitude;
+	private Double heyUserLatitude= 0.0;
 	@Transient
 	@JsonIgnore
-	private Double heyUserLongitude;
+	private Double heyUserLongitude= 0.0;
 	@Transient
 	@JsonIgnore/*Properties("heyUserNearU")*/
-	private List<HeyUser> heyUserNearU;
+	private ArrayList<HeyUser> heyUserNearU;
 //	@JsonIgnore
 //	private int heyUserSearchRadius;	
 	@ManyToMany
 	@JsonIgnore
 	private Set<Role> roles;
-	private String heyUserMessage;
+	private String heyUserMessage= "Hello! I'm a new HeyUser";
+	
+	
+	
+	
 	
 	public String getHeyUserMessage() {
 		return heyUserMessage;
@@ -63,7 +68,7 @@ public class HeyUser {
 	public List<HeyUser> getHeyUserNearU() {
 		return heyUserNearU;
 	}
-	public void setHeyUserNearU(List<HeyUser> heyUserNearU) {
+	public void setHeyUserNearU(ArrayList<HeyUser> heyUserNearU) {
 		this.heyUserNearU = heyUserNearU;
 	}
 	public Set<Role> getRoles() {
