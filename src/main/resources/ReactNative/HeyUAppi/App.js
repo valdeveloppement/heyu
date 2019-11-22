@@ -17,6 +17,7 @@ class App extends React.Component {
   state = {
     heyUserName: 'nobody',
     heyUserPassword: '0000',
+    heyUserPasswordConfirm: '0000',
     heyUserSearchRadius:10,
     heyUserLongitude: "0",//Initial Longitude
     heyUserLongitude: "0",//Initial Latitude
