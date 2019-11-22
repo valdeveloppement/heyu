@@ -3,7 +3,6 @@ import React from 'react';
 import {View, Text,  StyleSheet, Image ,PermissionsAndroid,Platform} from 'react-native';
 //import all the components we are going to use.
 import Geolocation from '@react-native-community/geolocation';
-import HeyUFriends from './components/HeyUFriends';
 
 
 import 'react-native-gesture-handler'
@@ -12,7 +11,9 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 // import { Slider } from 'react-native-elements';
  
- 
+import SearchScreen from './components/SearchScreen';
+import LoggingScreen from './components/LoggingScreen';
+
 class App extends React.Component {
   state = {
     heyUserName: 'nobody',
@@ -169,39 +170,31 @@ class App extends React.Component {
  
  render() {
     return (
-       <View style = {styles.container}>
-          <Image
-            source={{uri:'https://s.yimg.com/uu/api/res/1.2/Bexb6QOS4icfU0kXaC86oQ--~B/aD0yMDA7dz0yNjA7c209MTthcHBpZD15dGFjaHlvbg--/http://media.zenfs.com/fr_FR/News/TeleLoisirs/50306-que-devient-rowan-atkinson-alias-mr-bean.jpg'}}
-            style={{width: 100, height: 100}}
-          />
-          <Text style = {styles.boldText}>
-             Mr Bean knows where you are:
-          </Text>
-          <Text style={{justifyContent:'center',alignItems: 'center',marginTop:16}}>
-            Longitude: {this.state.heyUserLongitude}
-          </Text>
-          <Text style={{justifyContent:'center',alignItems: 'center',marginTop:16}}>
-            Latitude: {this.state.heyUserLatitude}
-          </Text>
-          <Text style={{justifyContent:'center',alignItems: 'center',marginTop:16}}>
-          currentAccuracy: {this.state.currentAccuracy}
-          </Text>
-          <Text style={{justifyContent:'center',alignItems: 'center',marginTop:16}}>
-            PositionCountChange: {this.state.positionCountChange}
-          </Text>
-
-          <HeyUFriends AppState = {this.state} setHeyUserSearchRadius ={this.setHeyUserSearchRadius} setHeyUserPic={this.setHeyUserPic} setheyUserMessage={this.setheyUserMessage}>  </HeyUFriends>
-
-       </View>
+       <AppContainer />
+      //  <View style = {styles.container}>
+      //     <Search AppState = {this.state} setHeyUserSearchRadius ={this.setHeyUserSearchRadius} setHeyUserPic={this.setHeyUserPic} setheyUserMessage={this.setheyUserMessage}/>
+      //  </View>
     )
  }
 }
 
-const AppNavigator = createStackNavigator({
-  Home: {
-    screen: App,
+const AppNavigator = createStackNavigator(
+  {
+    
+      Logging: LoggingScreen,
+      // Registering: Registering
+      Search: SearchScreen
   },
-});
+  {
+    initialRouteName: 'Logging',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: '#f4511e',
+      }
+    }
+  }
+);
+
 
 
 
