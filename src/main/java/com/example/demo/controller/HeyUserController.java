@@ -6,6 +6,8 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.demo.model.HeyUser;
 import com.example.demo.service.HeyUSecurityService;
@@ -24,21 +26,26 @@ public class HeyUserController {
 	@Autowired
 	HeyUserValidator huValidator;
 	
+//	@GetMapping("/registration")
+//	public String registration(@ModelAttribute("userForm") HeyUser userForm, BindingResult bindingResult) {
+//        huValidator.validate(userForm, bindingResult);
+//
+//        if (bindingResult.hasErrors()) {
+//            return "registration";
+//        }
+//
+//        huServ.save(userForm);
+//
+//        securityService.autoLogin(userForm.getHeyUserName(), userForm.getHeyUPasswordConfirm());
+//
+//        return "redirect:/welcome";
+//    }
+
 	@GetMapping("/registration")
-	public String registration(@ModelAttribute("userForm") HeyUser userForm, BindingResult bindingResult) {
-        huValidator.validate(userForm, bindingResult);
-
-        if (bindingResult.hasErrors()) {
-            return "registration";
-        }
-
-        huServ.save(userForm);
-
-        securityService.autoLogin(userForm.getHeyUserName(), userForm.getHeyUPasswordConfirm());
-
-        return "redirect:/welcome";
-    }
-
+	public void resitration (@RequestParam("heyUser")HeyUser heyUser) {
+		huServ.save(heyUser);
+	}
+	
     @GetMapping("/login")
     public String login(Model model, String error, String logout) {
         if (error != null)
