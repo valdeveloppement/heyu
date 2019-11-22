@@ -1,64 +1,66 @@
-package com.example.demo.controller;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import com.example.demo.model.HeyUser;
-import com.example.demo.service.HeyUSecurityService;
-import com.example.demo.service.HeyUserService;
-import com.example.demo.validator.HeyUserValidator;
-
-@Controller
-public class HeyUserController {
-
-	@Autowired
-	HeyUserService huServ;
-	
-	@Autowired
-	HeyUSecurityService securityService;
-	
-	@Autowired
-	HeyUserValidator huValidator;
-	
-//	@GetMapping("/registration")
-//	public String registration(@ModelAttribute("userForm") HeyUser userForm, BindingResult bindingResult) {
-//        huValidator.validate(userForm, bindingResult);
+//package com.example.demo.controller;
 //
-//        if (bindingResult.hasErrors()) {
-//            return "registration";
-//        }
+//import java.util.ArrayList;
 //
-//        huServ.save(userForm);
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.stereotype.Controller;
+//import org.springframework.ui.Model;
+//import org.springframework.validation.BindingResult;
+//import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.ModelAttribute;
+//import org.springframework.web.bind.annotation.PostMapping;
+//import org.springframework.web.bind.annotation.RequestBody;
 //
-//        securityService.autoLogin(userForm.getHeyUserName(), userForm.getHeyUPasswordConfirm());
+//import com.example.demo.dto.NewLocationDTO;
+//import com.example.demo.model.HeyUser;
+//import com.example.demo.service.HeyUService;
+//import com.example.demo.service.HeyUserService;
 //
-//        return "redirect:/welcome";
-//    }
-
-	@GetMapping("/registration")
-	public void resitration (@RequestParam("heyUser")HeyUser heyUser) {
-		huServ.save(heyUser);
-	}
-	
-    @GetMapping("/login")
-    public String login(Model model, String error, String logout) {
-        if (error != null)
-            model.addAttribute("error", "Your username and password is invalid.");
-
-        if (logout != null)
-            model.addAttribute("message", "You have been logged out successfully.");
-
-        return "login";
-    }
-
-    @GetMapping({"/", "/welcome"})
-    public String welcome(Model model) {
-        return "welcome";
-    }
-}
+//@Controller
+//public class HeyUserController {
+////	
+////	@Autowired
+////	HeyUService hUServ;
+////	
+////	@Autowired
+////	HeyUserService hUserServ;
+////	
+////	@Autowired
+////	HeyUSecurityService securityService;
+////	
+////	@Autowired
+////	HeyUserValidator huValidator;
+////	
+////	@GetMapping("/registration")
+////	public String registration(@ModelAttribute("userForm") HeyUser userForm, BindingResult bindingResult) {
+////        huValidator.validate(userForm, bindingResult);
+////
+////        if (bindingResult.hasErrors()) {
+////            return "registration";
+////        }
+////
+////        hUserServ.save(userForm);
+////
+////        securityService.autoLogin(userForm.getHeyUserName(), userForm.getHeyUPasswordConfirm());
+////
+////        return "redirect:/welcome";
+////    }
+////
+////    @GetMapping("/login")
+////    public String login(Model model, String error, String logout) {
+////        if (error != null)
+////            model.addAttribute("error", "Your username and password is invalid.");
+////
+////        if (logout != null)
+////            model.addAttribute("message", "You have been logged out successfully.");
+////
+////        return "login";
+////    }
+////
+////    @GetMapping({"/", "/welcome"})
+////    public String welcome(Model model) {
+////        return "welcome";
+////    }
+//    
+//
+//}

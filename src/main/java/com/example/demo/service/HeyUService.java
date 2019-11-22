@@ -2,6 +2,8 @@ package com.example.demo.service;
 
 import java.util.ArrayList;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,53 +15,97 @@ public class HeyUService {
 
 	@Autowired
 	HeyUserRepository huRep;
-
+	
 	ArrayList<HeyUser> listUsers = new ArrayList<HeyUser>();
+	
 
-	public void updateLocation() {
-
+	public ArrayList<HeyUser> getListUsers() {
+		return listUsers;
 	}
 
+	public void setListUsers(ArrayList<HeyUser> listUsers) {
+		this.listUsers = listUsers;
+	}
+	
+    
+	
+	
+    @PostConstruct
+    public void createTestsUsers() {
+    	System.out.println("createTestsUsers  s'execute");
+    	listUsers.add(new HeyUser());
+    	listUsers.add(new HeyUser());
+    	listUsers.get(1).setHeyUserName("nobody2");
+    	listUsers.get(1).setHeyUserLatitude(43.6081066);
+    	listUsers.get(1).setHeyUserLongitude(3.87417341);
+    }
+    
+    
+    
+    @PostConstruct
+    public void loadListUsers() {
+    	System.out.println("loadListUsers s'execute");
+    	listUsers.addAll(huRep.findAll());
+    
+    }
+	
+	
+	
+	
+	
+	
 
+	/**
+	 * Update the location of the user passed in parameter.
+	 * @param longitude
+	 * @param latitude
+	 * @param idUser
+	 */
+	public void updateLocation(double longitude, double latitude, HeyUser heyUser) {
+		heyUser.setHeyUserLongitude(longitude);
+		heyUser.setHeyUserLatitude(latitude);
+	}
 
-
-	public void findNearUser(HeyUser thisUser, ArrayList<HeyUser> listToCheck ) {
-
+	public HeyUser searchUserInArrayList(String heyUserName, String heyUserPassword, ArrayList<HeyUser> listUsers){
+		for(HeyUser heyUser : listUsers) {
+			if((heyUser.getHeyUserName().equals(heyUserName)) && (heyUser.getHeyUserPassword().equals(heyUserPassword))) {
+				return heyUser;
+			}
+		}
+		return null;
+	}
+	
+	public HeyUser searchUserInArrayListByName(String heyUserName, ArrayList<HeyUser> listUsers) {
+		for(HeyUser heyUser : listUsers) {
+			if(heyUser.getHeyUserName().equals(heyUserName)) {
+				return heyUser;
+			} 
+		}
+		
+		return null;
+	}
+	
+	public ArrayList<HeyUser> findNearUser(HeyUser thisUser, int radius, ArrayList<HeyUser> listToCheck ) {
+		
+		ArrayList<HeyUser> mylistUsers = new ArrayList<HeyUser>();
+		int distance=0;		
 		// listToCheck can be this.listUsers or a reduced list according to parameters(online, )
 		for(HeyUser heyUser : listToCheck) {
 
-			int distance = calculateDistance(thisUser.getHeyUserLatitude(), thisUser.getHeyUserLongitude(),heyUser.getHeyUserLatitude(), heyUser.getHeyUserLongitude());
 
-			if(!thisUser.equals(heyUser)) {
-
-				// Add or Remove matchs for thisUser
-
-				if(!thisUser.getHeyUserNearU().contains(heyUser)) {
-					if(distance <= thisUser.getHeyUserSearchRadius()) {
-						thisUser.addHeyUserNearU(heyUser);
-					}
-
-				}
-
-				else if(distance > thisUser.getHeyUserSearchRadius()) {
-					thisUser.removeHeyUserNearU(heyUser);
-				}
-
-
-				// Add or Remove matchs for heyUser
-
-				if(!heyUser.getHeyUserNearU().contains(thisUser)) {
-					if(distance <= heyUser.getHeyUserSearchRadius()) {
-						heyUser.addHeyUserNearU(thisUser);
-					}
-
-				}
-
-				else if(distance > heyUser.getHeyUserSearchRadius()) {
-					heyUser.removeHeyUserNearU(thisUser);
-				}
+			if((!thisUser.equals(heyUser)) && (calculateDistance(thisUser.getHeyUserLatitude(), thisUser.getHeyUserLongitude(),heyUser.getHeyUserLatitude(), heyUser.getHeyUserLongitude()) <= radius)) {
+				
+				
+				
+				System.out.println("MATCH");
+					
+				mylistUsers.add(heyUser);
 			}
+	
 		}
+		thisUser.setHeyUserNearU(mylistUsers);
+		return mylistUsers;
+
 	}
 
 
@@ -75,6 +121,7 @@ public class HeyUService {
 
 
 	public int calculateDistance(double latA, double longA, double latB, double longB) {
+		System.out.println("LatA="+latA+"LongA="+longA+"LatB="+latB+"LongB="+longB);
 
 		// En WGS84  https://fr.wikipedia.org/wiki/WGS_84
 		//https://geodesie.ign.fr/contenu/fichiers/Distance_longitude_latitude.pdf
@@ -118,6 +165,13 @@ public class HeyUService {
 
 
 	}
+
+	public void save(HeyUser thisUserLogin) {
+		huRep.save(thisUserLogin);
+		
+	}
+
+
 
 
 
