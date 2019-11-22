@@ -60,6 +60,7 @@ public class HeyUController {
 		HeyUser searchedUser = hUServ.searchUserInArrayList(loginDTO.getHeyUserName(),loginDTO.getHeyUserPassword(), hUServ.getListUsers());
 		LoginDTOSent thisUserLoginDto = new LoginDTOSent();
 		if(searchedUser != null) {
+			//thisUserLoginDto.getUserconnected().setHeyUserName(searchedUser);
 			thisUserLoginDto.setUserconnected(searchedUser);
 			thisUserLoginDto.setConnected(true);
 			thisUserLoginDto.setMessageSent("You've been successfully logged in");
@@ -110,7 +111,6 @@ public class HeyUController {
 		LoginDTOSent thisUserLoginDto = new LoginDTOSent();
 		if(searchedUser != null) {
 			
-
 			thisUserLoginDto.setUserconnected(searchedUser);
 			thisUserLoginDto.getUserconnected().setHeyUserMessage(settingsDTO.getHeyUserMessage());
 			thisUserLoginDto.getUserconnected().setHeyUserPic(settingsDTO.getHeyUserPic());
