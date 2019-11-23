@@ -1,20 +1,12 @@
 import React from 'react';
-//import react in our code. 
 import {View, Text,  StyleSheet, Image ,PermissionsAndroid,Platform} from 'react-native';
-//import all the components we are going to use.
 import Geolocation from '@react-native-community/geolocation';
 
 
-import 'react-native-gesture-handler'
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import Navigation from './navigation/navigation';
 
-// import { Slider } from 'react-native-elements';
- 
-import SearchScreen from './components/SearchScreen';
-import LoggingScreen from './components/LoggingScreen';
 
-class App extends React.Component {
+export default class App extends React.Component {
   state = {
     heyUserName: 'nobody',
     heyUserPassword: '0000',
@@ -68,7 +60,7 @@ class App extends React.Component {
   updateHeyUserNearUList = (that) => {
     console.log("updateHeyUserNearUList s'execute")
 
-    fetch('http://192.168.8.105:8080/updateLocation', {
+    fetch('http://192.168.1.64/updateLocation', {
      method: 'POST',
      headers: {
        Accept: 'application/json',
@@ -154,65 +146,23 @@ class App extends React.Component {
  //Setters
   setHeyUserSearchRadius= (newRadius) =>{
     this.setState({ heyUserSearchRadius:newRadius });
-
   }
-
-
   setHeyUserPic = (url) =>{
     this.setState({ HeyUserPic:url });
-
   }
-
   setheyUserMessage= (newMessage) =>{
     this.setState({ heyUserMessage:newMessage });
-
   }
 
  
  render() {
     return (
-       <AppContainer />
       //  <View style = {styles.container}>
       //     <Search AppState = {this.state} setHeyUserSearchRadius ={this.setHeyUserSearchRadius} setHeyUserPic={this.setHeyUserPic} setheyUserMessage={this.setheyUserMessage}/>
       //  </View>
+      <Navigation/>
     )
  }
 }
 
-const AppNavigator = createStackNavigator(
-  {
-    
-      Logging: LoggingScreen,
-      // Registering: Registering
-      Search: SearchScreen
-  },
-  {
-    initialRouteName: 'Logging',
-    defaultNavigationOptions: {
-      headerStyle: {
-        backgroundColor: '#f4511e',
-      }
-    }
-  }
-);
 
-
-
-
-//Styles
-const styles = StyleSheet.create ({
- container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent:'center',
-    marginTop: 50,
-    padding:16,
-    backgroundColor:'white'
- },
- boldText: {
-    fontSize: 20,
-    color: 'red',
- }
-})
-
-export default createAppContainer(AppNavigator);
