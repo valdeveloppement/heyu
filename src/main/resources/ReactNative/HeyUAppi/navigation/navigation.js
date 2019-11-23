@@ -5,6 +5,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import SearchScreen from '../components/SearchScreen';
 import LoggingScreen from '../components/LoggingScreen';
+// import MyGeolocation from '../components/MyGeolocation';
 
 
 
@@ -20,7 +21,8 @@ const AppNavigator = createStackNavigator(
         }
         }
       },
-      Search: SearchScreen
+      Search: SearchScreen,
+      //  MyGeolocation: MyGeolocation
     },
 
     {
