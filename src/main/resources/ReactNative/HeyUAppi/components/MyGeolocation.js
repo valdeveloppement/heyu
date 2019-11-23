@@ -3,17 +3,16 @@ import {View, Text,  StyleSheet, Image ,PermissionsAndroid,Platform} from 'react
 import Geolocation from '@react-native-community/geolocation';
 
 
-import Navigation from './navigation/navigation';
 
-export default class App extends React.Component {
+export default class MyGeolocation extends React.Component {
   state = {
     heyUserIsConnected:true,
     heyUserName: 'nobody',
     heyUserPassword: '0000',
     heyUserPasswordConfirm: '0000',
     heyUserSearchRadius:10,
-    heyUserLongitude: "0",//Initial Longitude
-    heyUserLongitude: "0",//Initial Latitude
+    heyUserLongitude: "1",//Initial Longitude
+    heyUserLongitude: "1",//Initial Latitude
     currentAccuracy:"0",
     positionCountChange: 0,
     heyUserNearU: [],
@@ -21,6 +20,7 @@ export default class App extends React.Component {
     heyUserPic:"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
 
  }
+
 
 
  componentDidMount = () => {
@@ -52,8 +52,13 @@ export default class App extends React.Component {
         }
       }
       requestLocationPermission();
-    } 
-    
+    }  
+
+
+
+    const goToLogging = () => this.props.navigation.navigate('Logging',{ heyUserLongitude:this.state.heyUserLongitude });
+    goToLogging();
+
 
   }
 
@@ -92,7 +97,6 @@ export default class App extends React.Component {
 
   }
   
-  
 
 
  callLocation(that){
@@ -112,6 +116,10 @@ export default class App extends React.Component {
           //Setting state Latitude to re re-render the Longitude Text
           that.setState({ heyUserLongitude:heyUserLongitude });
           //Setting state Latitude to re re-render the Longitude Text
+
+        //   that.props.navigation.setParams({ currentAccuracy:currentAccuracy });
+        //   that.props.navigation.setParams({ heyUserLatitude:heyUserLatitude });
+        //   that.props.navigation.setParams({ heyUserLongitude:heyUserLongitude });
        },
        (error) => alert(error.message),
        { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000,distanceFilter: 3 }
@@ -133,6 +141,11 @@ export default class App extends React.Component {
        that.setState({ positionCountChange:this.state.positionCountChange+1});
        //accuracy
        that.setState({ currentAccuracy:currentAccuracy });
+    //    that.props.navigation.setParams({ currentAccuracy:currentAccuracy });
+    //    that.props.navigation.setParams({ heyUserLatitude:heyUserLatitude });
+    //    that.props.navigation.setParams({ heyUserLongitude:heyUserLongitude });
+    //    that.props.navigation.setParams({  positionCountChange:this.state.positionCountChange+1});
+
 
       // Fetch Here
       that.updateHeyUserNearUList(that);
@@ -168,9 +181,7 @@ export default class App extends React.Component {
       //  <View style = {styles.container}>
       //     <Search AppState = {this.state} setHeyUserSearchRadius ={this.setHeyUserSearchRadius} setHeyUserPic={this.setHeyUserPic} setheyUserMessage={this.setheyUserMessage}/>
       //  </View>
-      
-      <Navigation/>
-     
+        null
     )
  }
 }

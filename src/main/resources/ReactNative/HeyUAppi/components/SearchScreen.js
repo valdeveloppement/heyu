@@ -34,8 +34,8 @@ export default class SearchScreen extends React.Component {
         <Button
           title="Go to Logging"
           onPress={() => this.props.navigation.navigate('Logging')}
-        />    
-
+        />  
+         <Text>{this.props.navigation.getParam('heyUserLongitude', "ne marche pas")}</Text>
 
 {/*        
         <View>

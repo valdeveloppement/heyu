@@ -12,6 +12,8 @@ export default class LoggingScreen extends React.Component{
     static navigationOptions = {
           title: 'Logging'
       };
+     
+      componentDidMount = () => { console.log("test valentin");}
 
     render(){
       return(
@@ -21,7 +23,12 @@ export default class LoggingScreen extends React.Component{
           title="Go to Search"
           onPress={() => this.props.navigation.navigate('Search')}
         />
+        <Text>Longitude:</Text>
+        <Text>{this.props.navigation.getParam('heyUserLongitude', "ne marche pas")}</Text>
+
       </View>
+
+
       );
     }
 }
