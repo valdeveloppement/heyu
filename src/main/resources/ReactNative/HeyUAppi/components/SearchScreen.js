@@ -18,9 +18,9 @@ export default class SearchScreen extends React.Component {
     this.state = {};
   }
 
-  enableScroll = () => this.setState({ scrollEnabled: true });
-  disableScroll = () => this.setState({ scrollEnabled: false });
-  test =(values)=> console.log(values);
+  // enableScroll = () => this.setState({ scrollEnabled: true });
+  // disableScroll = () => this.setState({ scrollEnabled: false });
+
  render() {
     return (
        <View style = {styles.container}>
@@ -34,7 +34,9 @@ export default class SearchScreen extends React.Component {
         <Button
           title="Go to Logging"
           onPress={() => this.props.navigation.navigate('Logging')}
-        />
+        />    
+
+
 {/*        
         <View>
             {this.props.AppState.heyUserNearU.map((heyUser, index) =>
