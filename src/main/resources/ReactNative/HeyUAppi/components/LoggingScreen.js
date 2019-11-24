@@ -4,16 +4,16 @@ import {Button, View, Text,  StyleSheet, Image ,PermissionsAndroid,Platform} fro
 //import all the components we are going to use.
 
 import 'react-native-gesture-handler'
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import { connect } from 'react-redux'
 
-export default class LoggingScreen extends React.Component{
+
+class LoggingScreen extends React.Component{
 
     static navigationOptions = {
           title: 'Logging'
       };
      
-      componentDidMount = () => { console.log("test valentin");}
+      componentDidMount = () => { console.log(this.props);}
 
     render(){
       return(
@@ -23,8 +23,9 @@ export default class LoggingScreen extends React.Component{
           title="Go to Search"
           onPress={() => this.props.navigation.navigate('Search')}
         />
-        <Text>Longitude:</Text>
-        <Text>{this.props.navigation.getParam('heyUserLongitude', "ne marche pas")}</Text>
+
+        <Text>Longitude = {this.props.heyuserLocation.heyUserLongitude}</Text>
+        <Text>Latitude = {this.props.heyuserLocation.heyUserLatitude}</Text>
 
       </View>
 
@@ -32,3 +33,16 @@ export default class LoggingScreen extends React.Component{
       );
     }
 }
+
+
+const mapStateToProps = (state) => {
+  console.log("mapstatetoprops: "+state.heyuserLocation.heyUserLongitude)
+  // return state
+  return {
+    heyuserLocation: state.heyuserLocation
+
+
+  }
+}
+
+export default connect(mapStateToProps)(LoggingScreen)
