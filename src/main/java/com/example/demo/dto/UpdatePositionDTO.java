@@ -7,8 +7,15 @@ public class UpdatePositionDTO {
 	private double heyUserLatitude;
 	private double heyUserLongitude;
 	private int heyUserSearchRadius;
+	private double heyUserAccuracy;
 
 		
+	public double getHeyUserAccuracy() {
+		return heyUserAccuracy;
+	}
+	public void setHeyUserAccuracy(double heyUserAccuracy) {
+		this.heyUserAccuracy = heyUserAccuracy;
+	}
 	public int getHeyUserSearchRadius() {
 		return heyUserSearchRadius;
 	}
