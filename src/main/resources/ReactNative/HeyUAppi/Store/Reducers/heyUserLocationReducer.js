@@ -1,5 +1,5 @@
 
-const initialState = {  heyuserLocation:{
+const initialState = {  heyUserLocation:{
     heyUserLongitude: "1",
     heyUserLatitude: "1",
     heyUserAccuracy:"44000",
@@ -17,9 +17,9 @@ function updateLocation(state = initialState, action) {
         //   heyuserLocation: action.value
         // }
 
-        state.heyuserLocation= action.value;
-    console.log("returned state : "+state.heyuserLocation.heyUserLongitude)
-    return nextState || state
+        state.heyUserLocation= action.value;
+    console.log("returned state : "+state.heyUserLocation.heyUserLongitude)
+    return state //nextState || state
   default:
     return state
   }

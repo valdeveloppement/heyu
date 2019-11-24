@@ -26,7 +26,7 @@ class MyGeolocation extends React.Component {
     },
 
     //my geolocation
-    heyuserLocation:{
+    heyUserLocation:{
       heyUserLongitude: "3",
       heyUserLatitude: "3",
       heyUserAccuracy:"0",
@@ -77,9 +77,10 @@ class MyGeolocation extends React.Component {
   }
 
   // les coordonnées envoyées ne sont pas les bonnes.
-  updateHeyuserLocation(){
+  updateHeyuserLocation(that){
     console.log("Le dispatch se fait");
-    const action = { type: "UPDATE_LOCATION", value: this.state.heyuserLocation }
+    console.log("value : "+that.state.heyUserLocation.heyUserLongitude);
+    const action = { type: "UPDATE_LOCATION", value: that.state.heyUserLocation }
     console.log(action.value);
 
     this.props.dispatch(action)
@@ -137,7 +138,7 @@ class MyGeolocation extends React.Component {
           that.setState({ heyUserLocation: heyUserLocation });
           // Fetch Here
           that.updateHeyUserNearUList(that);
-          that.updateHeyuserLocation();
+          that.updateHeyuserLocation(that);
 
        },
        (error) => alert(error.message),
@@ -157,7 +158,7 @@ class MyGeolocation extends React.Component {
 
       // Fetch Here
       that.updateHeyUserNearUList(that);
-      that.updateHeyuserLocation();
+      that.updateHeyuserLocation(that);
 
     },
     (error) => alert(error.message),
@@ -184,7 +185,11 @@ class MyGeolocation extends React.Component {
 
 
 const mapStateToProps = (state) => {
-  return state
+  return {
+    heyUserAuthentication: state.heyUserAuthentication
+
+
+  }
 }
 
 
