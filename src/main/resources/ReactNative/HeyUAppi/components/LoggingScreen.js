@@ -12,8 +12,16 @@ class LoggingScreen extends React.Component{
     static navigationOptions = {
           title: 'Logging'
       };
-     
-      componentDidMount = () => { console.log(this.props);}
+
+
+
+    componentDidMount = () => { 
+      setInterval(() => {console.log(this.props)
+        
+      }, 2000);
+      }
+
+   // componentDidUpdate = () =>{console.log("logging s'update")}
 
     render(){
       return(
@@ -24,8 +32,8 @@ class LoggingScreen extends React.Component{
           onPress={() => this.props.navigation.navigate('Search')}
         />
 
-        <Text>Longitude = {this.props.heyuserLocation.heyUserLongitude}</Text>
-        <Text>Latitude = {this.props.heyuserLocation.heyUserLatitude}</Text>
+        <Text>Longitude = {this.props.heyUserLocation.heyUserLongitude}</Text>
+        <Text>Latitude = {this.props.heyUserLocation.heyUserLatitude}</Text>
 
       </View>
 
@@ -36,10 +44,10 @@ class LoggingScreen extends React.Component{
 
 
 const mapStateToProps = (state) => {
-  console.log("mapstatetoprops: "+state.heyuserLocation.heyUserLongitude)
-  // return state
+  console.log("mapstatetoprops: "+state.heyUserLocation.heyUserLongitude)
+ // return state
   return {
-    heyuserLocation: state.heyuserLocation
+    heyUserLocation: state.heyUserLocation
 
 
   }
