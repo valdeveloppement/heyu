@@ -6,21 +6,35 @@ import Geolocation from '@react-native-community/geolocation';
 import Navigation from './navigation/navigation';
 
 export default class App extends React.Component {
+  
   state = {
+    //if heyUser is connected
     heyUserIsConnected:true,
-    heyUserName: 'nobody',
-    heyUserPassword: '0000',
 
+    //identification
+    heyUserAuthentication:{
+      heyUserName: 'nobody',
+      heyUserPassword: '0000',
+    },
+
+    //list of heyUsers near
     heyUserNearU: [],
 
-    heyUserMessage: "Hi, I'm new on HeyU!",
-    heyUserPic:"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    //Profil
+    heyUserProfil:{
+      heyUserMessage: "Hi, I'm new on HeyU!",
+      heyUserPic:"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+    },
 
-    heyUserSearchRadius:10,
-    heyUserLongitude: "0",//Initial Longitude
-    heyUserLatitude: "0",//Initial Latitude
-    heyUserAccuracy:"0",
+    //my geolocation
+    heyuserLocation:{
+      heyUserLongitude: "0",
+      heyUserLatitude: "0",
+      heyUserAccuracy:"0",
+      heyUserSearchRadius:5000,
+    },
 
+    // count of update geolocation
     positionCountChange: 0
 
  }
@@ -73,12 +87,9 @@ export default class App extends React.Component {
         'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-        heyUserName: that.state.heyUserName,
-        heyUserPassword: that.state.heyUserPassword,
-        heyUserSearchRadius: that.state.heyUserSearchRadius,
-        heyUserLongitude: that.state.heyUserLongitude,
-        heyUserLatitude: that.state.heyUserLatitude,
-        heyUserAccuracy:that.state.heyUserAccuracy,
+        heyUserAuthentication: that.state.heyUserAuthentication,
+        heyUserLocation: that.state.heyUserLocation,
+       
         }),
          }).then((response) => response.json())
         .then((responseJson) => {
@@ -103,19 +114,17 @@ export default class App extends React.Component {
   //alert("callLocation Called");
     Geolocation.getCurrentPosition(
       //Will give you the current location
+
        (position) => {
-          const heyUserLongitude =JSON.stringify(position.coords.longitude);
-          //getting the Longitude from the location json
-          const heyUserLatitude = JSON.stringify(position.coords.latitude);
-          //getting the Latitude from the location json
-          const heyUserAccuracy = JSON.stringify(position.coords.accuracy);
-          //getting the Latitude from the location json
-          that.setState({ heyUserAccuracy:heyUserAccuracy });
-          //Setting state Longitude to re re-render the Longitude Text
-          that.setState({ heyUserLatitude:heyUserLatitude });
-          //Setting state Latitude to re re-render the Longitude Text
-          that.setState({ heyUserLongitude:heyUserLongitude });
-          //Setting state Latitude to re re-render the Longitude Text
+        console.log(position);
+          const heyUserLocation = {
+            heyUserLongitude: JSON.stringify(position.coords.longitude),
+            heyUserLatitude :JSON.stringify(position.coords.latitude),
+            heyUserAccuracy: JSON.stringify(position.coords.accuracy),
+          };
+
+          that.setState({ heyUserLocation: heyUserLocation });
+
        },
        (error) => alert(error.message),
        { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000,distanceFilter: 3 }
@@ -124,19 +133,14 @@ export default class App extends React.Component {
     that.watchID = Geolocation.watchPosition((position) => {
       //Will give you the location on location change
         console.log(position);
-        const heyUserLongitude = JSON.stringify(position.coords.longitude);
-          //getting the Longitude from the location json
-          const heyUserLatitude =JSON.stringify(position.coords.latitude);
-          //getting the Latitude from the location json
-          const heyUserAccuracy = JSON.stringify(position.coords.accuracy);
-        //getting the Latitude from the location json
-       that.setState({ heyUserLongitude:heyUserLongitude });
-       //Setting state Longitude to re re-render the Longitude Text
-       that.setState({ heyUserLatitude:heyUserLatitude });
-       //if position changes
+        const heyUserLocation = {
+          heyUserLongitude: JSON.stringify(position.coords.longitude),
+          heyUserLatitude :JSON.stringify(position.coords.latitude),
+          heyUserAccuracy: JSON.stringify(position.coords.accuracy),
+        };
+
+       that.setState({ heyUserLocation: heyUserLocation });
        that.setState({ positionCountChange:this.state.positionCountChange+1});
-       //accuracy
-       that.setState({ heyUserAccuracy:heyUserAccuracy });
 
       // Fetch Here
       that.updateHeyUserNearUList(that);
@@ -156,23 +160,19 @@ export default class App extends React.Component {
 
 
  //Setters
-  setHeyUserSearchRadius= (newRadius) =>{
-    this.setState({ heyUserSearchRadius:newRadius });
-  }
-  setHeyUserPic = (url) =>{
-    this.setState({ HeyUserPic:url });
-  }
-  setheyUserMessage= (newMessage) =>{
-    this.setState({ heyUserMessage:newMessage });
-  }
+  // setHeyUserSearchRadius= (newRadius) =>{
+  //   this.setState({ heyUserSearchRadius:newRadius });
+  // }
+  // setHeyUserPic = (url) =>{
+  //   this.setState({ HeyUserPic:url });
+  // }
+  // setheyUserMessage= (newMessage) =>{
+  //   this.setState({ heyUserMessage:newMessage });
+  // }
 
  
  render() {
     return (
-      //  <View style = {styles.container}>
-      //     <Search AppState = {this.state} setHeyUserSearchRadius ={this.setHeyUserSearchRadius} setHeyUserPic={this.setHeyUserPic} setheyUserMessage={this.setheyUserMessage}/>
-      //  </View>
-      
       <Navigation/>
      
     )

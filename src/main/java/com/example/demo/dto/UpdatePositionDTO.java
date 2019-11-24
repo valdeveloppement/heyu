@@ -1,51 +1,28 @@
 package com.example.demo.dto;
 
+import com.example.demo.model.HeyUserAuthentication;
+import com.example.demo.model.HeyUserLocation;
+
 public class UpdatePositionDTO {
-
-	private String heyUserName;
-	private String heyUserPassword;
-	private double heyUserLatitude;
-	private double heyUserLongitude;
-	private int heyUserSearchRadius;
-	private double heyUserAccuracy;
-
-		
-	public double getHeyUserAccuracy() {
-		return heyUserAccuracy;
+	
+	private HeyUserAuthentication heyUserAuthentication;
+	private HeyUserLocation heyUserLocation;
+	
+	
+	
+	public HeyUserAuthentication getHeyUserAuthentication() {
+		return heyUserAuthentication;
 	}
-	public void setHeyUserAccuracy(double heyUserAccuracy) {
-		this.heyUserAccuracy = heyUserAccuracy;
+	public void setHeyUserAuthentication(HeyUserAuthentication heyUserAuthentication) {
+		this.heyUserAuthentication = heyUserAuthentication;
 	}
-	public int getHeyUserSearchRadius() {
-		return heyUserSearchRadius;
+	public HeyUserLocation getHeyUserLocation() {
+		return heyUserLocation;
 	}
-	public void setHeyUserSearchRadius(int heyUserSearchRadius) {
-		this.heyUserSearchRadius = heyUserSearchRadius;
-	}
-	public String getHeyUserName() {
-		return heyUserName;
-	}
-	public void setHeyUserName(String heyUserName) {
-		this.heyUserName = heyUserName;
-	}
-	public String getHeyUserPassword() {
-		return heyUserPassword;
-	}
-	public void setHeyUserPassword(String heyUserPassword) {
-		this.heyUserPassword = heyUserPassword;
+	public void setHeyUserLocation(HeyUserLocation heyUserLocation) {
+		this.heyUserLocation = heyUserLocation;
 	}
 	
-	public double getHeyUserLatitude() {
-		return heyUserLatitude;
-	}
-	public void setHeyUserLatitude(double heyUserLatitude) {
-		this.heyUserLatitude = heyUserLatitude;
-	}
-	public double getHeyUserLongitude() {
-		return heyUserLongitude;
-	}
-	public void setHeyUserLongitude(double heyUserLongitude) {
-		this.heyUserLongitude = heyUserLongitude;
-	}
+
 	
 }

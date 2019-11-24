@@ -1,17 +1,12 @@
-package com.example.demo.dto;
+package com.example.demo.model;
 
-public class RegisteringDTOExpected {
+public class HeyUserAuthentication {
+	
 	private String heyUserName;
 	private String heyUserPassword;
 	private String heyUserConfirmPassword = null;
 	
 	
-	public String getHeyUserConfirmPassword() {
-		return heyUserConfirmPassword;
-	}
-	public void setHeyUserConfirmPassword(String heyUserConfirmPassword) {
-		this.heyUserConfirmPassword = heyUserConfirmPassword;
-	}
 	public String getHeyUserName() {
 		return heyUserName;
 	}
@@ -24,7 +19,11 @@ public class RegisteringDTOExpected {
 	public void setHeyUserPassword(String heyUserPassword) {
 		this.heyUserPassword = heyUserPassword;
 	}
+	public String getHeyUserConfirmPassword() {
+		return heyUserConfirmPassword;
+	}
+	public void setHeyUserConfirmPassword(String heyUserConfirmPassword) {
+		this.heyUserConfirmPassword = heyUserConfirmPassword;
+	}
 
-	
-	
 }
