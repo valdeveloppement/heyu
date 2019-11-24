@@ -12,7 +12,7 @@ export default class MyGeolocation extends React.Component {
     heyUserPasswordConfirm: '0000',
     heyUserSearchRadius:10,
     heyUserLongitude: "1",//Initial Longitude
-    heyUserLongitude: "1",//Initial Latitude
+    heyUserLatitude: "1",//Initial Latitude
     currentAccuracy:"0",
     positionCountChange: 0,
     heyUserNearU: [],

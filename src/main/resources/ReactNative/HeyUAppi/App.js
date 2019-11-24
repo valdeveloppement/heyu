@@ -10,15 +10,18 @@ export default class App extends React.Component {
     heyUserIsConnected:true,
     heyUserName: 'nobody',
     heyUserPassword: '0000',
-    heyUserPasswordConfirm: '0000',
+
+    heyUserNearU: [],
+
+    heyUserMessage: "Hi, I'm new on HeyU!",
+    heyUserPic:"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+
     heyUserSearchRadius:10,
     heyUserLongitude: "0",//Initial Longitude
-    heyUserLongitude: "0",//Initial Latitude
-    currentAccuracy:"0",
-    positionCountChange: 0,
-    heyUserNearU: [],
-    heyUserMessage: "Hi, I'm new on HeyU!",
-    heyUserPic:"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+    heyUserLatitude: "0",//Initial Latitude
+    heyUserAccuracy:"0",
+
+    positionCountChange: 0
 
  }
 
@@ -75,6 +78,7 @@ export default class App extends React.Component {
         heyUserSearchRadius: that.state.heyUserSearchRadius,
         heyUserLongitude: that.state.heyUserLongitude,
         heyUserLatitude: that.state.heyUserLatitude,
+        heyUserAccuracy:that.state.heyUserAccuracy,
         }),
          }).then((response) => response.json())
         .then((responseJson) => {
@@ -104,9 +108,9 @@ export default class App extends React.Component {
           //getting the Longitude from the location json
           const heyUserLatitude = JSON.stringify(position.coords.latitude);
           //getting the Latitude from the location json
-          const currentAccuracy = JSON.stringify(position.coords.accuracy);
+          const heyUserAccuracy = JSON.stringify(position.coords.accuracy);
           //getting the Latitude from the location json
-          that.setState({ currentAccuracy:currentAccuracy });
+          that.setState({ heyUserAccuracy:heyUserAccuracy });
           //Setting state Longitude to re re-render the Longitude Text
           that.setState({ heyUserLatitude:heyUserLatitude });
           //Setting state Latitude to re re-render the Longitude Text
@@ -124,7 +128,7 @@ export default class App extends React.Component {
           //getting the Longitude from the location json
           const heyUserLatitude =JSON.stringify(position.coords.latitude);
           //getting the Latitude from the location json
-          const currentAccuracy = JSON.stringify(position.coords.accuracy);
+          const heyUserAccuracy = JSON.stringify(position.coords.accuracy);
         //getting the Latitude from the location json
        that.setState({ heyUserLongitude:heyUserLongitude });
        //Setting state Longitude to re re-render the Longitude Text
@@ -132,7 +136,7 @@ export default class App extends React.Component {
        //if position changes
        that.setState({ positionCountChange:this.state.positionCountChange+1});
        //accuracy
-       that.setState({ currentAccuracy:currentAccuracy });
+       that.setState({ heyUserAccuracy:heyUserAccuracy });
 
       // Fetch Here
       that.updateHeyUserNearUList(that);
