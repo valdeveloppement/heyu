@@ -19,7 +19,8 @@ export default class SearchScreen extends React.Component {
     this.setState({sliderValue:Math.round(this.toExponential(sliderValue))})
   }
 
-  toExponential = (x) => {
+  toExponential = (x) => {
+
     return Math.exp(x) + 10;
   }
 
@@ -28,7 +29,9 @@ export default class SearchScreen extends React.Component {
       return (
         <View style={styles.container}>
             <View>
-              <Button title="Logging" onPress={() => this.props.navigation.navigate('Logging')}/>
+
+              <Button title="registering" onPress={() => this.props.navigation.navigate('HeyURegistration')}/>
+
             </View>
             <View style={styles.sliderContainer}>
               <Text>Search radius</Text>
@@ -70,7 +73,5 @@ const styles = StyleSheet.create({
     transform: [{ scaleX: 3.1 }, { scaleY: 3.1 }],
     width : ScreenWidth / 3,
   },
-
-  
 });
 
