@@ -12,14 +12,15 @@ function updateLocation(state = initialState, action) {
     case 'UPDATE_LOCATION':
         console.log("Case Update_location");
         console.log("action reçue = "+action.value.heyUserLongitude)
-        // nextState = {
-        //   ...state,
-        //   heyuserLocation: action.value
-        // }
+         nextState = {
+           ...state,
+           heyUserLocation:action.value
+         }
+    
+       // nextState.heyUserLocation=action.value;
 
-        state.heyUserLocation= action.value;
-    console.log("returned state : "+state.heyUserLocation.heyUserLongitude)
-    return state //nextState || state
+    console.log("returned state : "+nextState.heyUserLocation.heyUserLongitude)
+    return nextState || state
   default:
     return state
   }

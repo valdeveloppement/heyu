@@ -1,30 +1,31 @@
 import React from 'react';
-//import react in our code. 
-import {Button, View, Text,  StyleSheet, Image ,PermissionsAndroid,Platform} from 'react-native';
-//import all the components we are going to use.
-
-import 'react-native-gesture-handler'
+import {Button, View, Text, TextInput,  StyleSheet, Image ,PermissionsAndroid,Platform} from 'react-native';
 import { connect } from 'react-redux'
 
 
 class LoggingScreen extends React.Component{
 
-    static navigationOptions = {
-          title: 'Logging'
-      };
+  static navigationOptions = {
+    title: 'Logging'
+  };
 
 
 
-    componentDidMount = () => { 
-      setInterval(() => {console.log(this.props)
-        
-      }, 2000);
-      }
 
-   // componentDidUpdate = () =>{console.log("logging s'update")}
 
-    render(){
+  componentDidUpdate = () =>{console.log("logging s'update")}
+
+
+
+  render(){
       return(
+
+
+
+
+
+
+        
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Logging Screen</Text>
          <Button
@@ -35,17 +36,24 @@ class LoggingScreen extends React.Component{
         <Text>Longitude = {this.props.heyUserLocation.heyUserLongitude}</Text>
         <Text>Latitude = {this.props.heyUserLocation.heyUserLatitude}</Text>
 
+        <View>
+            <Text>Login</Text>
+            <TextInput  name='heyUserName' onChange={()=>{}}></TextInput>
+            <TextInput  name='heyUserPassword' onChange={()=>{}}></TextInput>
+            <Button title='Submit' onPress={()=>{}}></Button>
+        </View>
+
       </View>
 
 
       );
-    }
+  }
 }
 
 
 const mapStateToProps = (state) => {
   console.log("mapstatetoprops: "+state.heyUserLocation.heyUserLongitude)
- // return state
+
   return {
     heyUserLocation: state.heyUserLocation
 
