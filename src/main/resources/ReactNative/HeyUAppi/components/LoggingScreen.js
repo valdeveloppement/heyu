@@ -1,34 +1,64 @@
 import React from 'react';
-//import react in our code. 
-import {Button, View, Text,  StyleSheet, Image ,PermissionsAndroid,Platform} from 'react-native';
-//import all the components we are going to use.
+import {Button, View, Text, TextInput,  StyleSheet, Image ,PermissionsAndroid,Platform} from 'react-native';
+import { connect } from 'react-redux'
 
-import 'react-native-gesture-handler'
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
 
-export default class LoggingScreen extends React.Component{
+class LoggingScreen extends React.Component{
 
-    static navigationOptions = {
-          title: 'Logging'
-      };
-     
-      componentDidMount = () => { console.log("test valentin");}
+  static navigationOptions = {
+    title: 'Logging'
+  };
 
-    render(){
+
+
+
+
+  componentDidUpdate = () =>{console.log("logging s'update")}
+
+
+
+  render(){
       return(
+
+
+
+
+
+
+        
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Logging Screen</Text>
          <Button
           title="Go to Search"
           onPress={() => this.props.navigation.navigate('Search')}
         />
-        <Text>Longitude:</Text>
-        <Text>{this.props.navigation.getParam('heyUserLongitude', "ne marche pas")}</Text>
+
+        <Text>Longitude = {this.props.heyUserLocation.heyUserLongitude}</Text>
+        <Text>Latitude = {this.props.heyUserLocation.heyUserLatitude}</Text>
+
+        <View>
+            <Text>Login</Text>
+            <TextInput  name='heyUserName' onChange={()=>{}}></TextInput>
+            <TextInput  name='heyUserPassword' onChange={()=>{}}></TextInput>
+            <Button title='Submit' onPress={()=>{}}></Button>
+        </View>
 
       </View>
 
 
       );
-    }
+  }
 }
+
+
+const mapStateToProps = (state) => {
+  console.log("mapstatetoprops: "+state.heyUserLocation.heyUserLongitude)
+
+  return {
+    heyUserLocation: state.heyUserLocation
+
+
+  }
+}
+
+export default connect(mapStateToProps)(LoggingScreen)
