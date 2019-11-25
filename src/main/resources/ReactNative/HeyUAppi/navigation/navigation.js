@@ -5,7 +5,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import SearchScreen from '../components/SearchScreen';
 import LoggingScreen from '../components/LoggingScreen';
-// import MyGeolocation from '../components/MyGeolocation';
+import MyGeolocation from '../components/MyGeolocation';
 
 
 
@@ -22,11 +22,11 @@ const AppNavigator = createStackNavigator(
         }
       },
       Search: SearchScreen,
-      //  MyGeolocation: MyGeolocation
+      MyGeolocation: MyGeolocation
     },
 
     {
-      initialRouteName: 'Logging',
+      initialRouteName: 'MyGeolocation',
       defaultNavigationOptions: {
         headerStyle: {
           backgroundColor: '#f4511e',
