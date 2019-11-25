@@ -16,7 +16,7 @@ class MyGeolocation extends React.Component {
     heyUserAuthentication:{
       heyUserName: 'nobody',
       heyUserPassword: '0000',
-      heyUserPasswordConfirm: '0000',
+      heyUserConfirmPassword: '0000',
     },
 
     //list of heyUsers near
