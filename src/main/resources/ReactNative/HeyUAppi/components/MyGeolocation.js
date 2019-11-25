@@ -14,8 +14,9 @@ class MyGeolocation extends React.Component {
 
     //identification
     heyUserAuthentication:{
-      heyUserName: 'nobody',
-      heyUserPassword: '0000',
+      heyUserName: '',
+      heyUserPassword: '',
+      heyUserPasswordConfirm: '',
     },
 
     //list of heyUsers near
@@ -77,7 +78,6 @@ class MyGeolocation extends React.Component {
 
   }
 
-  // les coordonnées envoyées ne sont pas les bonnes.
   updateHeyuserLocation(that){
     console.log("Le dispatch se fait");
     console.log("value : "+that.state.heyUserLocation.heyUserLongitude);
@@ -93,7 +93,7 @@ class MyGeolocation extends React.Component {
   updateHeyUserNearUList = (that) => {
     console.log("updateHeyUserNearUList s'execute")
 
-    if(that.state.heyUserIsConnected == true){
+    if(that.props.heyUserIsConnected == true){
         fetch('http://192.168.8.105:8080/updateLocation', {
         method: 'POST',
         headers: {
@@ -101,7 +101,7 @@ class MyGeolocation extends React.Component {
         'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-        heyUserAuthentication: that.state.heyUserAuthentication,
+        heyUserAuthentication: that.props.heyUserAuthentication,
         heyUserLocation: that.state.heyUserLocation,
        
         }),
@@ -186,12 +186,7 @@ class MyGeolocation extends React.Component {
 
 
 const mapStateToProps = (state) => {
-  
-  return state
-  //   heyUserAuthentication: state.heyUserAuthentication
-
-
-  // }
+  return {heyUserAuthentication: state.heyUserAuthentication}
 }
 
 

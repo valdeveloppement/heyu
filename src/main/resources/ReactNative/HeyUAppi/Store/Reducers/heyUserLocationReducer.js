@@ -4,7 +4,13 @@ const initialState = {  heyUserLocation:{
     heyUserLatitude: "1",
     heyUserAccuracy:"44000",
     heyUserSearchRadius:10000,
-  } }
+  },
+  heyUserAuthentication:{
+    heyUserName: '',
+    heyUserPassword: '',
+    heyUserPasswordConfirm: '',
+  },
+}
 
 function updateLocation(state = initialState, action) {
   let nextState
@@ -20,6 +26,25 @@ function updateLocation(state = initialState, action) {
        // nextState.heyUserLocation=action.value;
 
     console.log("returned state : "+nextState.heyUserLocation.heyUserLongitude)
+    return nextState || state
+  default:
+    return state
+  }
+}
+
+function updateAuth(state = initialState, action) {
+  let nextState
+  switch (action.type) {
+    case 'UPDATE_AUTH':
+         nextState = {
+           ...state,
+           heyUserAuthentication:action.value
+         }
+    case 'UPDATE_CONNECT':
+      nextState = {
+        ...state,
+        heyUserIsConnected:action.value
+      }
     return nextState || state
   default:
     return state
