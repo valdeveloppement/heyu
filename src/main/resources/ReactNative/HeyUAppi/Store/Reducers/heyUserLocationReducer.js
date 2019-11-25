@@ -12,7 +12,7 @@ const initialState = {  heyUserLocation:{
   },
 }
 
-export const updateLoc = function updateLocation(state = initialState, action) {
+export default function updateLocation(state = initialState, action) {
   let nextState
   switch (action.type) {
     case 'UPDATE_LOCATION':
@@ -32,21 +32,21 @@ export const updateLoc = function updateLocation(state = initialState, action) {
   }
 }
 
-export const updateAuth = function updateAuthentication(state = initialState, action) {
-  let nextState
-  switch (action.type) {
-    case 'UPDATE_AUTH':
-         nextState = {
-           ...state,
-           heyUserAuthentication:action.value
-         }
-    case 'UPDATE_CONNECT':
-      nextState = {
-        ...state,
-        heyUserIsConnected:action.value
-      }
-    return nextState || state
-  default:
-    return state
-  }
-}
+// export const updateAuth = function updateAuthentication(state = initialState, action) {
+//   let nextState
+//   switch (action.type) {
+//     case 'UPDATE_AUTH':
+//          nextState = {
+//            ...state,
+//            heyUserAuthentication:action.value
+//          }
+//     case 'UPDATE_CONNECT':
+//       nextState = {
+//         ...state,
+//         heyUserIsConnected:action.value
+//       }
+//     return nextState || state
+//   default:
+//     return state
+//   }
+// }

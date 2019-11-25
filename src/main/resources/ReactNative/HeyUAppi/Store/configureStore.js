@@ -1,6 +1,5 @@
 
 import { createStore } from 'redux';
-import {updateLoc, updateAuth} from './Reducers/heyUserLocationReducer'
+import updateLocation from './Reducers/heyUserLocationReducer'
 
-export const updateLocation = createStore(updateLoc)
-export const updateAuth = createStore(updateAuth) 
+export default createStore(updateLocation)
