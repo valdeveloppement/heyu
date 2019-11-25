@@ -7,9 +7,9 @@ class Registration extends React.Component {
         super(props);
         this.state= {
             heyUserAuthentication:{
-                heyUserName: 'bob',
-                heyUserPassword: 'bob',
-                heyUserConfirmPassword: 'bob',
+                heyUserName: 'gasper',
+                heyUserPassword: '123',
+                heyUserConfirmPassword: '456',
             },
             heyUserIsConnected: false,
             messageSent:"Veuillez saisir les informations",
@@ -29,7 +29,12 @@ class Registration extends React.Component {
         this.props.dispatch(action)
     }
 
-
+    leaveRegistering(){
+        console.log("leaveRegistration")
+        if(this.state.heyUserIsConnected == true){
+        this.props.navigation.navigate('Search')
+        }   
+    }
 
 
     register(){
@@ -51,7 +56,10 @@ class Registration extends React.Component {
             .then((responseJson) => {
                 this.setState({heyUserIsConnected: responseJson.connected});
                 this.setState({messageSent: responseJson.messageSent});
-
+                this.updateAuthentication();
+                this.updateConnected();
+                this.leaveRegistering();
+                console.log(this.state.heyUserIsConnected)
                 return responseJson.heyUserIsConnected;
             })
             .catch((error) => {
@@ -59,9 +67,7 @@ class Registration extends React.Component {
             });
 
 
-            this.updateAuthentication();
-            this.updateConnected();
-
+            
     }
 
 
@@ -93,6 +99,10 @@ class Registration extends React.Component {
         <Button title="registering" onPress={() =>this.register() }/>
 
         <Text>{this.state.messageSent}</Text>
+        <Button
+          title="Go to Logging"
+          onPress={() => this.props.navigation.navigate('Logging')}
+        />
 
 
       </View>
