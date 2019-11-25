@@ -29,7 +29,7 @@ const AppNavigator = createStackNavigator(
     },
 
     {
-      initialRouteName: 'Logging',
+      initialRouteName: 'MyGeolocation',
       defaultNavigationOptions: {
         headerStyle: {
           backgroundColor: '#f4511e',
