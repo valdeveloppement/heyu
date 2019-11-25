@@ -14,9 +14,9 @@ class MyGeolocation extends React.Component {
 
     //identification
     heyUserAuthentication:{
-      heyUserName: '',
-      heyUserPassword: '',
-      heyUserPasswordConfirm: '',
+      heyUserName: 'nobody',
+      heyUserPassword: '0000',
+      heyUserPasswordConfirm: '0000',
     },
 
     //list of heyUsers near
@@ -93,8 +93,8 @@ class MyGeolocation extends React.Component {
   updateHeyUserNearUList = (that) => {
     console.log("updateHeyUserNearUList s'execute")
 
-    if(that.props.heyUserIsConnected == true){
-        fetch('http://192.168.8.105:8080/updateLocation', {
+    if(that.state.heyUserIsConnected == true){
+        fetch('http://192.168.1.62:8080/updateLocation', {
         method: 'POST',
         headers: {
         Accept: 'application/json',
@@ -186,7 +186,13 @@ class MyGeolocation extends React.Component {
 
 
 const mapStateToProps = (state) => {
-  return {heyUserAuthentication: state.heyUserAuthentication}
+
+  return state
+
+  // return {
+  //   heyUserAuthentication: state.heyUserAuthentication,
+  //   heyUserIsConnected:state.heyUserIsConnected
+  // }
 }
 
 

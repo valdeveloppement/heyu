@@ -7,13 +7,15 @@ class Registration extends React.Component {
         super(props);
         this.state= {
             heyUserAuthentication:{
-                heyUserName: '',
-                heyUserPassword: '',
-                heyUserPasswordConfirm: '',
+                heyUserName: 'bob',
+                heyUserPassword: 'bob',
+                heyUserPasswordConfirm: 'bob',
             },
             heyUserIsConnected: false,
         }
     }
+
+
 
     updateAuthentication = () => {
         const action = { type: "UPDATE_AUTH", value: this.state.heyUserAuthentication }
@@ -24,6 +26,12 @@ class Registration extends React.Component {
         const action = { type: "UPDATE_CONNECT", value: this.state.heyUserIsConnected}
         this.props.dispatch(action)
     }
+
+    componentDidMount= ()=>{
+        updateAuthentication();
+        updateConnected();
+    }
+
 
     render() {
         return(
