@@ -8,8 +8,6 @@ public class UpdatePositionDTO {
 	private HeyUserAuthentication heyUserAuthentication;
 	private HeyUserLocation heyUserLocation;
 	
-	
-	
 	public HeyUserAuthentication getHeyUserAuthentication() {
 		return heyUserAuthentication;
 	}
