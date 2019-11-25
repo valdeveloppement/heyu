@@ -18,8 +18,7 @@ export default class MyGeolocation extends React.Component {
     heyUserNearU: [],
     heyUserMessage: "Hi, I'm new on HeyU!",
     heyUserPic:"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
-
- }
+  }
 
 
 
