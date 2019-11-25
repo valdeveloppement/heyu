@@ -28,8 +28,8 @@ class Registration extends React.Component {
     }
 
     componentDidMount= ()=>{
-        updateAuthentication();
-        updateConnected();
+        this.updateAuthentication();
+        this.updateConnected();
     }
 
 
@@ -37,9 +37,9 @@ class Registration extends React.Component {
         return(
             <View>
                 <Text>Registration</Text>
-                <TextInput autoCorrect='false' name='heyUserName' value={this.state.heyUserName} onChange={()=>{ this.setState({heyUserName: value})}}></TextInput>
-                <TextInput autoCorrect='false' name='heyUserPassword' value={this.state.heyUserPassword} onChange={()=>{}}></TextInput>
-                <TextInput autoCorrect='false' name='heyUserPasswordConfirm' value={this.state.heyUserPasswordConfirm} onChange={()=>{}}></TextInput>
+                <TextInput  name='heyUserName' value={this.state.heyUserName} onChange={()=>{ this.setState({heyUserName: value})}}></TextInput>
+                <TextInput  name='heyUserPassword' value={this.state.heyUserPassword} onChange={()=>{}}></TextInput>
+                <TextInput  name='heyUserPasswordConfirm' value={this.state.heyUserPasswordConfirm} onChange={()=>{}}></TextInput>
                 <Button title='Submit' onPress={()=>{
                     let register = {
                         heyUserName: this.state.heyUserName,

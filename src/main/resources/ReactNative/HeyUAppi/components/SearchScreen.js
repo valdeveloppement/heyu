@@ -1,96 +1,77 @@
+
+
 import React from 'react';
-import {Button, View, Text,  StyleSheet, Image , ScrollView , PermissionsAndroid,Platform} from 'react-native';
+import {Dimensions, Slider, View, Text,  StyleSheet, Button} from 'react-native';
 
+//const used for the styles const
+const ScreenWidth = Math.round(Dimensions.get('window').width);
+const screenHeight = Math.round(Dimensions.get('window').height);
 
-// import Slider from '@react-native-community/slider';
-// import  MultiSlider from '@ptomasroos/react-native-multi-slider';
-// import CustomSliderMarkerLeft from '@ptomasroos/react-native-multi-slider';
-// import  CustomSliderMarkerRight  from '@ptomasroos/react-native-multi-slider';
-// import Slider from '@react-native-community/slider';
-
-// import Slider from '@react-native-slider';
-//import all the components we are going to use.
-
- 
 export default class SearchScreen extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
+
+  state = {
+    sliderValue : 10,
   }
 
-  // enableScroll = () => this.setState({ scrollEnabled: true });
-  // disableScroll = () => this.setState({ scrollEnabled: false });
+  handleOnSliderChangeFetch = (sliderValue) => {
 
- render() {
-    return (
-       <View style = {styles.container}>
+  }
 
-        <Text style={{justifyContent:'center',alignItems: 'center',marginTop:10}}>
-            {/* Friends: {this.props.AppState.heyUserNearU.length} */}
-            Search SearchScreen
-          
-        </Text>
+  handleOnSliderChange = (sliderValue) => {
+    this.setState({sliderValue:Math.round(this.toExponential(sliderValue))})
+  }
 
-        <Button
-          title="Go to Logging"
-          onPress={() => this.props.navigation.navigate('Logging')}
-        />  
-         <Text>{this.props.navigation.getParam('heyUserLongitude', "ne marche pas")}</Text>
+  toExponential = (x) => {
+    return Math.exp(x) + 10;
+  }
 
-{/*        
-        <View>
-            {this.props.AppState.heyUserNearU.map((heyUser, index) =>
-            <View key={heyUser.heyUserName + index}>
-                 <Image source={{uri:heyUser.heyUserPic }} style={{width: 60, height: 60}}/>
-                <Text>{heyUser.heyUserName}</Text>
-                <Text>{heyUser.heyUserMessage}</Text>
+  render() {
+      
+      return (
+        <View style={styles.container}>
+            <View>
+              <Button title="registering" onPress={() => this.props.navigation.navigate('HeyURegistration')}/>
             </View>
-            
-
-            )}
-        </View> */}
-
-         {/* HOW TO USE  https://github.com/ptomasroos/react-native-multi-slider#installation
-        <ScrollView scrollEnabled={this.state.scrollEnabled}>
-           <MultiSlider
-           onValuesChangeFinish={this.test()}
-            // onValuesChangeStart={this.disableScroll}
-            // onValuesChangeFinish={this.enableScroll}
-          /> 
-
-        </ScrollView> */}
-
-{/* <Slider
-    style={{width: 200, height: 40}}
-    minimumValue={0}
-    maximumValue={1}
-    minimumTrackTintColor="#FFFFFF"
-    maximumTrackTintColor="#000000"
-  /> */}
-
-
-    </View>
-    )
- }
-
-
+            <View style={styles.sliderContainer}>
+              <Text>Search radius</Text>
+              <Slider
+                style={styles.slider}
+                minimumValue={0}
+                maximumValue={8.8}
+                onValueChange={this.handleOnSliderChange}
+                onSlidingComplete={this.handleOnSliderChangeFetch}
+              />
+              <Text style={styles.sliderInfos}>{this.state.sliderValue} mètres</Text>
+            </View>
+        </View>
+      );
+  }
 }
 
 
+const styles = StyleSheet.create({
+  container: {
+    height : screenHeight,
+  },
 
-//Styles
-const styles = StyleSheet.create ({
- container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent:'center',
-    marginTop: 50,
-    padding:16,
-    backgroundColor:'white'
- },
- boldText: {
-    fontSize: 20,
-    color: 'red',
- }
-})
+  sliderContainer: {
+    flex:1,
+    height : 130,
+    marginBottom : 160,
+    alignItems: "center",
+    justifyContent: "flex-end",
+  },
 
+  sliderInfos : {
+    color : "red",
+    marginTop : 30,
+    fontWeight : "bold"
+  },
+
+  slider : {
+    transform: [{ scaleX: 3.1 }, { scaleY: 3.1 }],
+    width : ScreenWidth / 3,
+  },
+
+  
+});
