@@ -13,7 +13,7 @@ const initialState = {  heyUserLocation:{
   },
 }
 
-function updateLocation(state = initialState, action) {
+export default function updateLocation(state = initialState, action) {
   let nextState
   switch (action.type) {
     case 'UPDATE_LOCATION':
@@ -33,30 +33,22 @@ function updateLocation(state = initialState, action) {
   }
 }
 
-function updateAuth(state = initialState, action) {
-  let nextState
-  switch (action.type) {
-    case 'UPDATE_AUTH':
-         nextState = {
-           ...state,
-           heyUserAuthentication:action.value
-         }
-    case 'UPDATE_CONNECT':
-      nextState = {
-        ...state,
-        heyUserIsConnected:action.value
-      }
-    return nextState || state
-  default:
-    return state
-  }
-}
 
-
-
-const myReducers = combineReducers({
-  updateLocation,
-  updateAuth
-})
-
-export default updateLocation
+// export const updateAuth = function updateAuthentication(state = initialState, action) {
+//   let nextState
+//   switch (action.type) {
+//     case 'UPDATE_AUTH':
+//          nextState = {
+//            ...state,
+//            heyUserAuthentication:action.value
+//          }
+//     case 'UPDATE_CONNECT':
+//       nextState = {
+//         ...state,
+//         heyUserIsConnected:action.value
+//       }
+//     return nextState || state
+//   default:
+//     return state
+//   }
+// }
