@@ -6,6 +6,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import SearchScreen from '../components/SearchScreen';
 import LoggingScreen from '../components/LoggingScreen';
 import MyGeolocation from '../components/MyGeolocation';
+import HeyURegistration from '../components/HeyURegistration';
 
 
 
@@ -24,11 +25,11 @@ const AppNavigator = createStackNavigator(
       Search: SearchScreen,
       MyGeolocation: MyGeolocation,
       Registration:HeyURegistration
-      
+
     },
 
     {
-      initialRouteName: 'Registration',
+      initialRouteName: 'Logging',
       defaultNavigationOptions: {
         headerStyle: {
           backgroundColor: '#f4511e',
