@@ -28,6 +28,7 @@ class Registration extends React.Component {
     }
 
     componentDidMount= ()=>{
+        console.log("registration mount")
         this.updateAuthentication();
         this.updateConnected();
     }

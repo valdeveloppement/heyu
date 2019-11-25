@@ -40,6 +40,8 @@ class MyGeolocation extends React.Component {
     positionCountChange: 0
   }
 
+  componentDidUpdate = () => {console.log(this.props.heyUserAuthentication)}
+
 
   componentDidMount = () => {
   

@@ -65,13 +65,13 @@ class LoggingScreen extends React.Component{
 
 
 const mapStateToProps = (state) => {
-  console.log("mapstatetoprops: "+state.heyUserLocation.heyUserLongitude)
+  // console.log("mapstatetoprops: "+state.heyUserLocation.heyUserLongitude)
+return state
+  // return {
+  //   heyUserLocation: state.heyUserLocation
 
-  return {
-    heyUserLocation: state.heyUserLocation
 
-
-  }
+  // }
 }
 
 export default connect(mapStateToProps)(LoggingScreen)
