@@ -7,9 +7,9 @@ class Registration extends React.Component {
         super(props);
         this.state= {
             heyUserAuthentication:{
-                heyUserName: '',
-                heyUserPassword: '',
-                heyUserPasswordConfirm: '',
+                heyUserName: 'bob',
+                heyUserPassword: 'bob',
+                heyUserPasswordConfirm: 'bob',
             },
             heyUserIsConnected: false,
         }
