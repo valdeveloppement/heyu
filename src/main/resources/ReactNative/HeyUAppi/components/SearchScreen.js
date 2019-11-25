@@ -2,14 +2,6 @@ import React from 'react';
 import {Button, View, Text,  StyleSheet, Image , ScrollView , PermissionsAndroid,Platform} from 'react-native';
 
 
-// import Slider from '@react-native-community/slider';
-// import  MultiSlider from '@ptomasroos/react-native-multi-slider';
-// import CustomSliderMarkerLeft from '@ptomasroos/react-native-multi-slider';
-// import  CustomSliderMarkerRight  from '@ptomasroos/react-native-multi-slider';
-// import Slider from '@react-native-community/slider';
-
-// import Slider from '@react-native-slider';
-//import all the components we are going to use.
 
  
 export default class SearchScreen extends React.Component {
@@ -18,8 +10,6 @@ export default class SearchScreen extends React.Component {
     this.state = {};
   }
 
-  // enableScroll = () => this.setState({ scrollEnabled: true });
-  // disableScroll = () => this.setState({ scrollEnabled: false });
 
  render() {
     return (
