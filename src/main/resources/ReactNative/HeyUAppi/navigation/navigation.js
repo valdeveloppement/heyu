@@ -22,11 +22,12 @@ const AppNavigator = createStackNavigator(
         }
       },
       Search: SearchScreen,
-      MyGeolocation: MyGeolocation
+      MyGeolocation: MyGeolocation,
+      Registration:HeyURegistration
     },
 
     {
-      initialRouteName: 'MyGeolocation',
+      initialRouteName: 'Registration',
       defaultNavigationOptions: {
         headerStyle: {
           backgroundColor: '#f4511e',
