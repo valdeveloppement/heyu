@@ -186,7 +186,13 @@ class MyGeolocation extends React.Component {
 
 
 const mapStateToProps = (state) => {
-  return {heyUserAuthentication: state.heyUserAuthentication}
+
+  return state
+
+  // return {
+  //   heyUserAuthentication: state.heyUserAuthentication,
+  //   heyUserIsConnected:state.heyUserIsConnected
+  // }
 }
 
 
