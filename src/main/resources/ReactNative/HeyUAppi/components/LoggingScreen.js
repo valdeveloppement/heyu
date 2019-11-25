@@ -38,9 +38,22 @@ class LoggingScreen extends React.Component{
 
         <View>
             <Text>Login</Text>
-            <TextInput  name='heyUserName' onChange={()=>{}}></TextInput>
-            <TextInput  name='heyUserPassword' onChange={()=>{}}></TextInput>
-            <Button title='Submit' onPress={()=>{}}></Button>
+            <TextInput  name='heyUserName' value='' onChange={()=>{}}></TextInput>
+            <TextInput  name='heyUserPassword' value='' onChange={()=>{}}></TextInput>
+            <Button title='Submit' onPress={()=>{
+              let register = {
+                heyUserName: this.props.heyUserName,
+                heyUserPassword: this.props.heyUserPassword,
+                heyUserPasswordConfirm: this.props.heyUserPasswordConfirm,
+              }
+              fetch('/login', {method: 'POST', body: JSON.stringify(register)}).then((response) => response.json())
+        .then((responseJson) => {
+            this.setState({heyUserIsConnected: responseJson.Connected})
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+            }}></Button>
         </View>
 
       </View>

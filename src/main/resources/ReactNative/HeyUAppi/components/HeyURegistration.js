@@ -40,7 +40,7 @@ class Registration extends React.Component {
                     }
                     fetch('http://192.168.8.105:8080/registering', { method: 'POST', body: JSON.stringify(register)}).then((response) => response.json())
         .then((responseJson) => {
-            
+            this.setState({heyUserIsConnected: responseJson.Connected})
         })
         .catch((error) => {
             console.error(error);
