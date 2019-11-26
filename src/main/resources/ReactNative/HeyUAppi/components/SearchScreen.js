@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import {Dimensions, Slider, View, Text,  StyleSheet, Button} from 'react-native';
 
@@ -82,7 +80,9 @@ export default class SearchScreen extends React.Component {
       return (
         <View style={styles.container}>
             <View>
+
               <Button title="registering" onPress={() => this.props.navigation.navigate('HeyURegistration')}/>
+
             </View>
             <View style={styles.sliderContainer}>
               <Text>Search radius</Text>
@@ -129,6 +129,5 @@ const styles = StyleSheet.create({
     transform: [{ scaleX: 3.1 }, { scaleY: 3.1 }],
     width : ScreenWidth / 3,
   },
-
-  
 });
+
