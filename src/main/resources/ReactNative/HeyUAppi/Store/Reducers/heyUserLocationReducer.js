@@ -1,4 +1,3 @@
-import { combineReducers } from 'redux' 
 
 const initialState = {  heyUserLocation:{
     heyUserLongitude: "1",
@@ -32,7 +31,6 @@ export default function updateLocation(state = initialState, action) {
     return state
   }
 }
-
 
 // export const updateAuth = function updateAuthentication(state = initialState, action) {
 //   let nextState

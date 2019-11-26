@@ -9,9 +9,47 @@ export default class SearchScreen extends React.Component {
 
   state = {
     sliderValue : 10,
+
+
+
   }
 
   handleOnSliderChangeFetch = (sliderValue) => {
+
+
+    //Pas fini relocaliser ici le fetch du geoloc
+
+    
+
+    // fetch('http://192.168.1.62:8080/updateLocation', {
+    //   method: 'POST',
+    //   headers: {
+    //   Accept: 'application/json',
+    //   'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify({
+    //   heyUserAuthentication: this.props.heyUserAuthentication,
+    //   heyUserLocation: {
+    //     ... heyUserLocation,
+    //     heyUserSearchRadius:this.state.sliderValue,
+    //   },
+     
+    //   }),
+    //    }).then((response) => response.json())
+    //   .then((responseJson) => {
+    //     this.setState({ heyUserNearU:responseJson.heyUserNearU });
+    //       console.log(this.state.heyUserNearU);
+    //       console.log("longueur du tableau = "+ this.state.heyUserNearU.length);
+    //       return responseJson.heyUserNearU;
+    //   })
+    //   .catch((error) => {
+    //       console.error(error);
+    //   });
+
+
+
+
+
 
   }
 
@@ -20,8 +58,21 @@ export default class SearchScreen extends React.Component {
   }
 
   toExponential = (x) => {
+    // return Math.pow(x,3) + 10;
+    // return 10+Math.pow(x,4)
+    // return 1000*Math.exp(x)-1000
+    return 10*Math.exp(x)-10
 
-    return Math.exp(x) + 10;
+  }
+
+  toLisible = (x) => {
+    let unit ="metres";
+    if(x>1000){
+    x=Math.round(x/1000);
+    unit="kilometres"
+    }
+  return radius = ""+x+" "+unit;
+
   }
 
   render() {
@@ -38,11 +89,16 @@ export default class SearchScreen extends React.Component {
               <Slider
                 style={styles.slider}
                 minimumValue={0}
-                maximumValue={8.8}
+                // maximumValue={125.9919}  //x³+10
+                // maximumValue={37.605}  //x4
+                //  maximumValue={7.7}  //1000exp
+                 maximumValue={12.206}  //100exp
+
+
                 onValueChange={this.handleOnSliderChange}
                 onSlidingComplete={this.handleOnSliderChangeFetch}
               />
-              <Text style={styles.sliderInfos}>{this.state.sliderValue} mètres</Text>
+              <Text style={styles.sliderInfos}>{this.toLisible(this.state.sliderValue)}</Text>
             </View>
         </View>
       );

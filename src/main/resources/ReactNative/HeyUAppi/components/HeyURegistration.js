@@ -7,11 +7,13 @@ class Registration extends React.Component {
         super(props);
         this.state= {
             heyUserAuthentication:{
-                heyUserName: 'bob',
-                heyUserPassword: 'bob',
-                heyUserPasswordConfirm: 'bob',
+                heyUserName: 'gasper',
+                heyUserPassword: '123',
+                heyUserConfirmPassword: '456',
             },
             heyUserIsConnected: false,
+            messageSent:"Veuillez saisir les informations",
+         
         }
     }
 
@@ -27,37 +29,97 @@ class Registration extends React.Component {
         this.props.dispatch(action)
     }
 
-    componentDidMount= ()=>{
-        this.updateAuthentication();
-        this.updateConnected();
+    leaveRegistering(){
+        console.log("leaveRegistration")
+        if(this.state.heyUserIsConnected == true){
+        this.props.navigation.navigate('Search')
+        }   
     }
 
 
-    render() {
-        return(
-            <View>
-                <Text>Registration</Text>
-                <TextInput  name='heyUserName' value={this.state.heyUserName} onChange={()=>{ this.setState({heyUserName: value})}}></TextInput>
-                <TextInput  name='heyUserPassword' value={this.state.heyUserPassword} onChange={()=>{}}></TextInput>
-                <TextInput  name='heyUserPasswordConfirm' value={this.state.heyUserPasswordConfirm} onChange={()=>{}}></TextInput>
-                <Button title='Submit' onPress={()=>{
-                    let register = {
-                        heyUserName: this.state.heyUserName,
-                        heyUserPassword: this.state.heyUserPassword,
-                        heyUserPasswordConfirm: this.state.heyUserPasswordConfirm,
-                    }
-                    fetch('http://192.168.8.105:8080/registering', { method: 'POST', body: JSON.stringify(register)}).then((response) => response.json())
-        .then((responseJson) => {
-            this.setState({heyUserIsConnected: responseJson.Connected})
-        })
-        .catch((error) => {
-            console.error(error);
-        });
-                }}></Button>
-            </View>
-        )
+    register(){
+    console.log("fetch de registering")
+        fetch('http://192.168.1.62:8080/registering', {
+            method: 'POST',
+            headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                heyUserAuthentication:{
+                heyUserName: this.state.heyUserName,
+                heyUserPassword: this.state.heyUserPassword,
+                heyUserConfirmPassword: this.state.heyUserConfirmPassword
+                }
+            }),
+             }).then((response) => response.json())
+            .then((responseJson) => {
+                this.setState({heyUserIsConnected: responseJson.connected});
+                this.setState({messageSent: responseJson.messageSent});
+                this.updateAuthentication();
+                this.updateConnected();
+                this.leaveRegistering();
+                console.log(this.state.heyUserIsConnected)
+                return responseJson.heyUserIsConnected;
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+
+
+            
     }
+
+
+
+  render() {
+    return (
+      <View style={{padding: 10}}>
+        <TextInput
+          style={{height: 40}}
+          placeholder="UserName"
+          onChangeText={(text) => this.setState({heyUserName:text})}
+          value={this.state.text}
+        />
+
+        <TextInput
+          style={{height: 40}}
+          placeholder="Password"
+          onChangeText={(text) => this.setState({heyUserPassword:text})}
+          value={this.state.text}
+        />
+
+
+        <TextInput
+          style={{height: 40}}
+          placeholder="Verify Password"
+          onChangeText={(text) => this.setState({heyUserConfirmPassword:text})}
+          value={this.state.text}
+        />
+        <Button title="registering" onPress={() =>this.register() }/>
+
+        <Text>{this.state.messageSent}</Text>
+        <Button
+          title="Go to Logging"
+          onPress={() => this.props.navigation.navigate('Logging')}
+        />
+
+
+      </View>
+    );
+  }
+
+
+
+
+
 }
+
+
+
+
+
+
 
 const mapDispatchToProps = (dispatch) => {
     return {

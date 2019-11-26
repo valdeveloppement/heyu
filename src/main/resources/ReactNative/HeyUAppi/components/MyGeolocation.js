@@ -16,7 +16,7 @@ class MyGeolocation extends React.Component {
     heyUserAuthentication:{
       heyUserName: 'nobody',
       heyUserPassword: '0000',
-      heyUserPasswordConfirm: '0000',
+      heyUserConfirmPassword: '0000',
     },
 
     //list of heyUsers near
@@ -39,6 +39,8 @@ class MyGeolocation extends React.Component {
     // count of update geolocation
     positionCountChange: 0
   }
+
+  componentDidUpdate = () => {console.log(this.props.heyUserAuthentication)}
 
 
   componentDidMount = () => {
