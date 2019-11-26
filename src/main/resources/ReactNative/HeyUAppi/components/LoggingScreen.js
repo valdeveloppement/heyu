@@ -12,66 +12,125 @@ class LoggingScreen extends React.Component{
 
 
 
+  constructor(props) {
+    super(props);
+    this.state= {
+        heyUserAuthentication:{
+            heyUserName: 'gasper',
+            heyUserPassword: '123',
+            
+        },
+        heyUserIsConnected: false,
+        messageSent:"Veuillez saisir les informations",
+     
+    }
+}
 
-  componentDidUpdate = () =>{console.log("logging s'update")}
 
 
+updateAuthentication = () => {
+    const action = { type: "UPDATE_AUTH", value: this.state.heyUserAuthentication }
+    this.props.dispatch(action)
+}
 
-  render(){
-      return(
+updateConnected = () => {
+    const action = { type: "UPDATE_CONNECT", value: this.state.heyUserIsConnected}
+    this.props.dispatch(action)
+}
+
+leaveLogging(){
+    console.log("leaveLogging")
+    if(this.state.heyUserIsConnected == true){
+    this.props.navigation.navigate('Search')
+    }   
+}
 
 
-
-
-
-
-        
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Logging Screen</Text>
-         <Button
-          title="Go to Search"
-          onPress={() => this.props.navigation.navigate('Search')}
-        />
-
-        <Text>Longitude = {this.props.heyUserLocation.heyUserLongitude}</Text>
-        <Text>Latitude = {this.props.heyUserLocation.heyUserLatitude}</Text>
-
-        <View>
-            <Text>Login</Text>
-            <TextInput  name='heyUserName' value='' onChange={()=>{}}></TextInput>
-            <TextInput  name='heyUserPassword' value='' onChange={()=>{}}></TextInput>
-            <Button title='Submit' onPress={()=>{
-              let register = {
-                heyUserName: this.props.heyUserName,
-                heyUserPassword: this.props.heyUserPassword,
-                heyUserPasswordConfirm: this.props.heyUserPasswordConfirm,
-              }
-              fetch('/login', {method: 'POST', body: JSON.stringify(register)}).then((response) => response.json())
+logging(){
+console.log("fetch de Logging")
+    fetch('http://192.168.1.62:8080/login', {
+        method: 'POST',
+        headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            heyUserAuthentication:{
+            heyUserName: this.state.heyUserName,
+            heyUserPassword: this.state.heyUserPassword,
+            }
+        }),
+         }).then((response) => response.json())
         .then((responseJson) => {
-            this.setState({heyUserIsConnected: responseJson.Connected})
+            this.setState({heyUserIsConnected: responseJson.connected});
+            this.setState({messageSent: responseJson.messageSent});
+            this.updateAuthentication();
+            this.updateConnected();
+            this.leaveLogging();
+            console.log(this.state.heyUserIsConnected)
+            return responseJson.heyUserIsConnected;
         })
         .catch((error) => {
             console.error(error);
         });
-            }}></Button>
-        </View>
-
-      </View>
 
 
-      );
-  }
+        
+}
+
+
+
+render() {
+return (
+  <View style={{padding: 10}}>
+    <TextInput
+      style={{height: 40}}
+      placeholder="UserName"
+      onChangeText={(text) => this.setState({heyUserName:text})}
+      value={this.state.text}
+    />
+
+    <TextInput
+      style={{height: 40}}
+      placeholder="Password"
+      onChangeText={(text) => this.setState({heyUserPassword:text})}
+      value={this.state.text}
+    />
+
+
+
+    <Button title="logging" onPress={() =>this.logging() }/>
+
+    <Text>{this.state.messageSent}</Text>
+    <Button
+      title="Go to Registering"
+      onPress={() => this.props.navigation.navigate('HeyURegistration')}
+    />
+
+    <Text>Longitude = {this.props.heyUserLocation.heyUserLongitude}</Text>
+    <Text>Latitude = {this.props.heyUserLocation.heyUserLatitude}</Text>
+
+    </View>
+);
+}
+
+
+
+
+
+
+
 }
 
 
 const mapStateToProps = (state) => {
-  console.log("mapstatetoprops: "+state.heyUserLocation.heyUserLongitude)
+  // console.log("mapstatetoprops: "+state.heyUserLocation.heyUserLongitude)
+return state
+  // return {
+  //   heyUserLocation: state.heyUserLocation
 
-  return {
-    heyUserLocation: state.heyUserLocation
 
-
-  }
+  // }
 }
 
 export default connect(mapStateToProps)(LoggingScreen)
