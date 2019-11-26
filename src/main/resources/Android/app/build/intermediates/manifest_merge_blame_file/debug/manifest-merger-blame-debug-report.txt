@@ -1,0 +1,75 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.gp2"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="14"
+8-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:5:5-66
+11-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:6:5-80
+12-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:7:5-78
+13-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:7:22-76
+14
+15    <application
+15-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:9:5-27:19
+16        android:allowBackup="true"
+16-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.1.0] /home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:11:9-43
+20        android:label="@string/app_name"
+20-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:12:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:14:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:15:9-40
+25        <activity android:name="com.example.gp2.SearchActivity" />
+25-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:16:9-61
+25-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:16:19-49
+26        <activity android:name="com.example.gp2.RegisteryActivity" />
+26-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:17:9-64
+26-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:17:19-52
+27        <activity android:name="com.example.gp2.ModifyActivity" />
+27-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:18:9-61
+27-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:18:19-49
+28        <activity android:name="com.example.gp2.MainActivity" >
+28-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:19:9-26:20
+28-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:19:19-47
+29            <intent-filter>
+29-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:21:13-25:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:22:17-69
+30-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:22:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:24:17-77
+32-->/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/AndroidManifest.xml:24:27-74
+33            </intent-filter>
+34        </activity>
+35
+36        <provider
+36-->[com.squareup.picasso:picasso:2.71828] /home/stagiaire/.gradle/caches/transforms-2/files-2.1/b2d8b86f7b5730fa4948efe8c91e1258/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+37            android:name="com.squareup.picasso.PicassoProvider"
+37-->[com.squareup.picasso:picasso:2.71828] /home/stagiaire/.gradle/caches/transforms-2/files-2.1/b2d8b86f7b5730fa4948efe8c91e1258/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+38            android:authorities="com.example.gp2.com.squareup.picasso"
+38-->[com.squareup.picasso:picasso:2.71828] /home/stagiaire/.gradle/caches/transforms-2/files-2.1/b2d8b86f7b5730fa4948efe8c91e1258/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+39            android:exported="false" />
+39-->[com.squareup.picasso:picasso:2.71828] /home/stagiaire/.gradle/caches/transforms-2/files-2.1/b2d8b86f7b5730fa4948efe8c91e1258/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+40    </application>
+41
+42</manifest>
