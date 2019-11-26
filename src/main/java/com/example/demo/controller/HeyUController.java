@@ -12,7 +12,7 @@ import com.example.demo.dto.LoginDTOSent;
 import com.example.demo.dto.ModifyHeyUserSettingsDTOExpected;
 import com.example.demo.dto.UpdatePositionDTO;
 import com.example.demo.dto.UpdatePositionResponseDto;
-import com.example.demo.dto.RegisteringDTOExpected;
+import com.example.demo.dto.AuthenticationDTOExpected;
 import com.example.demo.model.HeyUser;
 import com.example.demo.service.HeyUService;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -40,13 +40,14 @@ public class HeyUController {
 		ObjectMapper mapper = new ObjectMapper();
 		// convert user object to json string and return it 
 		System.out.println(mapper.writeValueAsString(newLocationDto));
+		
 
-		HeyUser searchedUser = hUServ.searchUserInArrayList( newLocationDto.getHeyUserName(),newLocationDto.getHeyUserPassword(), hUServ.getListUsers());
+		HeyUser searchedUser = hUServ.searchUserInArrayList( newLocationDto.getHeyUserAuthentication().getHeyUserName(),newLocationDto.getHeyUserAuthentication().getHeyUserPassword(), hUServ.getListUsers());
 			UpdatePositionResponseDto response = new UpdatePositionResponseDto();
 			if(searchedUser != null) {
-			hUServ.updateLocation(newLocationDto.getHeyUserLongitude(), newLocationDto.getHeyUserLatitude(), searchedUser);
+			hUServ.updateLocation(newLocationDto.getHeyUserLocation().getHeyUserLongitude(), newLocationDto.getHeyUserLocation().getHeyUserLatitude(), searchedUser);
 			
-			response.setHeyUserNearU(hUServ.findNearUser(searchedUser, newLocationDto.getHeyUserSearchRadius(), hUServ.getListUsers()));
+			response.setHeyUserNearU(hUServ.findNearUser(searchedUser, newLocationDto.getHeyUserLocation().getHeyUserSearchRadius(), hUServ.getListUsers()));
 			}
 			return response;
 //		}
@@ -56,8 +57,8 @@ public class HeyUController {
 
 
 	@PostMapping("/login")
-	public LoginDTOSent login(@RequestBody RegisteringDTOExpected loginDTO) {
-		HeyUser searchedUser = hUServ.searchUserInArrayList(loginDTO.getHeyUserName(),loginDTO.getHeyUserPassword(), hUServ.getListUsers());
+	public LoginDTOSent login(@RequestBody AuthenticationDTOExpected loginDTO) {
+		HeyUser searchedUser = hUServ.searchUserInArrayList(loginDTO.getHeyUserAuthentication().getHeyUserName(),loginDTO.getHeyUserAuthentication().getHeyUserPassword(), hUServ.getListUsers());
 		LoginDTOSent thisUserLoginDto = new LoginDTOSent();
 
 		if(searchedUser != null) {
@@ -77,17 +78,17 @@ public class HeyUController {
 	}
 
 	@PostMapping("/registering")
-	public LoginDTOSent register(@RequestBody RegisteringDTOExpected registeringDTO) {
+	public LoginDTOSent register(@RequestBody AuthenticationDTOExpected registeringDTO) {
 		System.out.println("work");
-		HeyUser searchedUser = hUServ.searchUserInArrayListByName(registeringDTO.getHeyUserName(), hUServ.getListUsers());
+		HeyUser searchedUser = hUServ.searchUserInArrayListByName(registeringDTO.getHeyUserAuthentication().getHeyUserName(), hUServ.getListUsers());
 		LoginDTOSent thisUserLoginDto = new LoginDTOSent();
 		if(searchedUser != null) {
 			thisUserLoginDto.setConnected(false); // A CONFIRMER (si un utilisateur entre en dur "true" dans le false...
 			thisUserLoginDto.setMessageSent("There's already a HeyUser with that name.");
 			return thisUserLoginDto;
-		} else if(registeringDTO.getHeyUserPassword().equals(registeringDTO.getHeyUserConfirmPassword())){
-			thisUserLoginDto.getUserconnected().setHeyUserName(registeringDTO.getHeyUserName());
-			thisUserLoginDto.getUserconnected().setHeyUserPassword(registeringDTO.getHeyUserPassword());
+		} else if(registeringDTO.getHeyUserAuthentication().getHeyUserPassword().equals(registeringDTO.getHeyUserAuthentication().getHeyUserConfirmPassword())){
+			thisUserLoginDto.getUserconnected().setHeyUserName(registeringDTO.getHeyUserAuthentication().getHeyUserName());
+			thisUserLoginDto.getUserconnected().setHeyUserPassword(registeringDTO.getHeyUserAuthentication().getHeyUserPassword());
 			thisUserLoginDto.setConnected(true);
 			thisUserLoginDto.setMessageSent("Welcome "+thisUserLoginDto.getUserconnected().getHeyUserName() + " ! Your account has been successfully created !" );
 			hUServ.save(thisUserLoginDto.getUserconnected());
@@ -108,13 +109,13 @@ public class HeyUController {
 
 	@PostMapping("/ModifyHeyUserSettings")
 	public LoginDTOSent modifySettings(@RequestBody ModifyHeyUserSettingsDTOExpected settingsDTO) {
-		HeyUser searchedUser = hUServ.searchUserInArrayList( settingsDTO.getHeyUserName(),settingsDTO.getHeyUserPassword(), hUServ.getListUsers());
+		HeyUser searchedUser = hUServ.searchUserInArrayList( settingsDTO.getHeyUserAuthentication().getHeyUserName(),settingsDTO.getHeyUserAuthentication().getHeyUserPassword(), hUServ.getListUsers());
 		LoginDTOSent thisUserLoginDto = new LoginDTOSent();
 		if(searchedUser != null) {
 			
 			thisUserLoginDto.setUserconnected(searchedUser);
-			thisUserLoginDto.getUserconnected().setHeyUserMessage(settingsDTO.getHeyUserMessage());
-			thisUserLoginDto.getUserconnected().setHeyUserPic(settingsDTO.getHeyUserPic());
+			thisUserLoginDto.getUserconnected().setHeyUserMessage(settingsDTO.getHeyUserProfil().getHeyUserMessage());
+			thisUserLoginDto.getUserconnected().setHeyUserPic(settingsDTO.getHeyUserProfil().getHeyUserPic());
 			
 			thisUserLoginDto.setConnected(true);
 			thisUserLoginDto.setMessageSent("Your modifications has been successfully registered !");
