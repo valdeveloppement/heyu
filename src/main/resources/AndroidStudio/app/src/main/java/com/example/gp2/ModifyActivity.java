@@ -10,9 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -21,10 +19,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.squareup.picasso.Picasso;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,19 +28,22 @@ public class ModifyActivity extends AppCompatActivity {
 
 
     private static final int SEARCH_ACTIVITY_REQUEST_CODE = 42;
-//-------------MEMBERS------------------
+    private static final int MAIN_ACTIVITY_REQUEST_CODE=42;
+
+    //Members
     private Button mButton;
     private EditText mPicInput;
     private EditText mMsgInput;
     private Button mReturnButton;
     private ImageView mImageUrl;
+    private Button mLogOutButton;
 
-    // RESPONSE REQUEST
+    //Response Request
     private RequestQueue queue;
     private Boolean Connected;
     private String message;
 
-// ----------- Intent ------------------
+    //Intent
     private String heyUserName;
     private String heyUserPassword;
 
@@ -63,13 +62,13 @@ public class ModifyActivity extends AppCompatActivity {
         mButton = (Button) findViewById(R.id.modifyButton);
         mReturnButton = (Button) findViewById(R.id.returnButton);
         mImageUrl = (ImageView) findViewById(R.id.imageUrl);
-
+        mLogOutButton = (Button) findViewById(R.id.logoutButton);
         queue = Volley.newRequestQueue(this);
 
         String url = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png";
         Picasso.get().load(url).into(mImageUrl);
 
-    //GET INTENT ----------- PASSATION DES VALEURS DU HEYUSER
+//GET INTENT ----------- PASSATION DES VALEURS DU HEYUSER
         Intent intent = getIntent();
 
         if (intent.hasExtra("Name")){
@@ -85,54 +84,59 @@ public class ModifyActivity extends AppCompatActivity {
 //MODIF DES INPUTS
         mPicInput.addTextChangedListener(new TextWatcher() {
 
-                                             @Override
-                                             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
-                                             }
+            }
 
-                                             @Override
-                                             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                                                 mButton.setEnabled(s.toString().length() != 0);
-                                             }
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                mButton.setEnabled(s.toString().length() != 0);
+            }
 
-                                             @Override
-                                             public void afterTextChanged(Editable s) {
+            @Override
+            public void afterTextChanged(Editable s) {
 
-                                             }
+            }
 
         });
 
-         mMsgInput.addTextChangedListener(new TextWatcher() {
-                                                         @Override
-                                                         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        mMsgInput.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
-                                                         }
+            }
 
-                                                         @Override
-                                                         public void onTextChanged(CharSequence s, int start, int before, int count) {
-                                                             mButton.setEnabled(s.toString().length() != 0);
-                                                         }
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                mButton.setEnabled(s.toString().length() != 0);
+            }
 
-                                                         @Override
-                                                         public void afterTextChanged(Editable s) {
+            @Override
+            public void afterTextChanged(Editable s) {
 
-                                                         }
-         });
+            }
+        });
 
-    //ENVOI DES MODIFICATIONS
+        //ENVOI DES MODIFICATIONS
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
                     String URL = "http://192.168.8.105:8080/ModifyHeyUserSettings";
-                    JSONObject jsonBody = new JSONObject();
+                    JSONObject jsonObject1 = new JSONObject();
+                    JSONObject auth = jsonObject1.getJSONObject("heyUserAuthentication");
+                    JSONObject profil = jsonObject1.getJSONObject("heyUserProfil");
 
-                    jsonBody.put("heyUserName", heyUserName);
-                    jsonBody.put("heyUserPassword", heyUserPassword);
-                    jsonBody.put("heyUserPic", mPicInput.getText().toString());
-                    jsonBody.put("heyUserMessage", mMsgInput.getText().toString());
+                    auth.put("heyUserName", heyUserName);
+                    auth.put("heyUserPassword", heyUserPassword);
+                    profil.put("heyUserPic", mPicInput.getText().toString());
+                    profil.put("heyUserMessage", mMsgInput.getText().toString());
 
-                    JsonObjectRequest jsonObject = new JsonObjectRequest(Request.Method.POST, URL, jsonBody, new Response.Listener<JSONObject>() {
+                    jsonObject1.put("heyUserAuthentication", auth);
+                    jsonObject1.put("heyUserProfil", profil);
+
+                    JsonObjectRequest jsonObject = new JsonObjectRequest(Request.Method.POST, URL, jsonObject1, new Response.Listener<JSONObject>() {
                         @Override
                         public void onResponse(JSONObject response) {
                             Log.d("response", response.toString());
@@ -191,7 +195,7 @@ public class ModifyActivity extends AppCompatActivity {
 
 
 
-    //RETOUR AU SEARCH
+        //RETOUR AU SEARCH
         mReturnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -201,6 +205,17 @@ public class ModifyActivity extends AppCompatActivity {
                 registeryActivityIntent.putExtra("Password", heyUserName);
                 startActivityForResult(registeryActivityIntent, SEARCH_ACTIVITY_REQUEST_CODE);
 
+
+            }
+        });
+
+        //LOG OUT
+        mLogOutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent mainActivityIntent = new Intent(ModifyActivity.this, SearchActivity.class);
+                startActivityForResult(mainActivityIntent, MAIN_ACTIVITY_REQUEST_CODE);
 
             }
         });
