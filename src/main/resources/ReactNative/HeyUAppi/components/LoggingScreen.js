@@ -56,8 +56,8 @@ console.log("fetch de Logging")
         },
         body: JSON.stringify({
             heyUserAuthentication:{
-            heyUserName: this.state.heyUserName,
-            heyUserPassword: this.state.heyUserPassword,
+            heyUserName: this.state.heyUserAuthentication.heyUserName,
+            heyUserPassword: this.state.heyUserAuthentication.heyUserPassword,
             }
         }),
          }).then((response) => response.json())
@@ -86,14 +86,16 @@ return (
     <TextInput
       style={{height: 40}}
       placeholder="UserName"
-      onChangeText={(text) => this.setState({heyUserName:text})}
+     //onChangeText={(text) => this.setState({heyUserAuthentication:{heyUserName:text}})}
+     onChangeText={(text) => this.setState({heyUserAuthentication:{ ...this.state.heyUserAuthentication, heyUserName:text}})}
+
       value={this.state.text}
     />
 
     <TextInput
       style={{height: 40}}
       placeholder="Password"
-      onChangeText={(text) => this.setState({heyUserPassword:text})}
+      onChangeText={(text) => this.setState({heyUserAuthentication:{ ...this.state.heyUserAuthentication, heyUserPassword:text}})}
       value={this.state.text}
     />
 
@@ -109,6 +111,8 @@ return (
 
     <Text>Longitude = {this.props.heyUserLocation.heyUserLongitude}</Text>
     <Text>Latitude = {this.props.heyUserLocation.heyUserLatitude}</Text>
+    <Text>{this.state.heyUserAuthentication.heyUserName}</Text>
+    <Text>{this.state.heyUserAuthentication.heyUserPassword}</Text>
 
     </View>
 );
@@ -117,20 +121,28 @@ return (
 
 
 
-
-
-
 }
+
+
 
 
 const mapStateToProps = (state) => {
-  // console.log("mapstatetoprops: "+state.heyUserLocation.heyUserLongitude)
-return state
-  // return {
-  //   heyUserLocation: state.heyUserLocation
+
+  return {
+
+    heyUserLocation:state.loc.heyUserLocation
+  }
 
 
-  // }
 }
 
-export default connect(mapStateToProps)(LoggingScreen)
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    dispatch: (action) => { dispatch(action) }
+  }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(LoggingScreen)
+
