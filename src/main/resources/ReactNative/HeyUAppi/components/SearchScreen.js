@@ -21,7 +21,7 @@ export default class SearchScreen extends React.Component {
 
     
 
-    // fetch('http://192.168.1.62:8080/updateLocation', {
+    // fetch('http://192.168.8.105:8080/updateLocation', {
     //   method: 'POST',
     //   headers: {
     //   Accept: 'application/json',

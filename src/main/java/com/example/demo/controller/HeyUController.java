@@ -54,7 +54,10 @@ public class HeyUController {
 
 
 	@PostMapping("/login")
-	public LoginDTOSent login(@RequestBody AuthenticationDTOExpected loginDTO) {
+	public LoginDTOSent login(@RequestBody AuthenticationDTOExpected loginDTO) throws JsonProcessingException {
+		ObjectMapper mapper = new ObjectMapper();
+		// convert user object to json string and return it 
+		System.out.println(mapper.writeValueAsString(loginDTO));
 		HeyUser searchedUser = hUServ.searchUserInArrayList(loginDTO.getHeyUserAuthentication().getHeyUserName(),loginDTO.getHeyUserAuthentication().getHeyUserPassword(), hUServ.getListUsers());
 		LoginDTOSent thisUserLoginDto = new LoginDTOSent();
 
@@ -75,8 +78,12 @@ public class HeyUController {
 	}
 
 	@PostMapping("/registering")
-	public LoginDTOSent register(@RequestBody AuthenticationDTOExpected registeringDTO) {
+	public LoginDTOSent register(@RequestBody AuthenticationDTOExpected registeringDTO) throws JsonProcessingException {
 		System.out.println("work");
+		ObjectMapper mapper = new ObjectMapper();
+		// convert user object to json string and return it 
+		System.out.println(mapper.writeValueAsString(registeringDTO));
+		
 		HeyUser searchedUser = hUServ.searchUserInArrayListByName(registeringDTO.getHeyUserAuthentication().getHeyUserName(), hUServ.getListUsers());
 		LoginDTOSent thisUserLoginDto = new LoginDTOSent();
 		if(searchedUser != null) {
