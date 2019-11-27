@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import {Dimensions, Slider, View, Text,  StyleSheet, Button} from 'react-native';
 import { connect } from 'react-redux'
@@ -14,76 +13,62 @@ class SearchScreen extends React.Component {
   state = {
 
     sliderValue : 10,
-    heyUserNearU: [],
-    // //if heyUser is connected
-    // heyUserIsConnected:true,
+    // heyUserNearU: [],
 
-    // //identification
-    // heyUserAuthentication:{
-    //   heyUserName: 'nobody',
-    //   heyUserPassword: '0000',
-    //   heyUserConfirmPassword: '0000',
-    // },
-
-    //list of heyUsers near
- 
-
-    // //Profil
-    // heyUserProfil:{
-    //   heyUserMessage: "Hi, I'm new on HeyU!",
-    //   heyUserPic:"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
-    // },
-
-    // // count of update geolocation
-    // positionCountChange: 0
   }
 
+  dispatchRadius(){
+    console.log("Le dispatch se fait");
+    const action = { type: "UPDATE_RADIUS", value: this.state.sliderValue }
+    console.log(action.value);
+    this.props.dispatch(action)
 
+  }
 
-  updateHeyUserNearUList = () => {
-    console.log("updateHeyUserNearUList s'execute")
+  // updateHeyUserNearUList = () => {
+  //   console.log("updateHeyUserNearUList s'execute")
 
-    if(this.props.heyUserIsConnected == true){
-        fetch('http://192.168.8.105:8080/updateLocation', {
-        method: 'POST',
-        headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-        heyUserAuthentication: this.props.heyUserAuthentication,
-        heyUserLocation: {
-          heyUserLongitude: this.props.heyUserLocation.heyUserLongitude,
-          heyUserLatitude: this.props.heyUserLocation.heyUserLatitude,
-          heyUserAccuracy:this.props.heyUserLocation.heyUserAccuracy,
-          heyUserSearchRadius:this.state.sliderValue,
-          },
+  //   if(this.props.heyUserIsConnected == true){
+  //       fetch('http://192.168.8.105:8080/updateLocation', {
+  //       method: 'POST',
+  //       headers: {
+  //       Accept: 'application/json',
+  //       'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({
+  //       heyUserAuthentication: this.props.heyUserAuthentication,
+  //       heyUserLocation: {
+  //         heyUserLongitude: this.props.heyUserLocation.heyUserLongitude,
+  //         heyUserLatitude: this.props.heyUserLocation.heyUserLatitude,
+  //         heyUserAccuracy:this.props.heyUserLocation.heyUserAccuracy,
+  //         heyUserSearchRadius:this.state.sliderValue,
+  //         },
        
-        }),
-         }).then((response) => response.json())
-        .then((responseJson) => {
-            // this.setState({ heyUserNearU:responseJson.heyUserNearU });
-            // console.log(this.state.heyUserNearU);
-            console.log("longueur du tableau = "+ this.state.heyUserNearU.length);
-            return responseJson.heyUserNearU;
-        })
-        .catch((error) => {
-            console.error(error);
-        });
+  //       }),
+  //        }).then((response) => response.json())
+  //       .then((responseJson) => {
+  //           // this.setState({ heyUserNearU:responseJson.heyUserNearU });
+  //           // console.log(this.state.heyUserNearU);
+  //           console.log("longueur du tableau = "+ this.state.heyUserNearU.length);
+  //           return responseJson.heyUserNearU;
+  //       })
+  //       .catch((error) => {
+  //           console.error(error);
+  //       });
 
-    }
+  //   }
 
 
-  }
+  // }
 
-  componentDidUpdate =() =>{
-  this.updateHeyUserNearUList();
+  // componentDidUpdate =() =>{
+  // this.updateHeyUserNearUList();
 
-  }
+  // }
 
 
   handleOnSliderChangeFetch = (sliderValue) => {
-  this.updateHeyUserNearUList();
+  this.dispatchRadius()
 
   }
 
@@ -176,13 +161,24 @@ const styles = StyleSheet.create({
 });
 
 
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    dispatch: (action) => { dispatch(action) }
+  }
+}
+
 const mapStateToProps = (state) => {
 
 
   return {
-    heyUserAuthentication:state.auth.heyUserAuthentication,
-    heyUserIsConnected:state.auth.heyUserIsConnected,
-    heyUserLocation:state.loc.heyUserLocation
+     heyUserAuthentication:state.auth.heyUserAuthentication,
+     heyUserIsConnected:state.auth.heyUserIsConnected,
+     heyUserLocation:state.loc.heyUserLocation,
+     heyUserNearU:state.loc.heyUserNearU
+
+
+
   }
 
 
@@ -191,4 +187,4 @@ const mapStateToProps = (state) => {
 
 
 
-export default connect(mapStateToProps)(SearchScreen)
+export default connect(mapStateToProps, mapDispatchToProps)(SearchScreen)

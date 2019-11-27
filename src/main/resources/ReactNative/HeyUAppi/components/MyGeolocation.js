@@ -30,10 +30,10 @@ class MyGeolocation extends React.Component {
 
     //my geolocation
     heyUserLocation:{
-      heyUserLongitude: "3",
-      heyUserLatitude: "3",
+      heyUserLongitude: "0",
+      heyUserLatitude: "0",
       heyUserAccuracy:"0",
-      heyUserSearchRadius:5000,
+      // heyUserSearchRadius:5000,
     },
 
     // count of update geolocation
@@ -75,7 +75,7 @@ class MyGeolocation extends React.Component {
     } 
     
 
-    const goToLogging = () => this.props.navigation.navigate('Logging');
+    const goToLogging = () => this.props.navigation.navigate('UpdateHeyUserNearUList');
     goToLogging();
 
   }
@@ -158,15 +158,7 @@ class MyGeolocation extends React.Component {
 
 
 
-const mapStateToProps = (state) => {
 
-  // return state
-
-   return {
-     heyUserAuthentication:state.auth.heyUserAuthentication,
-     heyUserIsConnected:state.auth.heyUserIsConnected
-   }
-}
 
 
 const mapDispatchToProps = (dispatch) => {
@@ -175,4 +167,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MyGeolocation)
+export default connect(mapDispatchToProps)(MyGeolocation)
