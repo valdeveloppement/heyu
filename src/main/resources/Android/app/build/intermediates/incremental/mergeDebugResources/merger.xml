@@ -95,7 +95,99 @@
         <attr name="android:offset"/>
         
         <attr name="android:color"/>
-    </declare-styleable></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-cs/values-cs.xml" qualifiers="cs"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-az/values-az.xml" qualifiers="az"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-hy/values-hy.xml" qualifiers="hy"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-lt/values-lt.xml" qualifiers="lt"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-hi/values-hi.xml" qualifiers="hi"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-en-rAU/values-en-rAU.xml" qualifiers="en-rAU"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-ar/values-ar.xml" qualifiers="ar"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-te/values-te.xml" qualifiers="te"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-es-rUS/values-es-rUS.xml" qualifiers="es-rUS"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file name="notification_tile_bg" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/drawable/notification_tile_bg.xml" qualifiers="" type="drawable"/><file name="notification_bg" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/drawable/notification_bg.xml" qualifiers="" type="drawable"/><file name="notification_bg_low" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/drawable/notification_bg_low.xml" qualifiers="" type="drawable"/><file name="notification_icon_background" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/drawable/notification_icon_background.xml" qualifiers="" type="drawable"/><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-ml/values-ml.xml" qualifiers="ml"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-ky/values-ky.xml" qualifiers="ky"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-si/values-si.xml" qualifiers="si"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-zh-rHK/values-zh-rHK.xml" qualifiers="zh-rHK"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-mk/values-mk.xml" qualifiers="mk"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-ro/values-ro.xml" qualifiers="ro"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-bs/values-bs.xml" qualifiers="bs"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-pt-rBR/values-pt-rBR.xml" qualifiers="pt-rBR"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-sl/values-sl.xml" qualifiers="sl"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-af/values-af.xml" qualifiers="af"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-th/values-th.xml" qualifiers="th"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-de/values-de.xml" qualifiers="de"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-gl/values-gl.xml" qualifiers="gl"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">">999"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-lv/values-lv.xml" qualifiers="lv"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-da/values-da.xml" qualifiers="da"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-lo/values-lo.xml" qualifiers="lo"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-my/values-my.xml" qualifiers="my"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"၉၉၉+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-kn/values-kn.xml" qualifiers="kn"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.appcompat:appcompat-resources:1.1.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/c63ceca946e9bc27525371878741042e/appcompat-resources-1.1.0/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.appcompat:appcompat-resources:1.1.0" from-dependency="true" generated-set="androidx.appcompat:appcompat-resources:1.1.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/c63ceca946e9bc27525371878741042e/appcompat-resources-1.1.0/res"><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/c63ceca946e9bc27525371878741042e/appcompat-resources-1.1.0/res/values/values.xml" qualifiers=""><declare-styleable name="AnimatedStateListDrawableCompat">
+    </declare-styleable></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-cs/values-cs.xml" qualifiers="cs"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-az/values-az.xml" qualifiers="az"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-hy/values-hy.xml" qualifiers="hy"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-lt/values-lt.xml" qualifiers="lt"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-hi/values-hi.xml" qualifiers="hi"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-en-rAU/values-en-rAU.xml" qualifiers="en-rAU"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-ar/values-ar.xml" qualifiers="ar"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-te/values-te.xml" qualifiers="te"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-es-rUS/values-es-rUS.xml" qualifiers="es-rUS"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file name="notification_tile_bg" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/drawable/notification_tile_bg.xml" qualifiers="" type="drawable"/><file name="notification_bg" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/drawable/notification_bg.xml" qualifiers="" type="drawable"/><file name="notification_bg_low" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/drawable/notification_bg_low.xml" qualifiers="" type="drawable"/><file name="notification_icon_background" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/drawable/notification_icon_background.xml" qualifiers="" type="drawable"/><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-ml/values-ml.xml" qualifiers="ml"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-ky/values-ky.xml" qualifiers="ky"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-si/values-si.xml" qualifiers="si"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-zh-rHK/values-zh-rHK.xml" qualifiers="zh-rHK"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-mk/values-mk.xml" qualifiers="mk"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-ro/values-ro.xml" qualifiers="ro"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-bs/values-bs.xml" qualifiers="bs"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-pt-rBR/values-pt-rBR.xml" qualifiers="pt-rBR"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-sl/values-sl.xml" qualifiers="sl"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-af/values-af.xml" qualifiers="af"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-th/values-th.xml" qualifiers="th"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-de/values-de.xml" qualifiers="de"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-gl/values-gl.xml" qualifiers="gl"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">">999"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-lv/values-lv.xml" qualifiers="lv"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-da/values-da.xml" qualifiers="da"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-lo/values-lo.xml" qualifiers="lo"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-my/values-my.xml" qualifiers="my"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"၉၉၉+"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-kn/values-kn.xml" qualifiers="kn"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.coordinatorlayout:coordinatorlayout:1.0.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/3b95216347b91b0d0d6d33ef33ac3197/coordinatorlayout-1.0.0/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.coordinatorlayout:coordinatorlayout:1.0.0" from-dependency="true" generated-set="androidx.coordinatorlayout:coordinatorlayout:1.0.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/3b95216347b91b0d0d6d33ef33ac3197/coordinatorlayout-1.0.0/res"><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/3b95216347b91b0d0d6d33ef33ac3197/coordinatorlayout-1.0.0/res/values/values.xml" qualifiers=""><attr format="reference" name="coordinatorLayoutStyle"/><declare-styleable name="CoordinatorLayout">
+        
+        <attr format="reference" name="keylines"/>
+        
+        <attr format="color|reference" name="statusBarBackground"/>
+    </declare-styleable><declare-styleable name="CoordinatorLayout_Layout">
+        <attr name="android:layout_gravity"/>
+        
+        <attr format="string" name="layout_behavior"/>
+        
+        <attr format="reference" name="layout_anchor"/>
+        
+        <attr format="integer" name="layout_keyline"/>
+
+        
+        <attr name="layout_anchorGravity">
+            
+            <flag name="top" value="0x30"/>
+            
+            <flag name="bottom" value="0x50"/>
+            
+            <flag name="left" value="0x03"/>
+            
+            <flag name="right" value="0x05"/>
+            
+            <flag name="center_vertical" value="0x10"/>
+            
+            <flag name="fill_vertical" value="0x70"/>
+            
+            <flag name="center_horizontal" value="0x01"/>
+            
+            <flag name="fill_horizontal" value="0x07"/>
+            
+            <flag name="center" value="0x11"/>
+            
+            <flag name="fill" value="0x77"/>
+            
+            <flag name="clip_vertical" value="0x80"/>
+            
+            <flag name="clip_horizontal" value="0x08"/>
+            
+            <flag name="start" value="0x00800003"/>
+            
+            <flag name="end" value="0x00800005"/>
+        </attr>
+
+        
+        <attr format="enum" name="layout_insetEdge">
+            
+            <enum name="none" value="0x0"/>
+            
+            <enum name="top" value="0x30"/>
+            
+            <enum name="bottom" value="0x50"/>
+            
+            <enum name="left" value="0x03"/>
+            
+            <enum name="right" value="0x05"/>
+            
+            <enum name="start" value="0x00800003"/>
+            
+            <enum name="end" value="0x00800005"/>
+        </attr>
+        
+        <attr name="layout_dodgeInsetEdges">
+            
+            <flag name="none" value="0x0"/>
+            
+            <flag name="top" value="0x30"/>
+            
+            <flag name="bottom" value="0x50"/>
+            
+            <flag name="left" value="0x03"/>
+            
+            <flag name="right" value="0x05"/>
+            
+            <flag name="start" value="0x00800003"/>
+            
+            <flag name="end" value="0x00800005"/>
+            
+            <flag name="all" value="0x77"/>
+        </attr>
+    </declare-styleable><style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
+        <item name="statusBarBackground">#000000</item>
+    </style></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.media:media:1.0.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/b64f80842d3d302e8b4275c4ce2e897c/media-1.0.0/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.media:media:1.0.0" from-dependency="true" generated-set="androidx.media:media:1.0.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/b64f80842d3d302e8b4275c4ce2e897c/media-1.0.0/res"><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/b64f80842d3d302e8b4275c4ce2e897c/media-1.0.0/res/values-v24/values-v24.xml" qualifiers="v24"><style name="TextAppearance.Compat.Notification.Info.Media"/><style name="TextAppearance.Compat.Notification.Media"/><style name="TextAppearance.Compat.Notification.Time.Media"/><style name="TextAppearance.Compat.Notification.Title.Media"/></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/b64f80842d3d302e8b4275c4ce2e897c/media-1.0.0/res/values-v21/values-v21.xml" qualifiers="v21"><style name="TextAppearance.Compat.Notification.Info.Media">
+        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
+    </style><style name="TextAppearance.Compat.Notification.Media">
+        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
+    </style><style name="TextAppearance.Compat.Notification.Time.Media">
+        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
+    </style><style name="TextAppearance.Compat.Notification.Title.Media">
+        <item name="android:textColor">@color/primary_text_default_material_dark</item>
+    </style></file><file name="notification_media_action" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/b64f80842d3d302e8b4275c4ce2e897c/media-1.0.0/res/layout/notification_media_action.xml" qualifiers="" type="layout"/><file name="notification_template_big_media_narrow_custom" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/b64f80842d3d302e8b4275c4ce2e897c/media-1.0.0/res/layout/notification_template_big_media_narrow_custom.xml" qualifiers="" type="layout"/><file name="notification_template_big_media_narrow" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/b64f80842d3d302e8b4275c4ce2e897c/media-1.0.0/res/layout/notification_template_big_media_narrow.xml" qualifiers="" type="layout"/><file name="notification_media_cancel_action" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/b64f80842d3d302e8b4275c4ce2e897c/media-1.0.0/res/layout/notification_media_cancel_action.xml" qualifiers="" type="layout"/><file name="notification_template_media_custom" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/b64f80842d3d302e8b4275c4ce2e897c/media-1.0.0/res/layout/notification_template_media_custom.xml" qualifiers="" type="layout"/><file name="notification_template_big_media" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/b64f80842d3d302e8b4275c4ce2e897c/media-1.0.0/res/layout/notification_template_big_media.xml" qualifiers="" type="layout"/><file name="notification_template_lines_media" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/b64f80842d3d302e8b4275c4ce2e897c/media-1.0.0/res/layout/notification_template_lines_media.xml" qualifiers="" type="layout"/><file name="notification_template_media" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/b64f80842d3d302e8b4275c4ce2e897c/media-1.0.0/res/layout/notification_template_media.xml" qualifiers="" type="layout"/><file name="notification_template_big_media_custom" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/b64f80842d3d302e8b4275c4ce2e897c/media-1.0.0/res/layout/notification_template_big_media_custom.xml" qualifiers="" type="layout"/><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/b64f80842d3d302e8b4275c4ce2e897c/media-1.0.0/res/values/values.xml" qualifiers=""><color name="notification_material_background_media_default_color">#ff424242</color><color name="primary_text_default_material_dark">#ffffffff</color><color name="secondary_text_default_material_dark">#b3ffffff</color><dimen name="subtitle_corner_radius">2dp</dimen><dimen name="subtitle_outline_width">2dp</dimen><dimen name="subtitle_shadow_offset">2dp</dimen><dimen name="subtitle_shadow_radius">2dp</dimen><integer name="cancel_button_image_alpha">127</integer><style name="TextAppearance.Compat.Notification.Info.Media"/><style name="TextAppearance.Compat.Notification.Line2.Media" parent="TextAppearance.Compat.Notification.Info.Media"/><style name="TextAppearance.Compat.Notification.Media"/><style name="TextAppearance.Compat.Notification.Time.Media"/><style name="TextAppearance.Compat.Notification.Title.Media"/></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.appcompat:appcompat-resources:1.1.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/c63ceca946e9bc27525371878741042e/appcompat-resources-1.1.0/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.appcompat:appcompat-resources:1.1.0" from-dependency="true" generated-set="androidx.appcompat:appcompat-resources:1.1.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/c63ceca946e9bc27525371878741042e/appcompat-resources-1.1.0/res"><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/c63ceca946e9bc27525371878741042e/appcompat-resources-1.1.0/res/values/values.xml" qualifiers=""><declare-styleable name="AnimatedStateListDrawableCompat">
         
         <attr name="android:visible"/>
         
@@ -2680,12 +2772,16 @@
     </style><style name="Base.Widget.AppCompat.RatingBar.Indicator" parent="android:Widget.Material.RatingBar.Indicator"/><style name="Base.Widget.AppCompat.RatingBar.Small" parent="android:Widget.Material.RatingBar.Small"/><style name="Base.Widget.AppCompat.Spinner.Underlined" parent="android:Widget.Material.Spinner.Underlined"/><style name="Base.Widget.AppCompat.TextView" parent="android:Widget.Material.TextView">
         <item name="android:hyphenationFrequency">none</item>
         <item name="android:breakStrategy">high_quality</item>
-    </style></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-gl/values-gl.xml" qualifiers="gl"><string msgid="7903180715631665059" name="abc_action_bar_home_description">"Vai ao inicio"</string><string msgid="6794660482873516081" name="abc_action_bar_up_description">"Vai cara arriba"</string><string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Máis opcións"</string><string msgid="2571498368472823490" name="abc_action_mode_done">"Feito"</string><string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Ver todo"</string><string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Selecciona unha aplicación"</string><string msgid="3403923230105792483" name="abc_capital_off">"DESACTIVAR"</string><string msgid="7831734969929204599" name="abc_capital_on">"ACTIVAR"</string><string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt +"</string><string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string><string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"eliminar"</string><string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"intro"</string><string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Función +"</string><string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta +"</string><string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Maiús +"</string><string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"espazo"</string><string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym +"</string><string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menú +"</string><string msgid="940844115270746197" name="abc_search_hint">"Busca…"</string><string msgid="1769270744562318534" name="abc_searchview_description_clear">"Borra a consulta"</string><string msgid="908784302972860853" name="abc_searchview_description_query">"Busca a consulta"</string><string msgid="5466662225065974044" name="abc_searchview_description_search">"Realiza buscas"</string><string msgid="8203855622131699655" name="abc_searchview_description_submit">"Envía a consulta"</string><string msgid="3478748990613108725" name="abc_searchview_description_voice">"Busca por voz"</string><string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Comparte contido con"</string><string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Comparte contido coa aplicación <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string><string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Contrae"</string><string msgid="730395136688082741" name="search_menu_title">"Buscar"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-lv/values-lv.xml" qualifiers="lv"><string msgid="7903180715631665059" name="abc_action_bar_home_description">"Pārvietoties uz sākuma ekrānu"</string><string msgid="6794660482873516081" name="abc_action_bar_up_description">"Pārvietoties uz augšu"</string><string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Citas opcijas"</string><string msgid="2571498368472823490" name="abc_action_mode_done">"Gatavs"</string><string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Skatīt visu"</string><string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Izvēlieties lietotni"</string><string msgid="3403923230105792483" name="abc_capital_off">"IZSLĒGT"</string><string msgid="7831734969929204599" name="abc_capital_on">"IESLĒGT"</string><string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alternēšanas taustiņš +"</string><string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Vadīšanas taustiņš +"</string><string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"dzēšanas taustiņš"</string><string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"ievadīšanas taustiņš"</string><string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Funkcijas taustiņš +"</string><string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta taustiņš +"</string><string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Pārslēgšanas taustiņš +"</string><string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"atstarpes taustiņš"</string><string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Simbolu taustiņš +"</string><string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Poga Izvēlne +"</string><string msgid="940844115270746197" name="abc_search_hint">"Meklējiet…"</string><string msgid="1769270744562318534" name="abc_searchview_description_clear">"Notīrīt vaicājumu"</string><string msgid="908784302972860853" name="abc_searchview_description_query">"Meklēšanas vaicājums"</string><string msgid="5466662225065974044" name="abc_searchview_description_search">"Meklēt"</string><string msgid="8203855622131699655" name="abc_searchview_description_submit">"Iesniegt vaicājumu"</string><string msgid="3478748990613108725" name="abc_searchview_description_voice">"Meklēt ar balsi"</string><string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Kopīgot ar:"</string><string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Kopīgot ar lietojumprogrammu <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string><string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Sakļaut"</string><string msgid="730395136688082741" name="search_menu_title">"Meklēt"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-da/values-da.xml" qualifiers="da"><string msgid="7903180715631665059" name="abc_action_bar_home_description">"Find hjem"</string><string msgid="6794660482873516081" name="abc_action_bar_up_description">"Gå op"</string><string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Flere valgmuligheder"</string><string msgid="2571498368472823490" name="abc_action_mode_done">"Udfør"</string><string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Se alle"</string><string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Vælg en app"</string><string msgid="3403923230105792483" name="abc_capital_off">"FRA"</string><string msgid="7831734969929204599" name="abc_capital_on">"TIL"</string><string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string><string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string><string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"slet"</string><string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string><string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Fn+"</string><string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string><string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string><string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"mellemrum"</string><string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string><string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string><string msgid="940844115270746197" name="abc_search_hint">"Søg…"</string><string msgid="1769270744562318534" name="abc_searchview_description_clear">"Ryd forespørgsel"</string><string msgid="908784302972860853" name="abc_searchview_description_query">"Søgeforespørgsel"</string><string msgid="5466662225065974044" name="abc_searchview_description_search">"Søg"</string><string msgid="8203855622131699655" name="abc_searchview_description_submit">"Indsend forespørgsel"</string><string msgid="3478748990613108725" name="abc_searchview_description_voice">"Talesøgning"</string><string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Del med"</string><string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Del med <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string><string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Skjul"</string><string msgid="730395136688082741" name="search_menu_title">"Søg"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-lo/values-lo.xml" qualifiers="lo"><string msgid="7903180715631665059" name="abc_action_bar_home_description">"ກັບໄປໜ້າຫຼັກ"</string><string msgid="6794660482873516081" name="abc_action_bar_up_description">"ເລື່ອນຂຶ້ນເທິງ"</string><string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"ຕົວເລືອກເພີ່ມເຕີມ"</string><string msgid="2571498368472823490" name="abc_action_mode_done">"ແລ້ວໆ"</string><string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"ເບິ່ງທັງໝົດ"</string><string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"ເລືອກແອັບ"</string><string msgid="3403923230105792483" name="abc_capital_off">"ປິດ"</string><string msgid="7831734969929204599" name="abc_capital_on">"ເປີດ"</string><string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string><string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string><string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"ລຶບ"</string><string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string><string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string><string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string><string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string><string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"ຍະຫວ່າງ"</string><string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string><string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string><string msgid="940844115270746197" name="abc_search_hint">"ຊອກຫາ…"</string><string msgid="1769270744562318534" name="abc_searchview_description_clear">"ລຶບຂໍ້ຄວາມຊອກຫາ"</string><string msgid="908784302972860853" name="abc_searchview_description_query">"ຄຳສຳລັບຄົ້ນຫາ"</string><string msgid="5466662225065974044" name="abc_searchview_description_search">"ຊອກຫາ"</string><string msgid="8203855622131699655" name="abc_searchview_description_submit">"ສົ່ງຂໍ້ມູນ"</string><string msgid="3478748990613108725" name="abc_searchview_description_voice">"ຊອກຫາດ້ວຍສຽງ"</string><string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"ແບ່ງປັນກັບ"</string><string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"ແບ່ງປັນດ້ວຍ <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string><string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"ຫຍໍ້ລົງ"</string><string msgid="730395136688082741" name="search_menu_title">"ຊອກຫາ"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-my/values-my.xml" qualifiers="my"><string msgid="7903180715631665059" name="abc_action_bar_home_description">"မူလနေရာကို ပြန်သွားရန်"</string><string msgid="6794660482873516081" name="abc_action_bar_up_description">"အပေါ်သို့ ရွှေ့ရန်"</string><string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"နောက်ထပ် ရွေးစရာများ"</string><string msgid="2571498368472823490" name="abc_action_mode_done">"ပြီးပြီ"</string><string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"အားလုံး ကြည့်ရန်"</string><string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"အက်ပ်တစ်ခုကို ရွေးရန်"</string><string msgid="3403923230105792483" name="abc_capital_off">"ပိတ်ရန်"</string><string msgid="7831734969929204599" name="abc_capital_on">"ဖွင့်ရန်"</string><string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string><string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string><string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string><string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string><string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string><string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string><string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string><string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"space"</string><string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string><string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string><string msgid="940844115270746197" name="abc_search_hint">"ရှာဖွေရန်…"</string><string msgid="1769270744562318534" name="abc_searchview_description_clear">"ရှာဖွေမှုကို ဖယ်ရှားရန်"</string><string msgid="908784302972860853" name="abc_searchview_description_query">"ရှာဖွေရန် မေးခွန်း"</string><string msgid="5466662225065974044" name="abc_searchview_description_search">"ရှာရန်"</string><string msgid="8203855622131699655" name="abc_searchview_description_submit">"ရှာဖွေစရာ အချက်အလက်ကို ပေးပို့ရန်"</string><string msgid="3478748990613108725" name="abc_searchview_description_voice">"အသံဖြင့် ရှာရန်"</string><string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"နှင့် မျှဝေရန်"</string><string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ဖြင့် မျှဝေရန်"</string><string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"လျှော့ပြရန်"</string><string msgid="730395136688082741" name="search_menu_title">"ရှာဖွေမှု"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-kn/values-kn.xml" qualifiers="kn"><string msgid="7903180715631665059" name="abc_action_bar_home_description">"ಹೋಮ್‌ಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ"</string><string msgid="6794660482873516081" name="abc_action_bar_up_description">"ಮೇಲಕ್ಕೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ"</string><string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"ಇನ್ನಷ್ಟು ಆಯ್ಕೆಗಳು"</string><string msgid="2571498368472823490" name="abc_action_mode_done">"ಮುಗಿದಿದೆ"</string><string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"ಎಲ್ಲವನ್ನೂ ನೋಡಿ"</string><string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"ಆ್ಯಪ್‌ವೊಂದನ್ನು ಆಯ್ಕೆಮಾಡಿ"</string><string msgid="3403923230105792483" name="abc_capital_off">"ಆಫ್"</string><string msgid="7831734969929204599" name="abc_capital_on">"ಆನ್"</string><string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string><string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string><string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string><string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string><string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string><string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string><string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string><string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"space"</string><string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string><string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string><string msgid="940844115270746197" name="abc_search_hint">"ಹುಡುಕಿ…"</string><string msgid="1769270744562318534" name="abc_searchview_description_clear">"ಪ್ರಶ್ನೆಯನ್ನು ತೆರವುಗೊಳಿಸಿ"</string><string msgid="908784302972860853" name="abc_searchview_description_query">"ಪ್ರಶ್ನೆಯನ್ನು ಹುಡುಕಿ"</string><string msgid="5466662225065974044" name="abc_searchview_description_search">"ಹುಡುಕಿ"</string><string msgid="8203855622131699655" name="abc_searchview_description_submit">"ಪ್ರಶ್ನೆಯನ್ನು ಸಲ್ಲಿಸಿ"</string><string msgid="3478748990613108725" name="abc_searchview_description_voice">"ಧ್ವನಿ ಹುಡುಕಾಟ"</string><string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"ಇವರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ"</string><string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ನೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ"</string><string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"ಕುಗ್ಗಿಸಿ"</string><string msgid="730395136688082741" name="search_menu_title">"ಹುಡುಕಿ"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-ldltr-v21/values-ldltr-v21.xml" qualifiers="ldltr-v21"><style name="Base.Widget.AppCompat.Spinner.Underlined" parent="android:Widget.Material.Spinner.Underlined"/></file><file name="btn_checkbox_to_checked_icon_null_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_checkbox_to_checked_icon_null_animation.xml" qualifiers="" type="anim"/><file name="abc_shrink_fade_out_from_bottom" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_shrink_fade_out_from_bottom.xml" qualifiers="" type="anim"/><file name="abc_fade_out" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_fade_out.xml" qualifiers="" type="anim"/><file name="btn_checkbox_to_unchecked_box_inner_merged_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_checkbox_to_unchecked_box_inner_merged_animation.xml" qualifiers="" type="anim"/><file name="abc_grow_fade_in_from_bottom" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_grow_fade_in_from_bottom.xml" qualifiers="" type="anim"/><file name="abc_slide_out_top" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_slide_out_top.xml" qualifiers="" type="anim"/><file name="btn_checkbox_to_checked_box_inner_merged_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_checkbox_to_checked_box_inner_merged_animation.xml" qualifiers="" type="anim"/><file name="btn_radio_to_off_mtrl_ring_outer_path_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_radio_to_off_mtrl_ring_outer_path_animation.xml" qualifiers="" type="anim"/><file name="btn_checkbox_to_unchecked_icon_null_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_checkbox_to_unchecked_icon_null_animation.xml" qualifiers="" type="anim"/><file name="abc_tooltip_enter" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_tooltip_enter.xml" qualifiers="" type="anim"/><file name="abc_tooltip_exit" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_tooltip_exit.xml" qualifiers="" type="anim"/><file name="btn_radio_to_on_mtrl_ring_outer_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_radio_to_on_mtrl_ring_outer_animation.xml" qualifiers="" type="anim"/><file name="abc_slide_in_top" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_slide_in_top.xml" qualifiers="" type="anim"/><file name="abc_popup_exit" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_popup_exit.xml" qualifiers="" type="anim"/><file name="abc_fade_in" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_fade_in.xml" qualifiers="" type="anim"/><file name="btn_radio_to_on_mtrl_dot_group_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_radio_to_on_mtrl_dot_group_animation.xml" qualifiers="" type="anim"/><file name="btn_radio_to_on_mtrl_ring_outer_path_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_radio_to_on_mtrl_ring_outer_path_animation.xml" qualifiers="" type="anim"/><file name="abc_slide_in_bottom" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_slide_in_bottom.xml" qualifiers="" type="anim"/><file name="abc_slide_out_bottom" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_slide_out_bottom.xml" qualifiers="" type="anim"/><file name="btn_checkbox_to_unchecked_check_path_merged_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_checkbox_to_unchecked_check_path_merged_animation.xml" qualifiers="" type="anim"/><file name="btn_checkbox_to_checked_box_outer_merged_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_checkbox_to_checked_box_outer_merged_animation.xml" qualifiers="" type="anim"/><file name="btn_radio_to_off_mtrl_dot_group_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_radio_to_off_mtrl_dot_group_animation.xml" qualifiers="" type="anim"/><file name="abc_popup_enter" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_popup_enter.xml" qualifiers="" type="anim"/><file name="btn_radio_to_off_mtrl_ring_outer_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_radio_to_off_mtrl_ring_outer_animation.xml" qualifiers="" type="anim"/></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res"><file path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/drawable/ic_launcher_background.xml" preprocessing="true" qualifiers=""><generated-file path="/home/stagiaire/AndroidStudioProjects/GP2/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png" qualifiers="xxxhdpi-v4" type="drawable"/><generated-file path="/home/stagiaire/AndroidStudioProjects/GP2/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png" qualifiers="mdpi-v4" type="drawable"/><generated-file path="/home/stagiaire/AndroidStudioProjects/GP2/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png" qualifiers="ldpi-v4" type="drawable"/><generated-file path="/home/stagiaire/AndroidStudioProjects/GP2/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png" qualifiers="xxhdpi-v4" type="drawable"/><generated-file path="/home/stagiaire/AndroidStudioProjects/GP2/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png" qualifiers="hdpi-v4" type="drawable"/><generated-file path="/home/stagiaire/AndroidStudioProjects/GP2/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png" qualifiers="xhdpi-v4" type="drawable"/><generated-file path="/home/stagiaire/AndroidStudioProjects/GP2/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml" qualifiers="anydpi-v21" type="drawable"/></file></source><source path="/home/stagiaire/AndroidStudioProjects/GP2/app/build/generated/res/rs/debug"/><source path="/home/stagiaire/AndroidStudioProjects/GP2/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res"><file name="ic_launcher" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/mipmap-xhdpi/ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="activity_main" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="ic_launcher_round" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/values/colors.xml" qualifiers=""><color name="colorPrimary">#008577</color><color name="colorPrimaryDark">#00574B</color><color name="colorAccent">#D81B60</color></file><file path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">GP2</string></file><file path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/values/styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-gl/values-gl.xml" qualifiers="gl"><string msgid="7903180715631665059" name="abc_action_bar_home_description">"Vai ao inicio"</string><string msgid="6794660482873516081" name="abc_action_bar_up_description">"Vai cara arriba"</string><string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Máis opcións"</string><string msgid="2571498368472823490" name="abc_action_mode_done">"Feito"</string><string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Ver todo"</string><string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Selecciona unha aplicación"</string><string msgid="3403923230105792483" name="abc_capital_off">"DESACTIVAR"</string><string msgid="7831734969929204599" name="abc_capital_on">"ACTIVAR"</string><string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt +"</string><string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string><string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"eliminar"</string><string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"intro"</string><string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Función +"</string><string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta +"</string><string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Maiús +"</string><string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"espazo"</string><string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym +"</string><string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menú +"</string><string msgid="940844115270746197" name="abc_search_hint">"Busca…"</string><string msgid="1769270744562318534" name="abc_searchview_description_clear">"Borra a consulta"</string><string msgid="908784302972860853" name="abc_searchview_description_query">"Busca a consulta"</string><string msgid="5466662225065974044" name="abc_searchview_description_search">"Realiza buscas"</string><string msgid="8203855622131699655" name="abc_searchview_description_submit">"Envía a consulta"</string><string msgid="3478748990613108725" name="abc_searchview_description_voice">"Busca por voz"</string><string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Comparte contido con"</string><string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Comparte contido coa aplicación <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string><string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Contrae"</string><string msgid="730395136688082741" name="search_menu_title">"Buscar"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-lv/values-lv.xml" qualifiers="lv"><string msgid="7903180715631665059" name="abc_action_bar_home_description">"Pārvietoties uz sākuma ekrānu"</string><string msgid="6794660482873516081" name="abc_action_bar_up_description">"Pārvietoties uz augšu"</string><string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Citas opcijas"</string><string msgid="2571498368472823490" name="abc_action_mode_done">"Gatavs"</string><string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Skatīt visu"</string><string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Izvēlieties lietotni"</string><string msgid="3403923230105792483" name="abc_capital_off">"IZSLĒGT"</string><string msgid="7831734969929204599" name="abc_capital_on">"IESLĒGT"</string><string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alternēšanas taustiņš +"</string><string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Vadīšanas taustiņš +"</string><string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"dzēšanas taustiņš"</string><string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"ievadīšanas taustiņš"</string><string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Funkcijas taustiņš +"</string><string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta taustiņš +"</string><string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Pārslēgšanas taustiņš +"</string><string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"atstarpes taustiņš"</string><string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Simbolu taustiņš +"</string><string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Poga Izvēlne +"</string><string msgid="940844115270746197" name="abc_search_hint">"Meklējiet…"</string><string msgid="1769270744562318534" name="abc_searchview_description_clear">"Notīrīt vaicājumu"</string><string msgid="908784302972860853" name="abc_searchview_description_query">"Meklēšanas vaicājums"</string><string msgid="5466662225065974044" name="abc_searchview_description_search">"Meklēt"</string><string msgid="8203855622131699655" name="abc_searchview_description_submit">"Iesniegt vaicājumu"</string><string msgid="3478748990613108725" name="abc_searchview_description_voice">"Meklēt ar balsi"</string><string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Kopīgot ar:"</string><string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Kopīgot ar lietojumprogrammu <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string><string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Sakļaut"</string><string msgid="730395136688082741" name="search_menu_title">"Meklēt"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-da/values-da.xml" qualifiers="da"><string msgid="7903180715631665059" name="abc_action_bar_home_description">"Find hjem"</string><string msgid="6794660482873516081" name="abc_action_bar_up_description">"Gå op"</string><string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Flere valgmuligheder"</string><string msgid="2571498368472823490" name="abc_action_mode_done">"Udfør"</string><string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Se alle"</string><string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Vælg en app"</string><string msgid="3403923230105792483" name="abc_capital_off">"FRA"</string><string msgid="7831734969929204599" name="abc_capital_on">"TIL"</string><string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string><string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string><string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"slet"</string><string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string><string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Fn+"</string><string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string><string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string><string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"mellemrum"</string><string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string><string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string><string msgid="940844115270746197" name="abc_search_hint">"Søg…"</string><string msgid="1769270744562318534" name="abc_searchview_description_clear">"Ryd forespørgsel"</string><string msgid="908784302972860853" name="abc_searchview_description_query">"Søgeforespørgsel"</string><string msgid="5466662225065974044" name="abc_searchview_description_search">"Søg"</string><string msgid="8203855622131699655" name="abc_searchview_description_submit">"Indsend forespørgsel"</string><string msgid="3478748990613108725" name="abc_searchview_description_voice">"Talesøgning"</string><string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Del med"</string><string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Del med <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string><string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Skjul"</string><string msgid="730395136688082741" name="search_menu_title">"Søg"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-lo/values-lo.xml" qualifiers="lo"><string msgid="7903180715631665059" name="abc_action_bar_home_description">"ກັບໄປໜ້າຫຼັກ"</string><string msgid="6794660482873516081" name="abc_action_bar_up_description">"ເລື່ອນຂຶ້ນເທິງ"</string><string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"ຕົວເລືອກເພີ່ມເຕີມ"</string><string msgid="2571498368472823490" name="abc_action_mode_done">"ແລ້ວໆ"</string><string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"ເບິ່ງທັງໝົດ"</string><string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"ເລືອກແອັບ"</string><string msgid="3403923230105792483" name="abc_capital_off">"ປິດ"</string><string msgid="7831734969929204599" name="abc_capital_on">"ເປີດ"</string><string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string><string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string><string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"ລຶບ"</string><string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string><string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string><string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string><string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string><string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"ຍະຫວ່າງ"</string><string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string><string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string><string msgid="940844115270746197" name="abc_search_hint">"ຊອກຫາ…"</string><string msgid="1769270744562318534" name="abc_searchview_description_clear">"ລຶບຂໍ້ຄວາມຊອກຫາ"</string><string msgid="908784302972860853" name="abc_searchview_description_query">"ຄຳສຳລັບຄົ້ນຫາ"</string><string msgid="5466662225065974044" name="abc_searchview_description_search">"ຊອກຫາ"</string><string msgid="8203855622131699655" name="abc_searchview_description_submit">"ສົ່ງຂໍ້ມູນ"</string><string msgid="3478748990613108725" name="abc_searchview_description_voice">"ຊອກຫາດ້ວຍສຽງ"</string><string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"ແບ່ງປັນກັບ"</string><string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"ແບ່ງປັນດ້ວຍ <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string><string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"ຫຍໍ້ລົງ"</string><string msgid="730395136688082741" name="search_menu_title">"ຊອກຫາ"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-my/values-my.xml" qualifiers="my"><string msgid="7903180715631665059" name="abc_action_bar_home_description">"မူလနေရာကို ပြန်သွားရန်"</string><string msgid="6794660482873516081" name="abc_action_bar_up_description">"အပေါ်သို့ ရွှေ့ရန်"</string><string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"နောက်ထပ် ရွေးစရာများ"</string><string msgid="2571498368472823490" name="abc_action_mode_done">"ပြီးပြီ"</string><string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"အားလုံး ကြည့်ရန်"</string><string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"အက်ပ်တစ်ခုကို ရွေးရန်"</string><string msgid="3403923230105792483" name="abc_capital_off">"ပိတ်ရန်"</string><string msgid="7831734969929204599" name="abc_capital_on">"ဖွင့်ရန်"</string><string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string><string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string><string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string><string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string><string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string><string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string><string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string><string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"space"</string><string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string><string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string><string msgid="940844115270746197" name="abc_search_hint">"ရှာဖွေရန်…"</string><string msgid="1769270744562318534" name="abc_searchview_description_clear">"ရှာဖွေမှုကို ဖယ်ရှားရန်"</string><string msgid="908784302972860853" name="abc_searchview_description_query">"ရှာဖွေရန် မေးခွန်း"</string><string msgid="5466662225065974044" name="abc_searchview_description_search">"ရှာရန်"</string><string msgid="8203855622131699655" name="abc_searchview_description_submit">"ရှာဖွေစရာ အချက်အလက်ကို ပေးပို့ရန်"</string><string msgid="3478748990613108725" name="abc_searchview_description_voice">"အသံဖြင့် ရှာရန်"</string><string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"နှင့် မျှဝေရန်"</string><string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ဖြင့် မျှဝေရန်"</string><string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"လျှော့ပြရန်"</string><string msgid="730395136688082741" name="search_menu_title">"ရှာဖွေမှု"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-kn/values-kn.xml" qualifiers="kn"><string msgid="7903180715631665059" name="abc_action_bar_home_description">"ಹೋಮ್‌ಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ"</string><string msgid="6794660482873516081" name="abc_action_bar_up_description">"ಮೇಲಕ್ಕೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ"</string><string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"ಇನ್ನಷ್ಟು ಆಯ್ಕೆಗಳು"</string><string msgid="2571498368472823490" name="abc_action_mode_done">"ಮುಗಿದಿದೆ"</string><string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"ಎಲ್ಲವನ್ನೂ ನೋಡಿ"</string><string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"ಆ್ಯಪ್‌ವೊಂದನ್ನು ಆಯ್ಕೆಮಾಡಿ"</string><string msgid="3403923230105792483" name="abc_capital_off">"ಆಫ್"</string><string msgid="7831734969929204599" name="abc_capital_on">"ಆನ್"</string><string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string><string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string><string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string><string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string><string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string><string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string><string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string><string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"space"</string><string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string><string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string><string msgid="940844115270746197" name="abc_search_hint">"ಹುಡುಕಿ…"</string><string msgid="1769270744562318534" name="abc_searchview_description_clear">"ಪ್ರಶ್ನೆಯನ್ನು ತೆರವುಗೊಳಿಸಿ"</string><string msgid="908784302972860853" name="abc_searchview_description_query">"ಪ್ರಶ್ನೆಯನ್ನು ಹುಡುಕಿ"</string><string msgid="5466662225065974044" name="abc_searchview_description_search">"ಹುಡುಕಿ"</string><string msgid="8203855622131699655" name="abc_searchview_description_submit">"ಪ್ರಶ್ನೆಯನ್ನು ಸಲ್ಲಿಸಿ"</string><string msgid="3478748990613108725" name="abc_searchview_description_voice">"ಧ್ವನಿ ಹುಡುಕಾಟ"</string><string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"ಇವರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ"</string><string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ನೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ"</string><string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"ಕುಗ್ಗಿಸಿ"</string><string msgid="730395136688082741" name="search_menu_title">"ಹುಡುಕಿ"</string></file><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-ldltr-v21/values-ldltr-v21.xml" qualifiers="ldltr-v21"><style name="Base.Widget.AppCompat.Spinner.Underlined" parent="android:Widget.Material.Spinner.Underlined"/></file><file name="btn_checkbox_to_checked_icon_null_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_checkbox_to_checked_icon_null_animation.xml" qualifiers="" type="anim"/><file name="abc_shrink_fade_out_from_bottom" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_shrink_fade_out_from_bottom.xml" qualifiers="" type="anim"/><file name="abc_fade_out" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_fade_out.xml" qualifiers="" type="anim"/><file name="btn_checkbox_to_unchecked_box_inner_merged_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_checkbox_to_unchecked_box_inner_merged_animation.xml" qualifiers="" type="anim"/><file name="abc_grow_fade_in_from_bottom" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_grow_fade_in_from_bottom.xml" qualifiers="" type="anim"/><file name="abc_slide_out_top" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_slide_out_top.xml" qualifiers="" type="anim"/><file name="btn_checkbox_to_checked_box_inner_merged_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_checkbox_to_checked_box_inner_merged_animation.xml" qualifiers="" type="anim"/><file name="btn_radio_to_off_mtrl_ring_outer_path_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_radio_to_off_mtrl_ring_outer_path_animation.xml" qualifiers="" type="anim"/><file name="btn_checkbox_to_unchecked_icon_null_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_checkbox_to_unchecked_icon_null_animation.xml" qualifiers="" type="anim"/><file name="abc_tooltip_enter" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_tooltip_enter.xml" qualifiers="" type="anim"/><file name="abc_tooltip_exit" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_tooltip_exit.xml" qualifiers="" type="anim"/><file name="btn_radio_to_on_mtrl_ring_outer_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_radio_to_on_mtrl_ring_outer_animation.xml" qualifiers="" type="anim"/><file name="abc_slide_in_top" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_slide_in_top.xml" qualifiers="" type="anim"/><file name="abc_popup_exit" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_popup_exit.xml" qualifiers="" type="anim"/><file name="abc_fade_in" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_fade_in.xml" qualifiers="" type="anim"/><file name="btn_radio_to_on_mtrl_dot_group_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_radio_to_on_mtrl_dot_group_animation.xml" qualifiers="" type="anim"/><file name="btn_radio_to_on_mtrl_ring_outer_path_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_radio_to_on_mtrl_ring_outer_path_animation.xml" qualifiers="" type="anim"/><file name="abc_slide_in_bottom" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_slide_in_bottom.xml" qualifiers="" type="anim"/><file name="abc_slide_out_bottom" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_slide_out_bottom.xml" qualifiers="" type="anim"/><file name="btn_checkbox_to_unchecked_check_path_merged_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_checkbox_to_unchecked_check_path_merged_animation.xml" qualifiers="" type="anim"/><file name="btn_checkbox_to_checked_box_outer_merged_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_checkbox_to_checked_box_outer_merged_animation.xml" qualifiers="" type="anim"/><file name="btn_radio_to_off_mtrl_dot_group_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_radio_to_off_mtrl_dot_group_animation.xml" qualifiers="" type="anim"/><file name="abc_popup_enter" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/abc_popup_enter.xml" qualifiers="" type="anim"/><file name="btn_radio_to_off_mtrl_ring_outer_animation" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/anim/btn_radio_to_off_mtrl_ring_outer_animation.xml" qualifiers="" type="anim"/></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="com.github.Vatican-Cameos:CarouselPicker:v1.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/04fab4e953cff2a9f8b1fa334efef88e/jetified-CarouselPicker-v1.0/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="com.github.Vatican-Cameos:CarouselPicker:v1.0" from-dependency="true" generated-set="com.github.Vatican-Cameos:CarouselPicker:v1.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/04fab4e953cff2a9f8b1fa334efef88e/jetified-CarouselPicker-v1.0/res"><file name="page" path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/04fab4e953cff2a9f8b1fa334efef88e/jetified-CarouselPicker-v1.0/res/layout/page.xml" qualifiers="" type="layout"/><file path="/home/stagiaire/.gradle/caches/transforms-2/files-2.1/04fab4e953cff2a9f8b1fa334efef88e/jetified-CarouselPicker-v1.0/res/values/values.xml" qualifiers=""><attr format="enum" name="items_visible">
+        <enum name="three" value="3"/>
+        <enum name="five" value="5"/>
+        <enum name="seven" value="7"/>
+    </attr><declare-styleable name="CarouselPicker"><attr name="items_visible"/></declare-styleable><item format="float" name="five_items" type="dimen">1.25</item><item format="float" name="seven_items" type="dimen">1.16</item><item format="float" name="three_items" type="dimen">1.5</item><string name="app_name">CarouselView</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res"><file path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/drawable/ic_launcher_background.xml" preprocessing="true" qualifiers=""><generated-file path="/home/stagiaire/heyu/src/main/resources/Android/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png" qualifiers="xxxhdpi-v4" type="drawable"/><generated-file path="/home/stagiaire/heyu/src/main/resources/Android/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png" qualifiers="mdpi-v4" type="drawable"/><generated-file path="/home/stagiaire/heyu/src/main/resources/Android/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png" qualifiers="ldpi-v4" type="drawable"/><generated-file path="/home/stagiaire/heyu/src/main/resources/Android/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png" qualifiers="xxhdpi-v4" type="drawable"/><generated-file path="/home/stagiaire/heyu/src/main/resources/Android/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png" qualifiers="hdpi-v4" type="drawable"/><generated-file path="/home/stagiaire/heyu/src/main/resources/Android/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png" qualifiers="xhdpi-v4" type="drawable"/><generated-file path="/home/stagiaire/heyu/src/main/resources/Android/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml" qualifiers="anydpi-v21" type="drawable"/></file></source><source path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/drawable"/><source path="/home/stagiaire/heyu/src/main/resources/Android/app/build/generated/res/rs/debug"/><source path="/home/stagiaire/heyu/src/main/resources/Android/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res"><file name="ic_launcher" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="fragment_demo" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/layout/fragment_demo.xml" qualifiers="" type="layout"/><file name="activity_search" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/layout/activity_search.xml" qualifiers="" type="layout"/><file name="activity_modify" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/layout/activity_modify.xml" qualifiers="" type="layout"/><file name="activity_registery" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/layout/activity_registery.xml" qualifiers="" type="layout"/><file name="activity_main" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="ic_launcher_round" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/values/colors.xml" qualifiers=""><color name="colorPrimary">#008577</color><color name="colorPrimaryDark">#00574B</color><color name="colorAccent">#D81B60</color></file><file path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">GP2</string><string name="hello_blank_fragment">Hello blank fragment</string></file><file path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/values/styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style></file><file name="ic_launcher_foreground" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" qualifiers="v24" type="drawable"/><file name="ic_launcher_round" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/mipmap-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/mipmap-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="activity_search" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/layout/activity_search.xml" qualifiers="" type="layout"/><file name="activity_registery" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/layout/activity_registery.xml" qualifiers="" type="layout"/><file name="activity_modify" path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/main/res/layout/activity_modify.xml" qualifiers="" type="layout"/></source><source path="/home/stagiaire/AndroidStudioProjects/GP2/app/build/generated/res/rs/debug"/><source path="/home/stagiaire/AndroidStudioProjects/GP2/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/AndroidStudioProjects/GP2/app/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
+    </style></file><file name="ic_launcher_foreground" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" qualifiers="v24" type="drawable"/><file name="ic_launcher_round" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/mipmap-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/mipmap-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/></source><source path="/home/stagiaire/heyu/src/main/resources/Android/app/src/main/res/drawable"/><source path="/home/stagiaire/heyu/src/main/resources/Android/app/build/generated/res/rs/debug"/><source path="/home/stagiaire/heyu/src/main/resources/Android/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/heyu/src/main/resources/Android/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/stagiaire/heyu/src/main/resources/Android/app/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
         <attr format="reference" name="listLayout"/>
@@ -2714,6 +2810,83 @@
             <enum name="screen" value="15"/>
             
             <enum name="add" value="16"/>
+        </attr>
+    </declare-styleable><declare-styleable name="CoordinatorLayout_Layout">
+        <attr name="android:layout_gravity"/>
+        
+        <attr format="string" name="layout_behavior"/>
+        
+        <attr format="reference" name="layout_anchor"/>
+        
+        <attr format="integer" name="layout_keyline"/>
+
+        
+        <attr name="layout_anchorGravity">
+            
+            <flag name="top" value="0x30"/>
+            
+            <flag name="bottom" value="0x50"/>
+            
+            <flag name="left" value="0x03"/>
+            
+            <flag name="right" value="0x05"/>
+            
+            <flag name="center_vertical" value="0x10"/>
+            
+            <flag name="fill_vertical" value="0x70"/>
+            
+            <flag name="center_horizontal" value="0x01"/>
+            
+            <flag name="fill_horizontal" value="0x07"/>
+            
+            <flag name="center" value="0x11"/>
+            
+            <flag name="fill" value="0x77"/>
+            
+            <flag name="clip_vertical" value="0x80"/>
+            
+            <flag name="clip_horizontal" value="0x08"/>
+            
+            <flag name="start" value="0x00800003"/>
+            
+            <flag name="end" value="0x00800005"/>
+        </attr>
+
+        
+        <attr format="enum" name="layout_insetEdge">
+            
+            <enum name="none" value="0x0"/>
+            
+            <enum name="top" value="0x30"/>
+            
+            <enum name="bottom" value="0x50"/>
+            
+            <enum name="left" value="0x03"/>
+            
+            <enum name="right" value="0x05"/>
+            
+            <enum name="start" value="0x00800003"/>
+            
+            <enum name="end" value="0x00800005"/>
+        </attr>
+        
+        <attr name="layout_dodgeInsetEdges">
+            
+            <flag name="none" value="0x0"/>
+            
+            <flag name="top" value="0x30"/>
+            
+            <flag name="bottom" value="0x50"/>
+            
+            <flag name="left" value="0x03"/>
+            
+            <flag name="right" value="0x05"/>
+            
+            <flag name="start" value="0x00800003"/>
+            
+            <flag name="end" value="0x00800005"/>
+            
+            <flag name="all" value="0x77"/>
         </attr>
     </declare-styleable><declare-styleable name="GradientColor">
         
@@ -2747,87 +2920,11 @@
 
         
         <attr name="android:tileMode"/>
-    </declare-styleable><declare-styleable name="AnimatedStateListDrawableCompat">
-        
-        <attr name="android:visible"/>
-        
-        <attr name="android:variablePadding"/>
-        
-        <attr name="android:constantSize"/>
-        
-        <attr name="android:dither"/>
-        
-        <attr name="android:enterFadeDuration"/>
-        
-        <attr name="android:exitFadeDuration"/>
-        
-        
-    </declare-styleable><declare-styleable name="ColorStateListItem">
-        
-        <attr name="android:color"/>
-        
-        <attr format="float" name="alpha"/>
-        <attr name="android:alpha"/>
-    </declare-styleable><declare-styleable name="Spinner">
-        
-        <attr name="android:prompt"/>
-        
-        <attr name="popupTheme"/>
-        
-        <attr name="android:popupBackground"/>
-        
-        <attr name="android:dropDownWidth"/>
-        
-        <attr name="android:entries"/>
-    </declare-styleable><declare-styleable name="ConstraintLayout_placeholder"><attr name="emptyVisibility"/><attr name="content"/></declare-styleable><declare-styleable name="PopupWindow">
-        
-        <attr format="boolean" name="overlapAnchor"/>
-        <attr name="android:popupBackground"/>
-        <attr name="android:popupAnimationStyle"/>
     </declare-styleable><declare-styleable name="AnimatedStateListDrawableItem">
         
         <attr name="android:drawable"/>
         
         <attr name="android:id"/>
-    </declare-styleable><declare-styleable name="DrawerArrowToggle">
-        
-        <attr format="color" name="color"/>
-        
-        <attr format="boolean" name="spinBars"/>
-        
-        <attr format="dimension" name="drawableSize"/>
-        
-        <attr format="dimension" name="gapBetweenBars"/>
-        
-        <attr format="dimension" name="arrowHeadLength"/>
-        
-        <attr format="dimension" name="arrowShaftLength"/>
-        
-        <attr format="dimension" name="barLength"/>
-        
-        <attr format="dimension" name="thickness"/>
-    </declare-styleable><declare-styleable name="ActionBarLayout">
-        <attr name="android:layout_gravity"/>
-    </declare-styleable><declare-styleable name="StateListDrawable">
-        
-        <attr name="android:visible"/>
-        
-        <attr name="android:variablePadding"/>
-        
-        <attr name="android:constantSize"/>
-        
-        <attr name="android:dither"/>
-        
-        <attr name="android:enterFadeDuration"/>
-        
-        <attr name="android:exitFadeDuration"/>
-        
-        
-    </declare-styleable><declare-styleable name="ActivityChooserView">
-        
-        <attr format="string" name="initialActivityCount"/>
-        
-        <attr format="reference" name="expandActivityOverflowButtonDrawable"/>
     </declare-styleable><declare-styleable name="GradientColorItem">
         
         <attr name="android:offset"/>
@@ -3191,37 +3288,7 @@
         
         <attr format="reference" name="listChoiceIndicatorSingleAnimated"/>
 
-    </declare-styleable><declare-styleable name="ViewStubCompat">
-        
-        <attr name="android:layout"/>
-        
-        <attr name="android:inflatedId"/>
-        <attr name="android:id"/>
-    </declare-styleable><declare-styleable name="ListPopupWindow">
-        
-        <attr name="android:dropDownVerticalOffset"/>
-        
-        <attr name="android:dropDownHorizontalOffset"/>
-    </declare-styleable><declare-styleable name="TextAppearance">
-        <attr name="android:textSize"/>
-        <attr name="android:textColor"/>
-        <attr name="android:textColorHint"/>
-        <attr name="android:textColorLink"/>
-        <attr name="android:textStyle"/>
-        <attr name="android:textFontWeight"/>
-        <attr name="android:typeface"/>
-        <attr name="android:fontFamily"/>
-        <attr name="fontFamily"/>
-        <attr name="textAllCaps"/>
-        
-        <attr name="textLocale"/>
-        <attr name="android:shadowColor"/>
-        <attr name="android:shadowDy"/>
-        <attr name="android:shadowDx"/>
-        <attr name="android:shadowRadius"/>
-        
-        <attr name="fontVariationSettings"/>
-    </declare-styleable><declare-styleable name="MenuView">
+    </declare-styleable><declare-styleable name="CarouselPicker"><attr name="items_visible"/></declare-styleable><declare-styleable name="MenuView">
         
         <attr name="android:itemTextAppearance"/>
         
@@ -3319,26 +3386,6 @@
         <attr format="dimension" name="elevation"/>
         
         <attr format="reference" name="popupTheme"/>
-    </declare-styleable><declare-styleable name="MenuGroup">
-
-        
-        <attr name="android:id"/>
-
-        
-        <attr name="android:menuCategory"/>
-
-        
-        <attr name="android:orderInCategory"/>
-
-        
-        <attr name="android:checkableBehavior"/>
-
-        
-        <attr name="android:visible"/>
-
-        
-        <attr name="android:enabled"/>
-
     </declare-styleable><declare-styleable name="ActionMenuItemView">
         <attr name="android:minWidth"/>
     </declare-styleable><declare-styleable name="Toolbar">
@@ -3400,27 +3447,6 @@
         <attr name="android:layout_height"/>
         <attr name="android:layout_weight"/>
         <attr name="android:layout_gravity"/>
-    </declare-styleable><declare-styleable name="FontFamily">
-        
-        <attr format="string" name="fontProviderAuthority"/>
-        
-        <attr format="string" name="fontProviderPackage"/>
-        
-        <attr format="string" name="fontProviderQuery"/>
-        
-        <attr format="reference" name="fontProviderCerts"/>
-        
-        <attr name="fontProviderFetchStrategy">
-            
-            <enum name="blocking" value="0"/>
-            
-            <enum name="async" value="1"/>
-        </attr>
-        
-        <attr format="integer" name="fontProviderFetchTimeout">
-            
-            <enum name="forever" value="-1"/>
-        </attr>
     </declare-styleable><declare-styleable name="StateListDrawableItem">
         
         <attr name="android:drawable"/>
@@ -3478,6 +3504,270 @@
             <enum name="screen" value="15"/>
             
             <enum name="add" value="16"/>
+        </attr>
+    </declare-styleable><declare-styleable name="ButtonBarLayout">
+        
+        <attr format="boolean" name="allowStacking"/>
+    </declare-styleable><declare-styleable name="ViewBackgroundHelper">
+        <attr name="android:background"/>
+        
+        <attr format="color" name="backgroundTint"/>
+
+        
+        <attr name="backgroundTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+    </declare-styleable><declare-styleable name="ConstraintSet"><attr name="android:orientation"/><attr name="android:id"/><attr name="android:visibility"/><attr name="android:alpha"/><attr name="android:elevation"/><attr name="android:rotation"/><attr name="android:rotationX"/><attr name="android:rotationY"/><attr name="android:scaleX"/><attr name="android:scaleY"/><attr name="android:transformPivotX"/><attr name="android:transformPivotY"/><attr name="android:translationX"/><attr name="android:translationY"/><attr name="android:translationZ"/><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_marginStart"/><attr name="android:layout_marginBottom"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginEnd"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginRight"/><attr name="layout_constraintCircle"/><attr name="layout_constraintCircleRadius"/><attr name="layout_constraintCircleAngle"/><attr name="layout_constraintGuide_begin"/><attr name="layout_constraintGuide_end"/><attr name="layout_constraintGuide_percent"/><attr name="layout_constraintLeft_toLeftOf"/><attr name="layout_constraintLeft_toRightOf"/><attr name="layout_constraintRight_toLeftOf"/><attr name="layout_constraintRight_toRightOf"/><attr name="layout_constraintTop_toTopOf"/><attr name="layout_constraintTop_toBottomOf"/><attr name="layout_constraintBottom_toTopOf"/><attr name="layout_constraintBottom_toBottomOf"/><attr name="layout_constraintBaseline_toBaselineOf"/><attr name="layout_constraintStart_toEndOf"/><attr name="layout_constraintStart_toStartOf"/><attr name="layout_constraintEnd_toStartOf"/><attr name="layout_constraintEnd_toEndOf"/><attr name="layout_goneMarginLeft"/><attr name="layout_goneMarginTop"/><attr name="layout_goneMarginRight"/><attr name="layout_goneMarginBottom"/><attr name="layout_goneMarginStart"/><attr name="layout_goneMarginEnd"/><attr name="layout_constrainedWidth"/><attr name="layout_constrainedHeight"/><attr name="layout_constraintHorizontal_bias"/><attr name="layout_constraintVertical_bias"/><attr name="layout_constraintWidth_default"/><attr name="layout_constraintHeight_default"/><attr name="layout_constraintWidth_min"/><attr name="layout_constraintWidth_max"/><attr name="layout_constraintWidth_percent"/><attr name="layout_constraintHeight_min"/><attr name="layout_constraintHeight_max"/><attr name="layout_constraintHeight_percent"/><attr name="layout_constraintLeft_creator"/><attr name="layout_constraintTop_creator"/><attr name="layout_constraintRight_creator"/><attr name="layout_constraintBottom_creator"/><attr name="layout_constraintBaseline_creator"/><attr name="layout_constraintDimensionRatio"/><attr name="layout_constraintHorizontal_weight"/><attr name="layout_constraintVertical_weight"/><attr name="layout_constraintHorizontal_chainStyle"/><attr name="layout_constraintVertical_chainStyle"/><attr name="layout_editor_absoluteX"/><attr name="layout_editor_absoluteY"/><attr name="barrierDirection"/><attr name="constraint_referenced_ids"/><attr name="android:maxHeight"/><attr name="android:maxWidth"/><attr name="android:minHeight"/><attr name="android:minWidth"/><attr name="barrierAllowsGoneWidgets"/><attr name="chainUseRtl"/></declare-styleable><declare-styleable name="AppCompatImageView">
+        <attr name="android:src"/>
+        
+        <attr format="reference" name="srcCompat"/>
+
+        
+        <attr format="color" name="tint"/>
+
+        
+        <attr name="tintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+    </declare-styleable><declare-styleable name="ConstraintLayout_Layout"><attr name="android:orientation"/><attr name="android:minWidth"/><attr name="android:minHeight"/><attr name="android:maxWidth"/><attr name="android:maxHeight"/><attr name="layout_optimizationLevel"/><attr name="constraintSet"/><attr name="barrierDirection"/><attr name="barrierAllowsGoneWidgets"/><attr name="constraint_referenced_ids"/><attr name="chainUseRtl"/><attr name="layout_constraintCircle"/><attr name="layout_constraintCircleRadius"/><attr name="layout_constraintCircleAngle"/><attr name="layout_constraintGuide_begin"/><attr name="layout_constraintGuide_end"/><attr name="layout_constraintGuide_percent"/><attr name="layout_constraintLeft_toLeftOf"/><attr name="layout_constraintLeft_toRightOf"/><attr name="layout_constraintRight_toLeftOf"/><attr name="layout_constraintRight_toRightOf"/><attr name="layout_constraintTop_toTopOf"/><attr name="layout_constraintTop_toBottomOf"/><attr name="layout_constraintBottom_toTopOf"/><attr name="layout_constraintBottom_toBottomOf"/><attr name="layout_constraintBaseline_toBaselineOf"/><attr name="layout_constraintStart_toEndOf"/><attr name="layout_constraintStart_toStartOf"/><attr name="layout_constraintEnd_toStartOf"/><attr name="layout_constraintEnd_toEndOf"/><attr name="layout_goneMarginLeft"/><attr name="layout_goneMarginTop"/><attr name="layout_goneMarginRight"/><attr name="layout_goneMarginBottom"/><attr name="layout_goneMarginStart"/><attr name="layout_goneMarginEnd"/><attr name="layout_constrainedWidth"/><attr name="layout_constrainedHeight"/><attr name="layout_constraintHorizontal_bias"/><attr name="layout_constraintVertical_bias"/><attr name="layout_constraintWidth_default"/><attr name="layout_constraintHeight_default"/><attr name="layout_constraintWidth_min"/><attr name="layout_constraintWidth_max"/><attr name="layout_constraintWidth_percent"/><attr name="layout_constraintHeight_min"/><attr name="layout_constraintHeight_max"/><attr name="layout_constraintHeight_percent"/><attr name="layout_constraintLeft_creator"/><attr name="layout_constraintTop_creator"/><attr name="layout_constraintRight_creator"/><attr name="layout_constraintBottom_creator"/><attr name="layout_constraintBaseline_creator"/><attr name="layout_constraintDimensionRatio"/><attr name="layout_constraintHorizontal_weight"/><attr name="layout_constraintVertical_weight"/><attr name="layout_constraintHorizontal_chainStyle"/><attr name="layout_constraintVertical_chainStyle"/><attr name="layout_editor_absoluteX"/><attr name="layout_editor_absoluteY"/></declare-styleable><declare-styleable name="PopupWindowBackgroundState">
+        
+        <attr format="boolean" name="state_above_anchor"/>
+    </declare-styleable><declare-styleable name="ActionMode">
+        
+        <attr name="titleTextStyle"/>
+        
+        <attr name="subtitleTextStyle"/>
+        
+        <attr name="background"/>
+        
+        <attr name="backgroundSplit"/>
+        
+        <attr name="height"/>
+        
+        <attr format="reference" name="closeItemLayout"/>
+    </declare-styleable><declare-styleable name="SwitchCompat">
+        
+        <attr name="android:thumb"/>
+        
+        <attr format="color" name="thumbTint"/>
+        
+        <attr name="thumbTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+        
+        <attr format="reference" name="track"/>
+        
+        <attr format="color" name="trackTint"/>
+        
+        <attr name="trackTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+        
+        <attr name="android:textOn"/>
+        
+        <attr name="android:textOff"/>
+        
+        <attr format="dimension" name="thumbTextPadding"/>
+        
+        <attr format="reference" name="switchTextAppearance"/>
+        
+        <attr format="dimension" name="switchMinWidth"/>
+        
+        <attr format="dimension" name="switchPadding"/>
+        
+        <attr format="boolean" name="splitTrack"/>
+        
+        <attr format="boolean" name="showText"/>
+    </declare-styleable><declare-styleable name="AnimatedStateListDrawableCompat">
+        
+        <attr name="android:visible"/>
+        
+        <attr name="android:variablePadding"/>
+        
+        <attr name="android:constantSize"/>
+        
+        <attr name="android:dither"/>
+        
+        <attr name="android:enterFadeDuration"/>
+        
+        <attr name="android:exitFadeDuration"/>
+        
+        
+    </declare-styleable><declare-styleable name="ColorStateListItem">
+        
+        <attr name="android:color"/>
+        
+        <attr format="float" name="alpha"/>
+        <attr name="android:alpha"/>
+    </declare-styleable><declare-styleable name="Spinner">
+        
+        <attr name="android:prompt"/>
+        
+        <attr name="popupTheme"/>
+        
+        <attr name="android:popupBackground"/>
+        
+        <attr name="android:dropDownWidth"/>
+        
+        <attr name="android:entries"/>
+    </declare-styleable><declare-styleable name="ConstraintLayout_placeholder"><attr name="emptyVisibility"/><attr name="content"/></declare-styleable><declare-styleable name="PopupWindow">
+        
+        <attr format="boolean" name="overlapAnchor"/>
+        <attr name="android:popupBackground"/>
+        <attr name="android:popupAnimationStyle"/>
+    </declare-styleable><declare-styleable name="DrawerArrowToggle">
+        
+        <attr format="color" name="color"/>
+        
+        <attr format="boolean" name="spinBars"/>
+        
+        <attr format="dimension" name="drawableSize"/>
+        
+        <attr format="dimension" name="gapBetweenBars"/>
+        
+        <attr format="dimension" name="arrowHeadLength"/>
+        
+        <attr format="dimension" name="arrowShaftLength"/>
+        
+        <attr format="dimension" name="barLength"/>
+        
+        <attr format="dimension" name="thickness"/>
+    </declare-styleable><declare-styleable name="ActionBarLayout">
+        <attr name="android:layout_gravity"/>
+    </declare-styleable><declare-styleable name="StateListDrawable">
+        
+        <attr name="android:visible"/>
+        
+        <attr name="android:variablePadding"/>
+        
+        <attr name="android:constantSize"/>
+        
+        <attr name="android:dither"/>
+        
+        <attr name="android:enterFadeDuration"/>
+        
+        <attr name="android:exitFadeDuration"/>
+        
+        
+    </declare-styleable><declare-styleable name="ActivityChooserView">
+        
+        <attr format="string" name="initialActivityCount"/>
+        
+        <attr format="reference" name="expandActivityOverflowButtonDrawable"/>
+    </declare-styleable><declare-styleable name="ViewStubCompat">
+        
+        <attr name="android:layout"/>
+        
+        <attr name="android:inflatedId"/>
+        <attr name="android:id"/>
+    </declare-styleable><declare-styleable name="ListPopupWindow">
+        
+        <attr name="android:dropDownVerticalOffset"/>
+        
+        <attr name="android:dropDownHorizontalOffset"/>
+    </declare-styleable><declare-styleable name="TextAppearance">
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textColorHint"/>
+        <attr name="android:textColorLink"/>
+        <attr name="android:textStyle"/>
+        <attr name="android:textFontWeight"/>
+        <attr name="android:typeface"/>
+        <attr name="android:fontFamily"/>
+        <attr name="fontFamily"/>
+        <attr name="textAllCaps"/>
+        
+        <attr name="textLocale"/>
+        <attr name="android:shadowColor"/>
+        <attr name="android:shadowDy"/>
+        <attr name="android:shadowDx"/>
+        <attr name="android:shadowRadius"/>
+        
+        <attr name="fontVariationSettings"/>
+    </declare-styleable><declare-styleable name="MenuGroup">
+
+        
+        <attr name="android:id"/>
+
+        
+        <attr name="android:menuCategory"/>
+
+        
+        <attr name="android:orderInCategory"/>
+
+        
+        <attr name="android:checkableBehavior"/>
+
+        
+        <attr name="android:visible"/>
+
+        
+        <attr name="android:enabled"/>
+
+    </declare-styleable><declare-styleable name="FontFamily">
+        
+        <attr format="string" name="fontProviderAuthority"/>
+        
+        <attr format="string" name="fontProviderPackage"/>
+        
+        <attr format="string" name="fontProviderQuery"/>
+        
+        <attr format="reference" name="fontProviderCerts"/>
+        
+        <attr name="fontProviderFetchStrategy">
+            
+            <enum name="blocking" value="0"/>
+            
+            <enum name="async" value="1"/>
+        </attr>
+        
+        <attr format="integer" name="fontProviderFetchTimeout">
+            
+            <enum name="forever" value="-1"/>
         </attr>
     </declare-styleable><declare-styleable name="MenuItem">
 
@@ -3588,30 +3878,7 @@
             <enum name="add" value="16"/>
         </attr>
 
-    </declare-styleable><declare-styleable name="ButtonBarLayout">
-        
-        <attr format="boolean" name="allowStacking"/>
-    </declare-styleable><declare-styleable name="LinearConstraintLayout"><attr name="android:orientation"/></declare-styleable><declare-styleable name="ViewBackgroundHelper">
-        <attr name="android:background"/>
-        
-        <attr format="color" name="backgroundTint"/>
-
-        
-        <attr name="backgroundTintMode">
-            
-            <enum name="src_over" value="3"/>
-            
-            <enum name="src_in" value="5"/>
-            
-            <enum name="src_atop" value="9"/>
-            
-            <enum name="multiply" value="14"/>
-            
-            <enum name="screen" value="15"/>
-            
-            <enum name="add" value="16"/>
-        </attr>
-    </declare-styleable><declare-styleable name="AnimatedStateListDrawableTransition">
+    </declare-styleable><declare-styleable name="LinearConstraintLayout"><attr name="android:orientation"/></declare-styleable><declare-styleable name="AnimatedStateListDrawableTransition">
         
         <attr name="android:fromId"/>
         
@@ -3620,29 +3887,6 @@
         <attr name="android:drawable"/>
         
         <attr name="android:reversible"/>
-    </declare-styleable><declare-styleable name="ConstraintSet"><attr name="android:orientation"/><attr name="android:id"/><attr name="android:visibility"/><attr name="android:alpha"/><attr name="android:elevation"/><attr name="android:rotation"/><attr name="android:rotationX"/><attr name="android:rotationY"/><attr name="android:scaleX"/><attr name="android:scaleY"/><attr name="android:transformPivotX"/><attr name="android:transformPivotY"/><attr name="android:translationX"/><attr name="android:translationY"/><attr name="android:translationZ"/><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_marginStart"/><attr name="android:layout_marginBottom"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginEnd"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginRight"/><attr name="layout_constraintCircle"/><attr name="layout_constraintCircleRadius"/><attr name="layout_constraintCircleAngle"/><attr name="layout_constraintGuide_begin"/><attr name="layout_constraintGuide_end"/><attr name="layout_constraintGuide_percent"/><attr name="layout_constraintLeft_toLeftOf"/><attr name="layout_constraintLeft_toRightOf"/><attr name="layout_constraintRight_toLeftOf"/><attr name="layout_constraintRight_toRightOf"/><attr name="layout_constraintTop_toTopOf"/><attr name="layout_constraintTop_toBottomOf"/><attr name="layout_constraintBottom_toTopOf"/><attr name="layout_constraintBottom_toBottomOf"/><attr name="layout_constraintBaseline_toBaselineOf"/><attr name="layout_constraintStart_toEndOf"/><attr name="layout_constraintStart_toStartOf"/><attr name="layout_constraintEnd_toStartOf"/><attr name="layout_constraintEnd_toEndOf"/><attr name="layout_goneMarginLeft"/><attr name="layout_goneMarginTop"/><attr name="layout_goneMarginRight"/><attr name="layout_goneMarginBottom"/><attr name="layout_goneMarginStart"/><attr name="layout_goneMarginEnd"/><attr name="layout_constrainedWidth"/><attr name="layout_constrainedHeight"/><attr name="layout_constraintHorizontal_bias"/><attr name="layout_constraintVertical_bias"/><attr name="layout_constraintWidth_default"/><attr name="layout_constraintHeight_default"/><attr name="layout_constraintWidth_min"/><attr name="layout_constraintWidth_max"/><attr name="layout_constraintWidth_percent"/><attr name="layout_constraintHeight_min"/><attr name="layout_constraintHeight_max"/><attr name="layout_constraintHeight_percent"/><attr name="layout_constraintLeft_creator"/><attr name="layout_constraintTop_creator"/><attr name="layout_constraintRight_creator"/><attr name="layout_constraintBottom_creator"/><attr name="layout_constraintBaseline_creator"/><attr name="layout_constraintDimensionRatio"/><attr name="layout_constraintHorizontal_weight"/><attr name="layout_constraintVertical_weight"/><attr name="layout_constraintHorizontal_chainStyle"/><attr name="layout_constraintVertical_chainStyle"/><attr name="layout_editor_absoluteX"/><attr name="layout_editor_absoluteY"/><attr name="barrierDirection"/><attr name="constraint_referenced_ids"/><attr name="android:maxHeight"/><attr name="android:maxWidth"/><attr name="android:minHeight"/><attr name="android:minWidth"/><attr name="barrierAllowsGoneWidgets"/><attr name="chainUseRtl"/></declare-styleable><declare-styleable name="AppCompatImageView">
-        <attr name="android:src"/>
-        
-        <attr format="reference" name="srcCompat"/>
-
-        
-        <attr format="color" name="tint"/>
-
-        
-        <attr name="tintMode">
-            
-            <enum name="src_over" value="3"/>
-            
-            <enum name="src_in" value="5"/>
-            
-            <enum name="src_atop" value="9"/>
-            
-            <enum name="multiply" value="14"/>
-            
-            <enum name="screen" value="15"/>
-            
-            <enum name="add" value="16"/>
-        </attr>
     </declare-styleable><declare-styleable name="View">
         
         <attr format="dimension" name="paddingStart"/>
@@ -3654,9 +3898,11 @@
         <attr format="reference" name="theme"/>
         
         <attr name="android:theme"/>
-    </declare-styleable><declare-styleable name="ConstraintLayout_Layout"><attr name="android:orientation"/><attr name="android:minWidth"/><attr name="android:minHeight"/><attr name="android:maxWidth"/><attr name="android:maxHeight"/><attr name="layout_optimizationLevel"/><attr name="constraintSet"/><attr name="barrierDirection"/><attr name="barrierAllowsGoneWidgets"/><attr name="constraint_referenced_ids"/><attr name="chainUseRtl"/><attr name="layout_constraintCircle"/><attr name="layout_constraintCircleRadius"/><attr name="layout_constraintCircleAngle"/><attr name="layout_constraintGuide_begin"/><attr name="layout_constraintGuide_end"/><attr name="layout_constraintGuide_percent"/><attr name="layout_constraintLeft_toLeftOf"/><attr name="layout_constraintLeft_toRightOf"/><attr name="layout_constraintRight_toLeftOf"/><attr name="layout_constraintRight_toRightOf"/><attr name="layout_constraintTop_toTopOf"/><attr name="layout_constraintTop_toBottomOf"/><attr name="layout_constraintBottom_toTopOf"/><attr name="layout_constraintBottom_toBottomOf"/><attr name="layout_constraintBaseline_toBaselineOf"/><attr name="layout_constraintStart_toEndOf"/><attr name="layout_constraintStart_toStartOf"/><attr name="layout_constraintEnd_toStartOf"/><attr name="layout_constraintEnd_toEndOf"/><attr name="layout_goneMarginLeft"/><attr name="layout_goneMarginTop"/><attr name="layout_goneMarginRight"/><attr name="layout_goneMarginBottom"/><attr name="layout_goneMarginStart"/><attr name="layout_goneMarginEnd"/><attr name="layout_constrainedWidth"/><attr name="layout_constrainedHeight"/><attr name="layout_constraintHorizontal_bias"/><attr name="layout_constraintVertical_bias"/><attr name="layout_constraintWidth_default"/><attr name="layout_constraintHeight_default"/><attr name="layout_constraintWidth_min"/><attr name="layout_constraintWidth_max"/><attr name="layout_constraintWidth_percent"/><attr name="layout_constraintHeight_min"/><attr name="layout_constraintHeight_max"/><attr name="layout_constraintHeight_percent"/><attr name="layout_constraintLeft_creator"/><attr name="layout_constraintTop_creator"/><attr name="layout_constraintRight_creator"/><attr name="layout_constraintBottom_creator"/><attr name="layout_constraintBaseline_creator"/><attr name="layout_constraintDimensionRatio"/><attr name="layout_constraintHorizontal_weight"/><attr name="layout_constraintVertical_weight"/><attr name="layout_constraintHorizontal_chainStyle"/><attr name="layout_constraintVertical_chainStyle"/><attr name="layout_editor_absoluteX"/><attr name="layout_editor_absoluteY"/></declare-styleable><declare-styleable name="PopupWindowBackgroundState">
+    </declare-styleable><declare-styleable name="CoordinatorLayout">
         
-        <attr format="boolean" name="state_above_anchor"/>
+        <attr format="reference" name="keylines"/>
+        
+        <attr format="color|reference" name="statusBarBackground"/>
     </declare-styleable><declare-styleable name="FontFamilyFont">
         
         <attr name="fontStyle">
@@ -3734,19 +3980,6 @@
         
         <attr format="reference" name="submitBackground"/>
         <attr name="android:focusable"/>
-    </declare-styleable><declare-styleable name="ActionMode">
-        
-        <attr name="titleTextStyle"/>
-        
-        <attr name="subtitleTextStyle"/>
-        
-        <attr name="background"/>
-        
-        <attr name="backgroundSplit"/>
-        
-        <attr name="height"/>
-        
-        <attr format="reference" name="closeItemLayout"/>
     </declare-styleable><declare-styleable name="ActionMenuView">
         
     </declare-styleable><declare-styleable name="CompoundButton">
@@ -3771,61 +4004,6 @@
             
             <enum name="add" value="16"/>
         </attr>
-    </declare-styleable><declare-styleable name="SwitchCompat">
-        
-        <attr name="android:thumb"/>
-        
-        <attr format="color" name="thumbTint"/>
-        
-        <attr name="thumbTintMode">
-            
-            <enum name="src_over" value="3"/>
-            
-            <enum name="src_in" value="5"/>
-            
-            <enum name="src_atop" value="9"/>
-            
-            <enum name="multiply" value="14"/>
-            
-            <enum name="screen" value="15"/>
-            
-            <enum name="add" value="16"/>
-        </attr>
-        
-        <attr format="reference" name="track"/>
-        
-        <attr format="color" name="trackTint"/>
-        
-        <attr name="trackTintMode">
-            
-            <enum name="src_over" value="3"/>
-            
-            <enum name="src_in" value="5"/>
-            
-            <enum name="src_atop" value="9"/>
-            
-            <enum name="multiply" value="14"/>
-            
-            <enum name="screen" value="15"/>
-            
-            <enum name="add" value="16"/>
-        </attr>
-        
-        <attr name="android:textOn"/>
-        
-        <attr name="android:textOff"/>
-        
-        <attr format="dimension" name="thumbTextPadding"/>
-        
-        <attr format="reference" name="switchTextAppearance"/>
-        
-        <attr format="dimension" name="switchMinWidth"/>
-        
-        <attr format="dimension" name="switchPadding"/>
-        
-        <attr format="boolean" name="splitTrack"/>
-        
-        <attr format="boolean" name="showText"/>
     </declare-styleable><declare-styleable name="AppCompatTextHelper">
         <attr name="android:drawableLeft"/>
         <attr name="android:drawableTop"/>

@@ -8,7 +8,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,14 +28,19 @@ import java.util.Map;
 
 public class RegisteryActivity extends AppCompatActivity {
 
+    //Members
     private Button mButton;
-    private static final int SEARCH_ACTIVITY_REQUEST_CODE = 42;
     private EditText mNameInput;
     private EditText mPasswordInput;
     private EditText mConfirmPasswordInput;
+
+    // Response Request
     private String message;
     private RequestQueue queue;
     private Boolean Connected;
+
+    //Intent
+    private static final int SEARCH_ACTIVITY_REQUEST_CODE = 42;
 
     //@RequiresApi(api = Build.VERSION_CODES.M)
     @Override
@@ -75,14 +79,18 @@ public class RegisteryActivity extends AppCompatActivity {
             public void onClick(View v) {
                 try {
                     String URL = "http://192.168.8.105:8080/registering";
+                    JSONObject jsonBody1 = new JSONObject();
                     JSONObject jsonBody = new JSONObject();
+
                     Log.d("mNameInput", mNameInput.getText().toString());
 
                     jsonBody.put("heyUserName", mNameInput.getText().toString());
                     jsonBody.put("heyUserPassword", mPasswordInput.getText().toString());
                     jsonBody.put("heyUserConfirmPassword", mConfirmPasswordInput.getText().toString());
 
-                    JsonObjectRequest jsonObject = new JsonObjectRequest(Request.Method.POST, URL, jsonBody, new Response.Listener<JSONObject>() {
+                    jsonBody1.put("heyUserAuthentication", jsonBody);
+
+                    JsonObjectRequest jsonObject = new JsonObjectRequest(Request.Method.POST, URL, jsonBody1, new Response.Listener<JSONObject>() {
                         @Override
                         public void onResponse(JSONObject response) {
                             Log.d("response", response.toString());
@@ -92,16 +100,16 @@ public class RegisteryActivity extends AppCompatActivity {
                                 message = response.getString("messageSent");
 
                                 Log.d("es-tu connecté?", Connected.toString());
-                               if(Connected) {
+                                if(Connected) {
                                     Toast.makeText(getApplicationContext(), (Connected.toString()), Toast.LENGTH_SHORT).show();
 
                                     Intent registeryActivityIntent = new Intent(RegisteryActivity.this, SearchActivity.class);
                                     registeryActivityIntent.putExtra("Name", mNameInput.getText().toString());
-                                   registeryActivityIntent.putExtra("Password", mPasswordInput.getText().toString());
+                                    registeryActivityIntent.putExtra("Password", mPasswordInput.getText().toString());
                                     startActivityForResult(registeryActivityIntent, SEARCH_ACTIVITY_REQUEST_CODE);
                                 }else {
-                                   Toast.makeText(getApplicationContext(), (message), Toast.LENGTH_SHORT).show();
-                               }
+                                    Toast.makeText(getApplicationContext(), (message), Toast.LENGTH_SHORT).show();
+                                }
 
 
                             }catch (JSONException e){

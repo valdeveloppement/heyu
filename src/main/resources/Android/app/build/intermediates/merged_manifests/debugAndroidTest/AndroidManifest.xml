@@ -3,7 +3,7 @@
     package="com.example.gp2.test" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="15"
         android:targetSdkVersion="29" />
 
     <instrumentation
