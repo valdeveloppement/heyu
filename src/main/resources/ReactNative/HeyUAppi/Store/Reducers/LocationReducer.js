@@ -12,7 +12,7 @@ heyUserAuthentication:{
 
 heyUserIsConnected:false,
 heyUserNearU:[],
-heyUserSearchRadius:10000000
+heyUserSearchRadius:10
 }
 
 function updateLocation(state = initialState, action) {
