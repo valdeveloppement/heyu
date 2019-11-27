@@ -65,4 +65,12 @@
         android:gravity="center"
         android:text="Retour" />
 
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/returnButton"
+        android:gravity="center"
+        android:text="Se déconnecter" />
+
 </RelativeLayout>

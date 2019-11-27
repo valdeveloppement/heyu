@@ -48,7 +48,7 @@ leaveLogging(){
 
 logging(){
 console.log("fetch de Logging")
-    fetch('http://192.168.8.105:8080/login', {
+    fetch('http://192.168.1.64:8080/login', {
         method: 'POST',
         headers: {
         Accept: 'application/json',

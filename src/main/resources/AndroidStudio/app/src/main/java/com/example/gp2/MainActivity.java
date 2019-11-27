@@ -1,19 +1,6 @@
 package com.example.gp2;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
-
-import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.renderscript.ScriptGroup;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -23,29 +10,44 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 
-import org.json.JSONArray;
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    //Members
     private Button mButton;
     private ImageView mImageUrl;
-    private static final int SEARCH_ACTIVITY_REQUEST_CODE = 42;
-    private static final int REGISTERY_ACTIVITY_REQUEST_CODE = 42;
-private Button mButton2;
+    private Button mButton2;
     private EditText mNameInput;
     private EditText mPasswordInput;
+
+    //Intent
+    private static final int SEARCH_ACTIVITY_REQUEST_CODE = 42;
+    private static final int REGISTERY_ACTIVITY_REQUEST_CODE = 42;
+
+
+    //Request
     private Boolean isConnected;
     private String message;
     private RequestQueue queue;
 
 
-
-   // @RequiresApi(api = Build.VERSION_CODES.M)
+    // @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +55,8 @@ private Button mButton2;
 
 
         queue = Volley.newRequestQueue(this);
+
+        //Find By View
         mButton = (Button) findViewById(R.id.button);
         mImageUrl = (ImageView) findViewById(R.id.imageUrl);
         mNameInput = (EditText) findViewById(R.id.MainName);
@@ -62,98 +66,111 @@ private Button mButton2;
 
         mNameInput.addTextChangedListener(new TextWatcher() {
 
-      @Override
-      public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
-      }
-      @Override
-      public void onTextChanged(CharSequence s, int start, int before, int count) {
-                                                  mButton.setEnabled(s.toString().length() != 0);
-                                              }
+            }
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                mButton.setEnabled(s.toString().length() != 0);
+            }
 
-     @Override
-      public void afterTextChanged(Editable s) {
+            @Override
+            public void afterTextChanged(Editable s) {
 
-}
+            }
         });
 
         mButton.setOnClickListener(new View.OnClickListener() {
-                                       @Override
-                                       public void onClick(View v) {
-                                           try {
-                                               String URL = "http://192.168.8.105:8080/login";
-                                               JSONObject jsonBody = new JSONObject();
-                                               Log.d("mNameInputmainActivity", mNameInput.getText().toString());
+            @Override
+            public void onClick(View v) {
+                try {
+                    String URL = "http://192.168.8.105:8080/login";
+                    JSONObject jsonObject1 = new JSONObject();
+                    JSONObject jsonBody = new JSONObject();
+                    Log.d("mNameInputmainActivity", mNameInput.getText().toString());
 
-                                               jsonBody.put("heyUserName", mNameInput.getText().toString());
-                                               jsonBody.put("heyUserPassword", mPasswordInput.getText().toString());
+                    jsonBody.put("heyUserName", mNameInput.getText().toString());
+                    jsonBody.put("heyUserPassword", mPasswordInput.getText().toString());
 
-                                               JsonObjectRequest jsonObject = new JsonObjectRequest(Request.Method.POST, URL, jsonBody, new Response.Listener<JSONObject>() {
-                                                   @Override
-                                                   public void onResponse(JSONObject response) {
-                                                       Log.d("response", response.toString());
-                                                       // Process the JSON
-                                                       try{
-                                                           isConnected = response.getBoolean("connected");
-                                                           message = response.getString("messageSent");
-
-                                                           Log.d("es-tu connecté?", isConnected.toString());
-                                                           if(isConnected) {
-                                                               Toast.makeText(getApplicationContext(), (isConnected.toString()), Toast.LENGTH_SHORT).show();
-
-                                                               Intent gameActivityIntent = new Intent(MainActivity.this, SearchActivity.class);
-                                                               gameActivityIntent.putExtra("Name", mNameInput.getText().toString());
-                                                               gameActivityIntent.putExtra("Password", mPasswordInput.getText().toString());
-                                                               startActivityForResult(gameActivityIntent, SEARCH_ACTIVITY_REQUEST_CODE);
-                                                           }else{
-                                                               Toast.makeText(getApplicationContext(), (message), Toast.LENGTH_SHORT).show();
-                                                           }
+                    jsonObject1.put("heyUserAuthentication", jsonBody);
 
 
-                                                       }catch (JSONException e){
-                                                           Log.d("erreur", e.toString());
-                                                           e.printStackTrace();
-                                                       }
-                                                   }
-                                               }, new Response.ErrorListener() {
+                    JsonObjectRequest jsonObject = new JsonObjectRequest(Request.Method.POST, URL, jsonObject1, new Response.Listener<JSONObject>() {
+                        @Override
+                        public void onResponse(JSONObject response) {
+                            Log.d("response", response.toString());
+                            // Process the JSON
+                            try{
+                                isConnected = response.getBoolean("connected");
+                                message = response.getString("messageSent");
 
-                                                   @Override
-                                                   public void onErrorResponse(VolleyError error) {
-
-                                                       Log.d("error ", error.toString());
-
-                                                   }
-                                               }){ //no semicolon or coma
-                                                   @Override
-                                                   public Map<String, String> getHeaders() throws AuthFailureError {
-                                                       Map<String, String> params = new HashMap<String, String>();
-                                                       params.put("Content-Type", "application/json");
-                                                       return params;
-                                                   }};
-
-
-                                               queue.add(jsonObject);
-
-                                           } catch (JSONException e) {
-                                               e.printStackTrace();
-                                           }
+                                Log.d("es-tu connecté?", isConnected.toString());
+                                if(isConnected) {
+                                    Toast.makeText(getApplicationContext(), (isConnected.toString()), Toast.LENGTH_SHORT).show();
 
 
 
+                                    //Intent --SEARCH ACTIVITY
+                                    Intent gameActivityIntent = new Intent(MainActivity.this, SearchActivity.class);
+                                    gameActivityIntent.putExtra("Name", mNameInput.getText().toString());
+                                    gameActivityIntent.putExtra("Password", mPasswordInput.getText().toString());
+                                    startActivityForResult(gameActivityIntent, SEARCH_ACTIVITY_REQUEST_CODE);
 
 
-                                       }
+                                }else{
+                                    Toast.makeText(getApplicationContext(), (message), Toast.LENGTH_SHORT).show();
+                                }
+
+
+                            }catch (JSONException e){
+                                Log.d("erreur", e.toString());
+                                e.printStackTrace();
+                            }
+                        }
+                    }, new Response.ErrorListener() {
+
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+
+                            Log.d("error ", error.toString());
+
+                        }
+                    }){ //no semicolon or coma
+                        @Override
+                        public Map<String, String> getHeaders() throws AuthFailureError {
+                            Map<String, String> params = new HashMap<String, String>();
+                            params.put("Content-Type", "application/json");
+                            return params;
+                        }};
+
+
+                    queue.add(jsonObject);
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
 
 
 
-    });
+
+
+            }
+
+
+
+        });
 
         mButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+
+                //Intent --REGISTERY ACTIVITY
                 Intent gameActivityIntent = new Intent(MainActivity.this, RegisteryActivity.class);
                 startActivityForResult(gameActivityIntent, REGISTERY_ACTIVITY_REQUEST_CODE);
+
+
 
             }
 

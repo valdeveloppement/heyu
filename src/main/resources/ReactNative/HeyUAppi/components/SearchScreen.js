@@ -25,46 +25,7 @@ class SearchScreen extends React.Component {
 
   }
 
-  // updateHeyUserNearUList = () => {
-  //   console.log("updateHeyUserNearUList s'execute")
-
-  //   if(this.props.heyUserIsConnected == true){
-  //       fetch('http://192.168.8.105:8080/updateLocation', {
-  //       method: 'POST',
-  //       headers: {
-  //       Accept: 'application/json',
-  //       'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify({
-  //       heyUserAuthentication: this.props.heyUserAuthentication,
-  //       heyUserLocation: {
-  //         heyUserLongitude: this.props.heyUserLocation.heyUserLongitude,
-  //         heyUserLatitude: this.props.heyUserLocation.heyUserLatitude,
-  //         heyUserAccuracy:this.props.heyUserLocation.heyUserAccuracy,
-  //         heyUserSearchRadius:this.state.sliderValue,
-  //         },
-       
-  //       }),
-  //        }).then((response) => response.json())
-  //       .then((responseJson) => {
-  //           // this.setState({ heyUserNearU:responseJson.heyUserNearU });
-  //           // console.log(this.state.heyUserNearU);
-  //           console.log("longueur du tableau = "+ this.state.heyUserNearU.length);
-  //           return responseJson.heyUserNearU;
-  //       })
-  //       .catch((error) => {
-  //           console.error(error);
-  //       });
-
-  //   }
-
-
-  // }
-
-  // componentDidUpdate =() =>{
-  // this.updateHeyUserNearUList();
-
-  // }
+  
 
 
   handleOnSliderChangeFetch = (sliderValue) => {
@@ -75,7 +36,6 @@ class SearchScreen extends React.Component {
   handleOnSliderChange = (sliderValue) => {
      this.setState({sliderValue:Math.round(this.toExponential(sliderValue))})
 
-    // return (<View><Text style={styles.sliderInfos}>{this.toLisible(Math.round(this.toExponential(sliderValue)))}</Text></View>);
   }
 
   toExponential = (x) => {
@@ -101,7 +61,9 @@ class SearchScreen extends React.Component {
       return (
         <View style={styles.container}>
             <View>
+
               <Button title="registering" onPress={() => this.props.navigation.navigate('HeyURegistration')}/>
+
             </View>
 
             <Text>Longitude = {this.props.heyUserLocation.heyUserLongitude}</Text>
@@ -156,9 +118,11 @@ const styles = StyleSheet.create({
     transform: [{ scaleX: 3.1 }, { scaleY: 3.1 }],
     width : ScreenWidth / 3,
   },
+});
+
 
   
-});
+
 
 
 
