@@ -75,8 +75,8 @@ class MyGeolocation extends React.Component {
     } 
     
 
-    const goToLogging = () => this.props.navigation.navigate('UpdateHeyUserNearUList');
-    goToLogging();
+    // const goToLogging = () => this.props.navigation.navigate('UpdateHeyUserNearUList');
+    // goToLogging();
 
   }
 
@@ -150,9 +150,7 @@ class MyGeolocation extends React.Component {
 
  
  render() {
-    return (
-      null
-    )
+  return this.props.children
  }
 }
 

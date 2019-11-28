@@ -69,15 +69,14 @@ class UpdateHeyUserNearUList extends React.Component {
     }
 
   componentDidMount =() =>{
-    const goToLogging = () => this.props.navigation.navigate('Logging');
-    goToLogging();
+    // const goToLogging = () => this.props.navigation.navigate('Logging');
+    // goToLogging();
   
     }
 
   render() {
       
-      return (null
-      );
+    return this.props.children
   }
 }
 

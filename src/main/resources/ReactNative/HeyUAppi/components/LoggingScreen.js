@@ -22,7 +22,7 @@ class LoggingScreen extends React.Component{
         },
         heyUserIsConnected: false,
         messageSent:"Veuillez saisir les informations",
-     
+        heyUserIAm:{}
     }
 }
 
@@ -64,10 +64,14 @@ console.log("fetch de Logging")
         .then((responseJson) => {
             this.setState({heyUserIsConnected: responseJson.connected});
             this.setState({messageSent: responseJson.messageSent});
+            this.setState({heyUserIAm: responseJson.userconnected});
+            console.log(this.state.heyUserIsConnected)
+            console.log(responseJson);
+            console.log("heyUserIam ci-dessous");
+            console.log(this.state.heyUserIAm.heyUserName);
             this.updateAuthentication();
             this.updateConnected();
             this.leaveLogging();
-            console.log(this.state.heyUserIsConnected)
             return responseJson.heyUserIsConnected;
         })
         .catch((error) => {

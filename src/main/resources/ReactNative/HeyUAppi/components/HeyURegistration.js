@@ -13,7 +13,8 @@ class Registration extends React.Component {
             },
             heyUserIsConnected: false,
             messageSent:"Veuillez saisir les informations",
-         
+            heyUserIAm:{}
+
         }
     }
 
@@ -56,6 +57,7 @@ class Registration extends React.Component {
             .then((responseJson) => {
                 this.setState({heyUserIsConnected: responseJson.connected});
                 this.setState({messageSent: responseJson.messageSent});
+                this.setState({heyUserIAm: responseJson.Userconnected});
                 this.updateAuthentication();
                 this.updateConnected();
                 this.leaveRegistering();

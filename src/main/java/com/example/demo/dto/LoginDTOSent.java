@@ -5,16 +5,16 @@ import com.example.demo.model.HeyUser;
 public class LoginDTOSent {
 
 	
-	HeyUser Userconnected = new HeyUser();
+	HeyUser userConnected = new HeyUser();
 
 	String messageSent = null;
 	private boolean connected;
 
 	public HeyUser getUserconnected() {
-		return Userconnected;
+		return userConnected;
 	}
-	public void setUserconnected(HeyUser userconnected) {
-		Userconnected = userconnected;
+	public void setUserconnected(HeyUser userConnected) {
+		this.userConnected = userConnected;
 	}
 	public String getMessageSent() {
 		return messageSent;

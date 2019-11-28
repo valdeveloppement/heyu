@@ -24,13 +24,13 @@ const AppNavigator = createStackNavigator(
         }
       },
       Search: SearchScreen,
-      MyGeolocation: MyGeolocation,
+      // MyGeolocation: MyGeolocation,
       HeyURegistration:HeyURegistration,
-      UpdateHeyUserNearUList:UpdateHeyUserNearUList
+      // UpdateHeyUserNearUList:UpdateHeyUserNearUList
     },
 
     {
-      initialRouteName: 'MyGeolocation',
+      initialRouteName: 'Logging',
       defaultNavigationOptions: {
         headerStyle: {
           backgroundColor: '#f4511e',
