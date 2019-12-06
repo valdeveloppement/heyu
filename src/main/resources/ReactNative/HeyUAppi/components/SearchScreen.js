@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {Dimensions, Slider, View, Text,  StyleSheet, Button} from 'react-native';
+import {Dimensions, Slider, View, Text,  StyleSheet, Button, Image} from 'react-native';
 import { connect } from 'react-redux'
 
 //const used for the styles const
@@ -66,6 +66,8 @@ class SearchScreen extends React.Component {
 
             </View>
 
+
+
             <Text>Longitude = {this.props.heyUserLocation.heyUserLongitude}</Text>
             <Text>Latitude = {this.props.heyUserLocation.heyUserLatitude}</Text>
             <Text>name = {this.props.heyUserAuthentication.heyUserName}</Text>
@@ -73,9 +75,20 @@ class SearchScreen extends React.Component {
             <Text>Message = {this.props.heyUserIAm.heyUserMessage}</Text>
 
 
-
             <View style={styles.sliderContainer}>
               <Text>Search radius</Text>
+              {this.props.heyUserNearU.map((user, index)=> {
+                    return(
+                        <View >
+                            <Image source={{uri:user.heyUserPic}}></Image>
+                            <Text style={styles.text}>{user.heyUserName}</Text>
+                            <Text style={styles.text}>{user.heyUserMessage}</Text>
+                        </View>
+                    )
+                })}
+
+              <Text style={styles.sliderInfos}>{this.toLisible(this.state.sliderValue)}</Text>
+
               <Slider
                 style={styles.slider}
                 minimumValue={0}
@@ -89,8 +102,13 @@ class SearchScreen extends React.Component {
                 onSlidingComplete={this.handleOnSliderChangeFetch}
               />
 
-               <Text style={styles.sliderInfos}>{this.toLisible(this.state.sliderValue)}</Text>
+
             </View>
+
+
+
+
+            
         </View>
       );
   }
