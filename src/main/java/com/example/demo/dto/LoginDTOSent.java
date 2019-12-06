@@ -10,10 +10,10 @@ public class LoginDTOSent {
 	String messageSent = null;
 	private boolean connected;
 
-	public HeyUser getUserconnected() {
+	public HeyUser getUserConnected() {
 		return userConnected;
 	}
-	public void setUserconnected(HeyUser userConnected) {
+	public void setUserConnected(HeyUser userConnected) {
 		this.userConnected = userConnected;
 	}
 	public String getMessageSent() {

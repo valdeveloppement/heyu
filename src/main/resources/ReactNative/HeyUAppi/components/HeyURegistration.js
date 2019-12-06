@@ -40,7 +40,7 @@ class Registration extends React.Component {
 
     register(){
     console.log("fetch de registering")
-        fetch('http://192.168.8.104:8080/registering', {
+        fetch('http://192.168.8.101:8080/registering', {
             method: 'POST',
             headers: {
             Accept: 'application/json',

@@ -8,10 +8,9 @@ class UpdateHeyUserNearUList extends React.Component {
 
 
   state = {
-
     heyUserNearU: [],
-
   }
+
 
 
   dispatchHeyUserNearU(heyUserNearU){
@@ -29,7 +28,7 @@ class UpdateHeyUserNearUList extends React.Component {
     console.log("updateHeyUserNearUList s'execute")
     console.log("radius envoyé:  "+this.props.heyUserSearchRadius);
     if(this.props.heyUserIsConnected == true){
-        fetch('http://192.168.8.104:8080/updateLocation', {
+        fetch('http://192.168.8.101:8080/updateLocation', {
         method: 'POST',
         headers: {
         Accept: 'application/json',

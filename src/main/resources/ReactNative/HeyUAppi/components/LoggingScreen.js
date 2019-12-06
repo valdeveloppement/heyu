@@ -38,6 +38,12 @@ updateConnected = () => {
     this.props.dispatch(action)
 }
 
+updateHeyUserConected = () => {
+  const action = { type: "UPDATE_USER_CONNECT", value: this.state.heyUserIAm}
+  this.props.dispatch(action)
+}
+
+
 leaveLogging(){
     console.log("leaveLogging")
     if(this.state.heyUserIsConnected == true){
@@ -48,7 +54,7 @@ leaveLogging(){
 
 logging(){
 console.log("fetch de Logging")
-    fetch('http://192.168.8.104:8080/login', {
+    fetch('http://192.168.8.101:8080/login', {
         method: 'POST',
         headers: {
         Accept: 'application/json',
@@ -64,11 +70,12 @@ console.log("fetch de Logging")
         .then((responseJson) => {
             this.setState({heyUserIsConnected: responseJson.connected});
             this.setState({messageSent: responseJson.messageSent});
-            this.setState({heyUserIAm: responseJson.userconnected});
+            this.setState({heyUserIAm: responseJson.userConnected});
             console.log(this.state.heyUserIsConnected)
             console.log(responseJson);
             console.log("heyUserIam ci-dessous");
-            console.log(this.state.heyUserIAm.heyUserName);
+            console.log(this.state.heyUserIAm);
+            this.updateHeyUserConected();
             this.updateAuthentication();
             this.updateConnected();
             this.leaveLogging();

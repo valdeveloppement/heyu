@@ -83,7 +83,7 @@ public class HeyUController {
 
 		if(searchedUser != null) {
 			//thisUserLoginDto.getUserconnected().setHeyUserName(searchedUser);
-			thisUserLoginDto.setUserconnected(searchedUser);
+			thisUserLoginDto.setUserConnected(searchedUser);
 			thisUserLoginDto.setConnected(true);
 			thisUserLoginDto.setMessageSent("You've been successfully logged in");
 			return thisUserLoginDto;
@@ -111,12 +111,12 @@ public class HeyUController {
 			thisUserLoginDto.setMessageSent("There's already a HeyUser with that name.");
 			return thisUserLoginDto;
 		} else if(registeringDTO.getHeyUserAuthentication().getHeyUserPassword().equals(registeringDTO.getHeyUserAuthentication().getHeyUserConfirmPassword())){
-			thisUserLoginDto.getUserconnected().setHeyUserName(registeringDTO.getHeyUserAuthentication().getHeyUserName());
-			thisUserLoginDto.getUserconnected().setHeyUserPassword(registeringDTO.getHeyUserAuthentication().getHeyUserPassword());
+			thisUserLoginDto.getUserConnected().setHeyUserName(registeringDTO.getHeyUserAuthentication().getHeyUserName());
+			thisUserLoginDto.getUserConnected().setHeyUserPassword(registeringDTO.getHeyUserAuthentication().getHeyUserPassword());
 			thisUserLoginDto.setConnected(true);
-			thisUserLoginDto.setMessageSent("Welcome "+thisUserLoginDto.getUserconnected().getHeyUserName() + " ! Your account has been successfully created !" );
-			hUServ.save(thisUserLoginDto.getUserconnected());
-			hUServ.getListUsers().add(thisUserLoginDto.getUserconnected());
+			thisUserLoginDto.setMessageSent("Welcome "+thisUserLoginDto.getUserConnected().getHeyUserName() + " ! Your account has been successfully created !" );
+			hUServ.save(thisUserLoginDto.getUserConnected());
+			hUServ.getListUsers().add(thisUserLoginDto.getUserConnected());
 			return thisUserLoginDto;	
 		} else {    		
 			thisUserLoginDto.setConnected(false); // A CONFIRMER (si un utilisateur entre en dur "true" dans le false...
@@ -137,17 +137,17 @@ public class HeyUController {
 		LoginDTOSent thisUserLoginDto = new LoginDTOSent();
 		if(searchedUser != null) {
 			
-			thisUserLoginDto.setUserconnected(searchedUser);
-			thisUserLoginDto.getUserconnected().setHeyUserMessage(settingsDTO.getHeyUserProfil().getHeyUserMessage());
-			thisUserLoginDto.getUserconnected().setHeyUserPic(settingsDTO.getHeyUserProfil().getHeyUserPic());
+			thisUserLoginDto.setUserConnected(searchedUser);
+			thisUserLoginDto.getUserConnected().setHeyUserMessage(settingsDTO.getHeyUserProfil().getHeyUserMessage());
+			thisUserLoginDto.getUserConnected().setHeyUserPic(settingsDTO.getHeyUserProfil().getHeyUserPic());
 			thisUserLoginDto.setConnected(true);
 			thisUserLoginDto.setMessageSent("Your modifications has been successfully registered !");
 			System.out.println("BUG ICI => "+searchedUser.getHeyUserName());
-			hUServ.save(thisUserLoginDto.getUserconnected());
+			hUServ.save(thisUserLoginDto.getUserConnected());
 			
 
 			int indexOfUserConnected = hUServ.getListUsers().indexOf(searchedUser);
-			hUServ.getListUsers().add(indexOfUserConnected, thisUserLoginDto.getUserconnected());
+			hUServ.getListUsers().add(indexOfUserConnected, thisUserLoginDto.getUserConnected());
 			return thisUserLoginDto;
 		} else {
 			thisUserLoginDto.setConnected(false); 

@@ -70,6 +70,8 @@ class SearchScreen extends React.Component {
             <Text>Latitude = {this.props.heyUserLocation.heyUserLatitude}</Text>
             <Text>name = {this.props.heyUserAuthentication.heyUserName}</Text>
             <Text>mp = {this.props.heyUserAuthentication.heyUserPassword}</Text>
+            <Text>Message = {this.props.heyUserIAm.heyUserMessage}</Text>
+
 
 
             <View style={styles.sliderContainer}>
@@ -139,9 +141,8 @@ const mapStateToProps = (state) => {
      heyUserAuthentication:state.auth.heyUserAuthentication,
      heyUserIsConnected:state.auth.heyUserIsConnected,
      heyUserLocation:state.loc.heyUserLocation,
-     heyUserNearU:state.loc.heyUserNearU
-
-
+     heyUserNearU:state.loc.heyUserNearU,
+     heyUserIAm:state.auth.heyUserIAm
 
   }
 

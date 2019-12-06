@@ -11,7 +11,8 @@ const initialState = {  heyUserLocation:{
     heyUserPasswordConfirm: 'blou',
   },
 
-  heyUserIsConnected:false
+  heyUserIsConnected:false,
+  heyUserIAm:{}
 }
 
 
@@ -29,6 +30,12 @@ function updateAuthentication(state = initialState, action) {
         nextState = {
           ...state,
           heyUserIsConnected:action.value
+        }
+      return nextState || state
+      case 'UPDATE_USER_CONNECT':
+        nextState = {
+          ...state,
+          heyUserIAm:action.value
         }
       return nextState || state
     default:
