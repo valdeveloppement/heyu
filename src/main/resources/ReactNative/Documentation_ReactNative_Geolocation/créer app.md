@@ -28,10 +28,17 @@ npm install typescript
 npm install eslint
 
 
+https://shift.infinite.red/beginner-s-guide-to-using-cocoapods-with-react-native-46cb4d372995
+
 On install cocoapods, et variables env:
+brew install cocoapods
 sudo gem install cocoapods
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/bin:$PATH
+
+$ cd ioscd ios
+$ pod init
+$ pod install
 
 Paste in : android/app/src/main/AndroidManifest.xml:
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />

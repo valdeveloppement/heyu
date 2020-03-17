@@ -50,25 +50,34 @@ public class HeyUController {
 		return thisUserLoginDto;
 	}
 
+    //Endpoint du REST controller: Renvoi à un utilisateur la liste des utilisateurs proches
 	@PostMapping("/updateLocation")
-	public UpdatePositionResponseDto updateLocation(@RequestBody UpdatePositionDTO newLocationDto) throws JsonProcessingException {
-		
-		System.out.println("/updateLocation is called");
-		ObjectMapper mapper = new ObjectMapper();
-		// convert user object to json string and return it 
-		System.out.println(mapper.writeValueAsString(newLocationDto));
-		
+	public UpdatePositionResponseDto updateLocation(@RequestBody UpdatePositionDTO newLocationDto) {
 
-		HeyUser searchedUser = hUServ.searchUserInArrayList( newLocationDto.getHeyUserAuthentication().getHeyUserName(),newLocationDto.getHeyUserAuthentication().getHeyUserPassword(), hUServ.getListUsers());
-			UpdatePositionResponseDto response = new UpdatePositionResponseDto();
-			if(searchedUser != null) {
-			hUServ.updateLocation(newLocationDto.getHeyUserLocation().getHeyUserLongitude(), newLocationDto.getHeyUserLocation().getHeyUserLatitude(), searchedUser);
-			
-			response.setHeyUserNearU(hUServ.findNearUser(searchedUser, newLocationDto.getHeyUserLocation().getHeyUserSearchRadius(), hUServ.getListUsers()));
-			}
-			return response;
-//		}
-//		return null;
+		HeyUser searchedUser = 
+		hUServ.searchUserInArrayList(
+			newLocationDto.getHeyUserAuthentication().getHeyUserName(),
+			newLocationDto.getHeyUserAuthentication().getHeyUserPassword(),
+			hUServ.getListUsers()
+		);
+
+		UpdatePositionResponseDto response = new UpdatePositionResponseDto();
+		if(searchedUser != null) {
+			hUServ.updateLocation(
+				newLocationDto.getHeyUserLocation().getHeyUserLongitude(),
+				newLocationDto.getHeyUserLocation().getHeyUserLatitude(),
+				searchedUser
+			);
+		
+			response.setHeyUserNearU(
+				hUServ.findNearUser(
+					searchedUser,
+					newLocationDto.getHeyUserLocation().getHeyUserSearchRadius(),
+					hUServ.getListUsers()
+				)
+			);
+		}
+		return response;
 	}
 
 
